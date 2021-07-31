@@ -1,0 +1,47 @@
+.page-enter-active {
+    animation: .3s ease-out 0s 1 apparition;
+}
+.page-leave-to {
+  opacity: 0;
+}
+
+@keyframes apparition {
+    0% {
+      transform: translatey(+3rem);
+      opacity: 0.3;
+    }
+    100% {
+      transform: translatey(0);
+      opacity: 1;
+    }
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(0, 6, 97);
+  outline: 1px solid rgb(1, 103, 204);
+}
+
+@keyframes img_top {
+  0% {
+      background-position-y: 0%
+  }
+  100% {
+      background-position-y: 100%
+  }
+}
+@keyframes img_left {
+  0% {
+      background-position-x: 0%
+  }
+  100% {
+      background-position-x: 100%
+  }
+}
+@keyframes img_right {
+  0% {
+      background-position-x: 100%
+  }
+  100% {
+      background-position-x: 000%
+  }
+}
