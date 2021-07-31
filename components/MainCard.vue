@@ -3,6 +3,7 @@
     class="mx-auto"
     max-width="600"
     tile
+    elevation=4
   >
     <v-img
       height="100%"

@@ -45,3 +45,8 @@ body::-webkit-scrollbar-thumb {
       background-position-x: 000%
   }
 }
+
+.v-application .blue.darken-3 {
+  background-color: #1565c0a1 !important;
+  border-color: #1565c080 !important;
+}

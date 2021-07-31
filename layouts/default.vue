@@ -64,7 +64,7 @@
           </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-main style="background-image: linear-gradient(162deg, #BBDEFB 0%, #0D47A1 100%);">
+    <v-main>
       <!-- and if darkMode linear-gradient(162deg, #0D47A1 0%, #020024 100%) #020024 0% -->
       <v-container>
         <v-btn
@@ -103,13 +103,32 @@ export default {
 </script>
 
 <style scoped>
+.v-application .grey.darken-2 {
+    background-color: #616161a4 !important;
+    border-color: #616161a4 !important;
+}
 .v-navigation-drawer *{
   color: white;
 }
 .v-application{
-    
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
+}
+.v-main {
+    background: linear-gradient(-45deg, #1976D2, #0D47A1, #23a6d5, #90CAF9);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 </style>

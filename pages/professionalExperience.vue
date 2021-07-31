@@ -13,7 +13,7 @@
               :md="card.flex"
               :sm="12"
             >
-              <v-card :class="'blue darken-3 white--text pa-2 '+card.class"  elevation="2">
+              <v-card :class="'blue darken-4 white--text pa-2 '+card.class"  elevation="2">
                 <v-row >
                   <v-col
                       v-for="(img, index) in card.imgs"

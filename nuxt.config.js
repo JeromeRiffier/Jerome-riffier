@@ -1,7 +1,8 @@
 import colors from 'vuetify/es5/util/colors'
+import TerserPlugin from 'terser-webpack-plugin'
 
 export default {
-  //server host
+  // server host
   server: {
     host: 0 // default: localhost
   },
@@ -62,7 +63,7 @@ export default {
       display: 'standalone',
     },
     workbox: {
-      dev: true, // or use a global variable to track the current NODE_ENV, etc to determine dev mode
+      dev: false, // or use a global variable to track the current NODE_ENV, etc to determine dev mode
       cacheAssets: true
 
     },
@@ -93,5 +94,20 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    uglify: {
+      uglifyOptions: {
+        compress: false
+      },
+      cache: '/path/to/cache/dir'
+    },
+    optimization: {
+      minimize: true,
+      minimizer: [
+        new TerserPlugin({
+          cache: true,
+          parallel: false
+        })
+      ]
+    }
   }
 }
