@@ -1,5 +1,46 @@
 
 {
+    "MENU": {
+        "class": "primary",
+        "img": "/portrait.png",
+        "title": "Jérôme Riffier",
+        "subtitle": "Développeur / Concepteur",
+        "description": "Passionné d'innovation et d'intelligence artificielle",
+        "items": [
+            {
+                "icon": "mdi-card-account-details",
+                "link": "/CV",
+                "title": "CV",
+                "group": false
+            },
+            {
+                "icon": "mdi-briefcase",
+                "link": "/professionalExperience",
+                "title": "Experience professionel",
+                "group": false
+            },
+            {
+                "icon": "mdi-folder",
+                "title": "Projet personnel",
+                "group": [
+                    {
+                        "title": "Lancement spatiaux",
+                        "link": "/perso/space"
+                    },
+                    {
+                        "title": "Conjoncture Collatz",
+                        "link": "/perso/conjecture"
+                    }
+                ]
+            },
+            {
+                "icon": "mdi-email",
+                "link": "/contact",
+                "title": "Me contacter",
+                "group": false
+            }
+        ]
+    },
     "CV": {
         "header" : {
             "nom":"Jérôme Riffier",
@@ -30,6 +71,7 @@
             "Laravel",
             "Symfony",
             "Nuxt",
+            "PWA",
             "Docker",
             "JS",
             "Windev"

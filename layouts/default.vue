@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-navigation-drawer
-      class="blue darken-4 white"
+      :class="MENU.class"
       :temporary="this.$vuetify.breakpoint.mobile"
       :permanent="!this.$vuetify.breakpoint.mobile"
       app
@@ -10,62 +10,87 @@
     >
       <v-list>
         <v-list-item class="px-2"  link nuxt to="/">
-            <v-list-item-avatar>
-              <v-img 
-              src="/portrait.png"
-              aspect-ratio="1:1"
-              ></v-img>
-            </v-list-item-avatar>
-            <v-list-item-title class="text-h6">
-                Jérôme Riffier
-              </v-list-item-title>
-          </v-list-item>
+          <v-list-item-avatar>
+            <v-img 
+            :src="MENU.img"
+            aspect-ratio="1:1"
+            ></v-img>
+          </v-list-item-avatar>
+          <v-list-item-title class="text-h6">
+              {{ MENU.title }}
+            </v-list-item-title>
+        </v-list-item>
 
-          <v-list-item disabled>
-            <v-list-item-content>
-              <v-list-item-title>
-                Développeur / Concepteur
-              </v-list-item-title>
-              <v-list-item-subtitle>Passionné d'innovation et d'intelligence artificielle</v-list-item-subtitle>
-            </v-list-item-content>
-          </v-list-item>
-        </v-list>
-
-        <v-list
-          nav
-          dense
-        >
-          <v-list-item link nuxt to="cv">
-            <v-list-item-icon>
-              <v-icon>mdi-card-account-details</v-icon>
-            </v-list-item-icon>
-            <v-list-item-title>CV</v-list-item-title>
-          </v-list-item>
-          <v-divider></v-divider>
-          <v-list-item class="mt-1" link nuxt to="professionalExperience">
-            <v-list-item-icon>
-              <v-icon>mdi-briefcase</v-icon>
-            </v-list-item-icon>
-            <v-list-item-title>Experience professionel</v-list-item-title>
-          </v-list-item>
-          <v-divider></v-divider>
-          <v-list-item class="mt-1" link>
-            <v-list-item-icon>
-              <v-icon>mdi-folder</v-icon>
-            </v-list-item-icon>
-            <v-list-item-title>Projet personnel</v-list-item-title>
-          </v-list-item>
-          <v-divider></v-divider>
-          <v-list-item class="mt-1" link nuxt to="contact">
-            <v-list-item-icon>
-              <v-icon>mdi-email</v-icon>
-            </v-list-item-icon>
-            <v-list-item-title>Me contacter</v-list-item-title>
-          </v-list-item>
+        <v-list-item>
+          <v-list-item-content>
+            <v-list-item-title>
+              {{ MENU.subtitle }}
+            </v-list-item-title>
+            <v-list-item-subtitle>{{ MENU.description }}</v-list-item-subtitle>
+          </v-list-item-content>
+        </v-list-item>
       </v-list>
+
+       <v-list
+        nav
+        dense
+      >
+        <template v-for="item in MENU.items">
+          <v-list-group
+            :key="'list' + item.index "
+            v-if="item.group"
+            class="white--text"
+            no-action
+          >
+            <template v-slot:activator>
+             <v-list-item class="pl-0">
+                <v-list-item-icon class="secondary--text">
+                  <v-icon>{{ item.icon }}</v-icon>
+                </v-list-item-icon>
+                <v-list-item-content>
+                  <v-list-item-title>{{ item.title }}</v-list-item-title>
+                </v-list-item-content>
+             </v-list-item>
+            </template>
+
+            <v-list-item 
+              v-for="item in item.group"
+              :key="item.link + item.index + 'listGroup'"
+              link 
+              nuxt 
+              :to="item.link">
+              <v-list-item-content>
+                <v-list-item-title >{{ item.title }}</v-list-item-title>
+              </v-list-item-content>
+            </v-list-item>
+          </v-list-group>
+
+           <v-list-item
+            :key="item.title + 'sub list'"
+            v-else
+            link 
+            nuxt 
+            :to="item.link">
+            <v-list-item-icon class="secondary--text">
+              <v-icon>{{ item.icon }}</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>{{ item.title }}</v-list-item-title>
+          </v-list-item>
+
+          <v-divider :key="item.title"></v-divider>
+  
+        </template>
+         <v-switch
+          class="pl-5"
+          v-model="$vuetify.theme.dark"
+          inset
+          color="secondary"
+          label="Clair/ Sombre"
+        ></v-switch>
+      </v-list>
+     
     </v-navigation-drawer>
     <v-main>
-      <!-- and if darkMode linear-gradient(162deg, #0D47A1 0%, #020024 100%) #020024 0% -->
       <v-container>
         <v-btn
         v-if="this.$vuetify.breakpoint.mobile"
@@ -73,8 +98,8 @@
           fixed
           right
           bottom
-          color="blue darken-2"
-          dark
+          color="secondary"
+          :dark=!dark
           fab
         >
           <v-icon v-if="drawer">
@@ -91,11 +116,16 @@
 </template>
 
 <script>
+import {get} from 'vuex-pathify'
 export default {
+  computed: {
+    ...get('menu/', ['MENU'])
+  },
   data: () => ({
     drawer: false,
   }),
   beforeMount() {
+    this.$store.dispatch('menu/init')
     this.$store.dispatch('cv/init')
     this.$store.dispatch('pros/init')
   }
@@ -103,20 +133,18 @@ export default {
 </script>
 
 <style scoped>
-.v-application .grey.darken-2 {
-    background-color: #616161a4 !important;
-    border-color: #616161a4 !important;
-}
-.v-navigation-drawer *{
-  color: white;
-}
 .v-application{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
 }
-.v-main {
-    background: linear-gradient(-45deg, #1976D2, #0D47A1, #23a6d5, #90CAF9);
+.theme--light .v-main {
+    background: linear-gradient(-45deg, #cbdcec, #9abef5, #59d3ff, #daeeff);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+.theme--dark .v-main {
+    background: linear-gradient(-45deg, #10508f, #05285c, #1b637e, #002542);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
 }

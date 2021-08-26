@@ -1,5 +1,5 @@
 import colors from 'vuetify/es5/util/colors'
-import TerserPlugin from 'terser-webpack-plugin'
+
 
 export default {
   // server host
@@ -30,11 +30,13 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    '~/assets/main.css',
+    '~/assets/main.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    '~/plugins/colorMode',
+    {src: '~/plugins/pixi'}
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -52,6 +54,7 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    '@nuxtjs/color-mode'
   ],
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
@@ -60,54 +63,70 @@ export default {
       lang: 'fr',
       name: 'Jérôme Riffier, développeur',
       short_name: 'Jérôme Riffier',
+      description: 'CV, Projet Personnel et plus encore...',
       display: 'standalone',
+      background_color: '#daeeff'
     },
     workbox: {
-      dev: false, // or use a global variable to track the current NODE_ENV, etc to determine dev mode
-      cacheAssets: true
-
+      enabled: false, // or use a global variable to track the current NODE_ENV, etc to determine dev mode
+      cacheAssets: true,
+      offline: true,
+      offlineStrategy: 'CacheFirst'
     },
     icon: {
       /* icon options */
       fileName: 'icon_pwa.png'
+    },
+    meta: {
+      theme_color: '#daeeff'
     }
   },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
+    customProperties: true,
     theme: {
       dark: false,
       themes: {
-        dark: {
-          primary: colors.blue.darken2,
-          accent: colors.grey.darken3,
-          secondary: colors.amber.darken3,
-          info: colors.teal.lighten1,
+        light: {
+          primary: colors.blueGrey.lighten5,
+          accent: colors.blueGrey.lighten4,
+          secondary: colors.blue.base,
+          info: colors.blue.darken1,
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
-          success: colors.green.accent3
+          success: colors.green.accent3,
+          anchor: colors.blue
+        },
+         dark: {
+          primary: '#0e122d',
+          accent: colors.blue.darken4,
+          secondary: colors.teal.accent3,
+          info: colors.indigo.darken1,
+          warning: colors.amber.base,
+          error: colors.deepOrange.accent4,
+          success: colors.green.accent3,
+          anchor: colors.blue
         }
-      }
-    }
+      },
+      options: { customProperties: true },
+    },
+    breakpoint: {
+      mobileBreakpoint: 'sm' // This is equivalent to a value of 960
+    },
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     uglify: {
       uglifyOptions: {
-        compress: false
+        compress: true
       },
       cache: '/path/to/cache/dir'
     },
     optimization: {
       minimize: true,
-      minimizer: [
-        new TerserPlugin({
-          cache: true,
-          parallel: false
-        })
-      ]
     }
   }
 }

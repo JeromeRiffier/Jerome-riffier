@@ -17,7 +17,6 @@
           cols="12">
           <v-list-item
             color="rgba(0, 0, 0, .4)"
-            dark
           >
             <v-list-item-content>
               <v-list-item-title class="text-h6">

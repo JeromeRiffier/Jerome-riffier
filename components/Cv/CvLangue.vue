@@ -1,11 +1,11 @@
 <template>
-    <h3 data-tooltip="Lu / Écrit / Parlé" data-inverted="" data-position="left center">
+    <h3 data-tooltip="Lu / Écrit / Parlé" data-inverted="" data-position="left center" class=" info--text pb-5">
         Anglais 
-        <span class="level not"></span>
-        <span class="level"></span>
-        <span class="level"></span>
-        <span class="level"></span>
-        <span class="level"></span>
+        <span class="level info not"></span>
+        <span class="level info"></span>
+        <span class="level info"></span>
+        <span class="level info"></span>
+        <span class="level info"></span>
     </h3>
 </template>
 
@@ -17,7 +17,7 @@
 
 <style scoped>
  h3 {
-    padding-right: 40% !important;
+    padding-right: 20% !important;
     font-size: 1.1rem !important;
     margin-top: 15px !important;
 }
@@ -27,15 +27,14 @@ span.level.not {
     margin-left: 5px !important;
     background-color: white !important;
     border: solid 2px !important;
-    border-color: #4f90cd !important;
     border-radius: 50% !important;
     display: inline-block !important;
 }
 span.level {
+    vertical-align: sub;
     height: 20px !important;
     width: 20px !important;
     margin-left: 5px !important;
-    background-color: #4f90cd !important;
     border-radius: 50% !important;
     display: inline-block !important;
     margin-top: 3px;

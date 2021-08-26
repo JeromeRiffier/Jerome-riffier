@@ -1,5 +1,5 @@
 <template>
-    <v-card dark class="pa-15">
+    <v-card class="pa-15">
       <h1 v-if="error.statusCode === 404">
         {{ pageNotFound }}
       </h1>

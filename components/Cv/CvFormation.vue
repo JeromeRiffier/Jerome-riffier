@@ -32,6 +32,9 @@ span.date {
     float: right;
     color: #4183c4;
 }
+.theme--dark span.date {
+    color: var(--v-secondary-lighten1)!important;
+}
 .formation {
     border-bottom: solid 1px #80808061;
     margin-bottom: 15px;

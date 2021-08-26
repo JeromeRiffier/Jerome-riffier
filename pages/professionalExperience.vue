@@ -12,8 +12,9 @@
               :key="cardIndex"
               :md="card.flex"
               :sm="12"
+              :class="card.class"
             >
-              <v-card :class="'blue darken-4 white--text pa-2 '+card.class"  elevation="2">
+              <v-card class="pa-2 primary"  elevation="2">
                 <v-row >
                   <v-col
                       v-for="(img, index) in card.imgs"
@@ -31,24 +32,23 @@
                 </v-row>               
                  <v-toolbar color="rgba(0,0,0,0)" elevation="0">
                    <div>
-                    <v-card-title v-text="card.title" class="subtitle-1 white--text"></v-card-title>
-                    <v-card-subtitle v-text="card.subtitle" class="subtitle-1 white--text"></v-card-subtitle>
+                    <v-card-title v-text="card.title" class="subtitle-1"></v-card-title>
+                    <v-card-subtitle v-text="card.subtitle" class="subtitle-1"></v-card-subtitle>
                    </div>
                    
                     <v-spacer></v-spacer>
                     <v-btn icon
                       v-model="card.reveal"
                       @click="toggle({'cardIndex':cardIndex, 'colIndex':colIndex, 'val': true})"
-                      color="teal accent-4"
+                      color="secondary"
                     >
                       <v-icon>mdi-chevron-up</v-icon>
                     </v-btn>
                  </v-toolbar>
                   <v-expand-transition>
                     <v-card
-                      dark
                       v-if="card.reveal"
-                      class="transition-fast-in-fast-out v-card--reveal blue darken-4"
+                      class="transition-fast-in-fast-out v-card--reveal"
                     >
                       <v-card-text class="pb-15">
                           <h3>
@@ -65,7 +65,7 @@
                           small
                           right
                           absolute
-                          color="teal accent-4"
+                          color="secondary"
                           @click="toggle({'cardIndex':cardIndex, 'colIndex':colIndex, 'val': false})"
                           class="mb-15"
                         >
@@ -104,7 +104,6 @@ export default {
     .v-card--reveal {
       bottom: 0;
       left: 1%;
-      opacity: 1 !important;
       position: absolute;
       width: 98%;
       max-height: 80% ;

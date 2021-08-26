@@ -1,6 +1,6 @@
 <template>
     <div class="interet">
-        <v-btn v-for="Interet in Interets" :key="Interet">{{ Interet }}</v-btn>
+        <v-btn class="info" v-for="Interet in Interets" :key="Interet">{{ Interet }}</v-btn>
     </div>
 </template>
 

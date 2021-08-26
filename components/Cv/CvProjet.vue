@@ -3,7 +3,7 @@
             data-tooltip="Ouvrir 'Projet personnels' pour une démo" 
             data-inverted="" 
             data-position="left center">
-        <h3>{{ projet.titre }}</h3>
+        <h3 class="info--text">{{ projet.titre }}</h3>
         <p>{{ projet.description }}</p>
     </div>
 </template>
@@ -29,5 +29,8 @@ p {
 }
 .projet {
     border-bottom: solid 1px #80808061;
+}
+.theme--dark p {
+    color: #cccccc;
 }
 </style>

@@ -3,11 +3,11 @@
         <h2>{{ experience.titre }}</h2>
         <h3>{{ experience.entreprise }}</h3>
         <div class="span-container">
-            <span class="Date">{{ experience.periode }}</span>
-            <span class="Lieu">{{ experience.lieu}}</span>
+            <span class="Date secondary--text">{{ experience.periode }}</span>
+            <span class="Lieu secondary--text">{{ experience.lieu}}</span>
             <span class="Description" v-html="experience.description"></span>
         </div>
-        <span class="Poste"></span>
+        <span class="Poste secondary--text text-lighten1"></span>
         <ul class="list">
             <li v-for="poste in experience.postes" :key="poste.id">{{ poste.text }}</li>
         </ul>
@@ -23,13 +23,9 @@
 
 
 <style scoped>
-.Experience * {
-    color: black;
-}
 .Experience {
     margin-bottom: 15px;
     padding-bottom: 10px;
-    color: black;
     border-bottom: solid 1px #80808061;
 }
 h2 {
@@ -49,12 +45,10 @@ h3 {
 .Date {
     font-size: 0.8rem;
     float: left;
-    color: #4183c4;
 }
 .Lieu {
     font-size: 0.8rem;
     float: right;
-    color: #4183c4;
 }
 .Description {
     width: 100%;
@@ -64,11 +58,18 @@ h3 {
     float: left;
     color: #84919e;
 }
+.theme--dark .Description {
+    color: #f0f8ff;
+}
 .list {
     margin-left: 1.25rem;
     font-size: 0.7em;
     color: #212121;
     font-weight: 700;
+}
+.theme--dark .list  {
+    color: #d8d8d8;
+
 }
 span.Poste::before {
     content: 'Description du poste';
@@ -80,7 +81,6 @@ span.Poste {
     margin-left: -1.25rem;
     font-size: 0.7rem;
     float: left;
-    color: #4183c4;
 }
 span.technologie {
     display: contents;
@@ -90,23 +90,23 @@ span.technologie {
     font-size: 0.75rem;
     font-weight: 500;
     float: left;
-    color: black;
 }
 span.technologie::before {
     content: 'Technologie : ';
-    color: #4183c4;
+    color: var(--v-secondary-lighten1)!important;
 }
 ul {
     list-style: none; /* Remove default bullets */
 }
 ul li::before {
   content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: rgb(79, 144, 205); /* Change the color */
   font-weight: bold; /* If you want it to be bold */
   width: 1em; /* Also needed for space (tweak if needed) */
   margin-left: -1em; /* Also needed for space (tweak if needed) */
   margin-right: 1em; /* Also needed for space (tweak if needed) */
   
 }
-
+.theme--dark .Lieu, .theme--dark .Date, .theme--dark span.Poste, .theme--dark span.technologie::before, .theme--dark ul li::before {
+    color: #a1ddff;
+}
 </style>
