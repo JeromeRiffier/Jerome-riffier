@@ -39,6 +39,14 @@ body::-webkit-scrollbar-thumb {
   background-color: rgb(0, 6, 97);
   outline: 1px solid rgb(1, 103, 204);
 }
+.v-navigation-drawer__content .v-list-item{
+  border-bottom: 0px;
+}
+
+v-image:hover .v-image__image {
+  background-size: 110% auto;
+  animation: 10s linear infinite img_top;
+}
 
 @keyframes img_top {
   0% {

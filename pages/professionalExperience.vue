@@ -1,10 +1,10 @@
 <template>
    <v-container fluid>
       <v-row >
-        <v-col 
+        <v-col
           v-for="(col, colIndex) in PROS.cols"
           :key="colIndex"
-          :md=col.size  
+          :md=col.size
         >
           <v-row>
             <v-col
@@ -29,13 +29,13 @@
                     >
                     </v-img>
                   </v-col>
-                </v-row>               
+                </v-row>
                  <v-toolbar color="rgba(0,0,0,0)" elevation="0">
                    <div>
                     <v-card-title v-text="card.title" class="subtitle-1"></v-card-title>
                     <v-card-subtitle v-text="card.subtitle" class="subtitle-1"></v-card-subtitle>
                    </div>
-                   
+
                     <v-spacer></v-spacer>
                     <v-btn icon
                       v-model="card.reveal"
@@ -97,10 +97,6 @@ export default {
 
 
 <style scoped>
-    .v-image {
-        background-size: 110% auto;
-        animation: 10s linear infinite img_top;
-    }
     .v-card--reveal {
       bottom: 0;
       left: 1%;

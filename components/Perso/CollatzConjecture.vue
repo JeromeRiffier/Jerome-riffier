@@ -2,9 +2,10 @@
     <v-sheet color="rgba(0, 0, 0, .12)">
         <v-sparkline
           :value="spark.range"
-          color="rgba(255, 255, 255, .7)"
+          :gradient="['#ff0000', '#cec404']"
           height="100"
           padding="24"
+          line-width="1"
           stroke-linecap="round"
           smooth
         >
@@ -28,6 +29,7 @@
                     :label="slider.label"
                     :thumb-color="slider.color"
                     thumb-label="always"
+
                     min="1"
                     max="100"
                     @change="start"
@@ -76,7 +78,7 @@ export default {
             } else{
                 val = val/2
             }
-            
+
             setTimeout(() => this.fill(val,limit), 50);
         }
     }
