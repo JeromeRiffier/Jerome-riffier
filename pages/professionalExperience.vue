@@ -86,11 +86,19 @@
 import { call, sync } from 'vuex-pathify'
 
 export default {
+  data: () => ({
+    pageTitle : 'Experience professionel',
+  }),
   computed: {
     ...sync('pros/', ['PROS']),
   },
   methods : {
     ...call('pros/', ['toggle'])
+  },
+  head() {
+    return {
+      title: this.pageTitle,
+    }
   }
 }
 </script>

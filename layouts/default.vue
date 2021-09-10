@@ -1,17 +1,17 @@
 <template>
   <v-app>
     <v-navigation-drawer
-      :class="MENU.class"
-      :temporary="this.$vuetify.breakpoint.mobile"
-      :permanent="!this.$vuetify.breakpoint.mobile"
-      app
       v-model="drawer"
+      :class="MENU.class"
+      :temporary="$vuetify.breakpoint.mobile"
+      :permanent="!$vuetify.breakpoint.mobile"
+      app
       bottom
     >
       <v-list>
         <v-list-item class="px-2"  link nuxt to="/">
           <v-list-item-avatar>
-            <v-img 
+            <v-img
             :src="MENU.img"
             aspect-ratio="1:1"
             ></v-img>
@@ -37,12 +37,12 @@
       >
         <template v-for="item in MENU.items">
           <v-list-group
-            :key="'list' + item.index "
             v-if="item.group"
+            :key="'list' + item.title "
             class="white--text"
             no-action
           >
-            <template v-slot:activator>
+            <template #activator>
              <v-list-item class="pl-0">
                 <v-list-item-icon class="secondary--text">
                   <v-icon>{{ item.icon }}</v-icon>
@@ -53,11 +53,11 @@
              </v-list-item>
             </template>
 
-            <v-list-item 
+            <v-list-item
               v-for="item in item.group"
               :key="item.link + item.index + 'listGroup'"
-              link 
-              nuxt 
+              link
+              nuxt
               :to="item.link">
               <v-list-item-content>
                 <v-list-item-title >{{ item.title }}</v-list-item-title>
@@ -66,10 +66,10 @@
           </v-list-group>
 
            <v-list-item
-            :key="item.title + 'sub list'"
             v-else
-            link 
-            nuxt 
+            :key="item.title + 'sub list'"
+            link
+            nuxt
             :to="item.link">
             <v-list-item-icon class="secondary--text">
               <v-icon>{{ item.icon }}</v-icon>
@@ -78,29 +78,29 @@
           </v-list-item>
 
           <v-divider :key="item.title"></v-divider>
-  
+
         </template>
          <v-switch
-          class="pl-5"
           v-model="$vuetify.theme.dark"
+          class="pl-5"
           inset
           color="secondary"
           label="Clair/ Sombre"
         ></v-switch>
       </v-list>
-     
+
     </v-navigation-drawer>
     <v-main>
       <v-container>
         <v-btn
-        v-if="this.$vuetify.breakpoint.mobile"
-          @click.stop="drawer = !drawer"
+        v-if="$vuetify.breakpoint.mobile"
           fixed
           right
           bottom
           color="secondary"
           :dark=!dark
           fab
+          @click.stop="drawer = !drawer"
         >
           <v-icon v-if="drawer">
             mdi-close

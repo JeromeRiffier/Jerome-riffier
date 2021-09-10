@@ -28,7 +28,7 @@
                         "link": "/projects/space"
                     },
                     {
-                        "title": "Conjoncture Collatz",
+                        "title": "Conjecture de Collatz",
                         "link": "/projects/conjecture"
                     }
                 ]
@@ -38,7 +38,7 @@
                 "title": "Jeux",
                 "group": [
                     {
-                        "title": "Découverte PixiJs",
+                        "title": "Découverte de PixiJs",
                         "link": "/games/decouverte_pixi"
                     },
                     {
@@ -60,7 +60,7 @@
             "nom":"Jérôme Riffier",
             "qualificatif":"Développeur / Concepteur",
             "accroche":"Passionné d'innovation et d'intelligence artificielle"
-            
+
         },
         "contacts" : [
             {
@@ -98,8 +98,8 @@
                     "lieu":"Oullin",
                     "description":"Concepteur de site client pour grand compte",
                     "postes":[
-                        { "id": 0, "text": "Conception de site metier" }, 
-                        { "id": 1, "text": "Conception de site metier" }, 
+                        { "id": 0, "text": "Conception de site metier" },
+                        { "id": 1, "text": "Conception de site metier" },
                         { "id": 2, "text": "Maintenance de site metier" }
                     ],
                     "technologies":"Symfony/Laravel/Nuxt/VueJS"
@@ -111,7 +111,7 @@
                     "lieu":"Villeurbanne",
                     "description":"Régie publicitaire '<b>Print</b>' et '<b>Internet</b>'",
                     "postes":[
-                        { "id": 0, "text": "Création from scratch et maintenance d'une page publicitaire pour les sites de Europe1/ Public.fr/ TV7 Jours/ ParisMatch (rubrique le carnet)" }, 
+                        { "id": 0, "text": "Création from scratch et maintenance d'une page publicitaire pour les sites de Europe1/ Public.fr/ TV7 Jours/ ParisMatch (rubrique le carnet)" },
                         { "id": 1, "text": "Responsable des outils informatiques de la société" }
                     ],
                     "technologies":"PHP/Iframe/HTML5/Bootstrap/CSS3/Js/Ajax"
@@ -123,7 +123,7 @@
                     "lieu":"Apt",
                     "description":"Gestion informatique pour prestataire",
                     "postes":[
-                        { "id": 0, "text": "Stage / Découverte de Windev 21 / Création d'une base de donnée" }, 
+                        { "id": 0, "text": "Stage / Découverte de Windev 21 / Création d'une base de donnée" },
                         { "id": 1, "text": "Création d'un logiciel-métier de gestion interne permettant de gérer les informations clients de la prise de commande a la facturation" }
                     ],
                     "technologies":"Windev"
@@ -135,7 +135,7 @@
                     "lieu":"Pourrières",
                     "description":"Startup de recherche et développement de Drone a usage commercial ou militaire. Notamment connus pour prototyper la livraison par drone pour le groupe La Poste",
                     "postes":[
-                        { "id": 0, "text": "Stage / Participation au développement du projet de livraison de colis par drone sous la maîtrise d’œuvre du groupe La Poste" }, 
+                        { "id": 0, "text": "Stage / Participation au développement du projet de livraison de colis par drone sous la maîtrise d’œuvre du groupe La Poste" },
                         { "id": 1, "text": "Adaptation d'une interface graphique de contrôle de drone en C++ via le Framework QT" }
                     ],
                     "technologies":"C++/ Qt"
@@ -145,23 +145,23 @@
             {
                 "titre":"EPSI",
                 "periode":"10/2016 – 05/2017",
-                "lieu":"Lyon" 
+                "lieu":"Lyon"
             },
             {
                 "titre":"SUPINFO",
                 "periode":"10/2014 – 06/2016",
-                "lieu":"Lyon" 
+                "lieu":"Lyon"
             },
             {
                 "titre":"BAC STI2D SIN",
                 "periode":"2014",
-                "lieu":"Bourg en Bresse" 
+                "lieu":"Bourg en Bresse"
             }
         ],
         "interets" : [
-            "IA", 
-            "Nouvelle technologie", 
-            "Musique", 
+            "IA",
+            "Nouvelle technologie",
+            "Musique",
             "Espace"
         ],
         "projets" : [
@@ -179,8 +179,8 @@
             {
                 "size": 4,
                 "cards": [
-                    {  
-                        "title": "Mediamarket-pub.com", 
+                    {
+                        "title": "Mediamarket-pub.com",
                         "details" : [
                             "Site vitrinne de présentation de l'entreprise Mediamarket. Créez sur base d'un template.",
                             "Comprennant aussi un script de formulaire Mail et un liens a une page de paiement en ligne."
@@ -188,7 +188,7 @@
                         "imgs": [
                             "/screens/mediamarket-pub.jpg"
                         ],
-                        "flex": 12, 
+                        "flex": 12,
                         "height": "530px",
                         "reveal": false
                     }
@@ -197,7 +197,7 @@
             {
                 "size": 8,
                 "cards": [
-                    { 
+                    {
                         "title": "Six9 Media",
                         "details" : [
                             "Site vitrinne de présentation de l'entreprise Six9 Media. Créez sur base d'un template."
@@ -210,7 +210,7 @@
                         "class": "",
                         "reveal": false
                     },
-                    { 
+                    {
                         "title": "Le Carnet",
                         "subtitle": "Europe 1/ Public.fr/ Tv7 Jours/ Parismatch ",
                         "details" : [
@@ -226,9 +226,9 @@
                         "flex": 12,
                         "height": "200px",
                         "class": "d-none d-md-block",
-                        "reveal": false 
+                        "reveal": false
                     },
-                    { 
+                    {
                         "title": "Le Carnet",
                         "subtitle": "Europe 1",
                         "details" : [
@@ -241,9 +241,9 @@
                         "flex": 0,
                         "height": "200px",
                         "class": "d-sm-block d-md-none",
-                        "reveal": false 
+                        "reveal": false
                     },
-                    { 
+                    {
                         "title": "Le Carnet",
                         "subtitle": " Public.fr",
                         "details" : [
@@ -256,9 +256,9 @@
                         "flex": 0,
                         "height": "200px",
                         "class": "d-sm-block d-md-none",
-                        "reveal": false 
+                        "reveal": false
                     },
-                    { 
+                    {
                         "title": "Le Carnet",
                         "subtitle": "Tv7 Jours",
                         "details" : [
@@ -271,9 +271,9 @@
                         "flex": 0,
                         "height": "200px",
                         "class": "d-sm-block d-md-none",
-                        "reveal": false 
-                    }, 
-                    { 
+                        "reveal": false
+                    },
+                    {
                         "title": "Le Carnet",
                         "subtitle": "Parismatch",
                         "details" : [
@@ -286,9 +286,9 @@
                         "flex": 0,
                         "height": "200px",
                         "class": "d-sm-block d-md-none",
-                        "reveal": false 
+                        "reveal": false
                     }
-                ] 
+                ]
             }
         ]
     }

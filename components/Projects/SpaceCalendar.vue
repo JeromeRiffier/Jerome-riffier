@@ -45,8 +45,8 @@
                 <v-col cols="12">
                     <v-calendar
                         ref="calendar"
-                        color="secondary"
                         v-model="value"
+                        color="secondary"
                         locale="fr"
                         :weekdays="weekday"
                         :type="type"
@@ -58,7 +58,7 @@
                         @click:event="showEvent"
                         @click:date="showDate"
                     >
-                   
+
                     </v-calendar>
                 </v-col>
             </v-row>
@@ -70,8 +70,8 @@
                     <v-btn
                         color="accent"
                         text
-                        @click.stop="dialog.state = false"
-                        class="ml-auto">
+                        class="ml-auto"
+                        @click.stop="dialog.state = false">
                         Fermer
                     </v-btn>
                 </v-card-title>
@@ -86,20 +86,20 @@
                                 <v-card-text v-if="dialog.content.mission">Description de la mission: {{dialog.content.mission.description}}</v-card-text>
                             </v-col>
                             <v-col cols="12" md="8">
-                                <v-card-text class="ma-0 pa-2 pl-5" v-if="dialog.content.mission"><div class="secondary--text">Type d'orbite:</div> {{dialog.content.mission.orbit.name}}</v-card-text>
-                                <v-card-text class="ma-0 pa-2 pl-5" v-if="dialog.content.pad"><div class="secondary--text">Pays:</div> {{dialog.content.pad.location.country_code}}</v-card-text>
-                                <v-card-text class="ma-0 pa-2 pl-5" v-if="dialog.content.rocket"><div class="secondary--text">Lanceur:</div> {{dialog.content.rocket.configuration.full_name}}</v-card-text>
-                                <v-card-text class="ma-0 pa-2 pl-5" v-if="dialog.content.pad"><div class="secondary--text">Pas de tir:</div> {{dialog.content.pad.location.name}} 
+                                <v-card-text v-if="dialog.content.mission" class="ma-0 pa-2 pl-5"><div class="secondary--text">Type d'orbite:</div> {{dialog.content.mission.orbit.name}}</v-card-text>
+                                <v-card-text v-if="dialog.content.pad" class="ma-0 pa-2 pl-5"><div class="secondary--text">Pays:</div> {{dialog.content.pad.location.country_code}}</v-card-text>
+                                <v-card-text v-if="dialog.content.rocket" class="ma-0 pa-2 pl-5"><div class="secondary--text">Lanceur:</div> {{dialog.content.rocket.configuration.full_name}}</v-card-text>
+                                <v-card-text v-if="dialog.content.pad" class="ma-0 pa-2 pl-5"><div class="secondary--text">Pas de tir:</div> {{dialog.content.pad.location.name}}
                                     <a target="blank" :href="dialog.content.pad.map_url">Voir sur maps</a>
                                 </v-card-text>
                             </v-col>
                             <v-col cols="12" md="4">
-                                <v-img class="ml-5 d-none d-md-block" v-if="dialog.content.pad" :src="dialog.content.pad.map_image" max-width="300"></v-img>
+                                <v-img v-if="dialog.content.pad" class="ma-5 d-none d-md-block rounded" :src="dialog.content.pad.map_image" :elevation="5" max-width="300"></v-img>
                             </v-col>
                         </v-row>
                     </v-col>
                     <v-col cols="12" class="d-block d-md-none">
-                        <v-img class="ma-5 mt-0 ma-md-0" v-if="dialog.content.pad" :src="dialog.content.pad.map_image"></v-img>
+                        <v-img v-if="dialog.content.pad" class="ma-5 mt-0 ma-md-0" :src="dialog.content.pad.map_image"></v-img>
                     </v-col>
                 </v-row>
             </v-card>
@@ -121,15 +121,15 @@ export default {
             launchesDatas: [],
             type: 'month',
             types: [
-                { 
+                {
                     'value':'month',
                     'text': 'Mois'
-                }, 
-                { 
+                },
+                {
                     'value':'week',
                     'text': 'Semaine'
-                }, 
-                { 
+                },
+                {
                     'value':'day',
                     'text': 'Jour'
                 }

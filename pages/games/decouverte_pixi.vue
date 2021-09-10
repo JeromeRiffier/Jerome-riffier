@@ -7,11 +7,18 @@
 </template>
 
 <script>
+import * as PIXI from 'pixi.js';
+global.PIXI = PIXI;
+require("pixi-projection");
+// eslint-disable-next-line no-unused-vars
+const renderer = PIXI.autoDetectRenderer();
+
 /* eslint-disable no-undef */
 export default {
   data () {
     return {
-      app : null
+      pageTitle : 'Découverte de PixiJs',
+      app : ''
     }
   },
   mounted() {
@@ -24,7 +31,7 @@ export default {
           resolution: window.devicePixelRatio || 1,
           backgroundColor: 0x6495ed,
           width: 640,
-          height: 480,          
+          height: 480,
          });
         // app.ticker.maxFPS = 2 //For debug purpose
 
@@ -103,7 +110,7 @@ export default {
              aBox.x < bBox.x + bBox.width  &&
              aBox.y + aBox.height > bBox.y &&
              aBox.y < bBox.y + bBox.height
-             
+
     },
     collisionDetectionCircle(objectA, objectB) {
       const dx = objectA.x - objectB.x;
@@ -111,12 +118,17 @@ export default {
       const distance = Math.sqrt(dx * dx + dy * dy)
       return distance < objectA.width/2 + objectB.width/2
     },
-    randomIntFromInterval(min, max) { // min and max included 
+    randomIntFromInterval(min, max) { // min and max included
       return Math.floor(Math.random() * (max - min + 1) + min)
     }
   },
   beforeDestroy() {
     this.app.destroy()
+  },
+  head() {
+    return {
+      title: this.pageTitle,
+    }
   }
 }
 </script>

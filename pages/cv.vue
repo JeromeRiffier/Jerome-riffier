@@ -14,13 +14,13 @@
         <v-row class="pa-5">
             <v-col md="6" col="12">
                 <h1 class="category info--text">EXPÉRIENCE PROFESSIONNELLE</h1>
-                <cv-experience 
+                <cv-experience
                     v-for='experience in CV.experiences'
                     :key='experience.titre'
                     :experience='experience'
                 />
                 <h1 class="category info--text">FORMATION</h1>
-                <cv-formation 
+                <cv-formation
                     v-for='formation in CV.formations'
                     :key='formation.titre'
                     :formation='formation'
@@ -45,9 +45,17 @@
 <script>
 import {get} from 'vuex-pathify'
 export default {
-    computed: {
-        ...get('cv/', ['CV'])
+  data: () => ({
+    pageTitle : 'CV',
+  }),
+  computed: {
+      ...get('cv/', ['CV'])
+  },
+  head() {
+    return {
+      title: this.pageTitle,
     }
+  }
 }
 </script>
 

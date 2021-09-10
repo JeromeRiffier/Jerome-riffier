@@ -5,7 +5,16 @@
 </template>
 
 <script>
-
+export default {
+  data: () => ({
+    pageTitle : 'Lancement spatiaux',
+  }),
+  head() {
+    return {
+      title: this.pageTitle,
+    }
+  }
+}
 </script>
 
 <style scoped>

@@ -7,13 +7,20 @@
 </template>
 
 <script>
+import * as PIXI from 'pixi.js';
+global.PIXI = PIXI;
+require("pixi-projection");
+// eslint-disable-next-line no-unused-vars
+const renderer = PIXI.autoDetectRenderer();
+
 /* eslint-disable no-undef */
 export default {
     data () {
         return {
-            app : null,
-            earth : null,
-            sun : null
+          pageTitle : 'Simulation de la Gravité',
+          app : null,
+          earth : null,
+          sun : null
         }
     },
     mounted() {
@@ -27,7 +34,7 @@ export default {
                 backgroundColor: 0x0000000c,
                 transparent: true,
                 width: 640,
-                height: 480,          
+                height: 480,
                 });
 
             this.sun = PIXI.Sprite.from(`/game/planets/sun.png`);
@@ -68,11 +75,16 @@ export default {
             object.x += Math.sin(object.direction) * (object.speed * object.scale.y);
             object.y += Math.cos(object.direction) * (object.speed * object.scale.y);
         },
-        randomIntFromInterval(min, max) { // min and max included 
+        randomIntFromInterval(min, max) { // min and max included
            return Math.floor(Math.random() * (max - min + 1) + min)
         }
     },
-     beforeDestroy() {
+    head() {
+      return {
+        title: this.pageTitle,
+      }
+    },
+    beforeDestroy() {
         this.app.destroy()
     }
 }
