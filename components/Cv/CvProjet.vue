@@ -1,5 +1,5 @@
 <template>
-    <div class="projet" 
+    <div class="projet pb-1" 
             data-tooltip="Ouvrir 'Projet personnels' pour une démo" 
             data-inverted="" 
             data-position="left center">

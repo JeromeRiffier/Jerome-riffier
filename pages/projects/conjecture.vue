@@ -1,6 +1,6 @@
 <template>
     
-  <perso-collatz-conjecture/>
+  <projects-collatz-conjecture/>
     <!-- 
         Ajouter un text d'explication sur le probleme de la conjoncture "3X + 1"  
         voir https://www.youtube.com/watch?v=094y1Z2wpJg

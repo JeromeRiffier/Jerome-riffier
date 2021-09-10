@@ -25,11 +25,25 @@
                 "group": [
                     {
                         "title": "Lancement spatiaux",
-                        "link": "/perso/space"
+                        "link": "/projects/space"
                     },
                     {
                         "title": "Conjoncture Collatz",
-                        "link": "/perso/conjecture"
+                        "link": "/projects/conjecture"
+                    }
+                ]
+            },
+            {
+                "icon": "mdi-folder",
+                "title": "Jeux",
+                "group": [
+                    {
+                        "title": "Découverte PixiJs",
+                        "link": "/games/decouverte_pixi"
+                    },
+                    {
+                        "title": "Simulation de la Gravité",
+                        "link": "/games/gravity"
                     }
                 ]
             },

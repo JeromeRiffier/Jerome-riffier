@@ -1,6 +1,6 @@
 <template>
     <v-container fluid>
-        <perso-space-calendar/>
+        <projects-space-calendar/>
     </v-container>
 </template>
 

@@ -19,7 +19,6 @@
     "nuxt": "^2.15.7",
     "pixi-projection": "^0.4.2",
     "pixi.js": "^6.1.2",
-    "pixi.js-legacy": "^6.1.2",
     "vuetify": "^2.5.5",
     "vuex-pathify": "^1.4.5"
   },
