@@ -24,7 +24,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.svg' }
     ]
   },
 
@@ -68,7 +68,7 @@ export default {
     },
     workbox: {
       enabled: false, // or use a global variable to track the current NODE_ENV, etc to determine dev mode
-      cacheAssets: true,
+      cacheAssets: false,
       offline: true,
       offlineStrategy: 'CacheFirst'
     },
