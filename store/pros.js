@@ -12,11 +12,10 @@ const actions = {
     commit('SET_PROS', PROS)
   },
   toggle({ state, commit}, param) {
-    console.log(param);
     commit(
-      'SET_PROS', 
+      'SET_PROS',
       new Payload(
-        'PROS@cols.'+ param.colIndex +'.cards.'+ param.cardIndex +'.reveal', 
+        'PROS@cols.'+ param.colIndex +'.cards.'+ param.cardIndex +'.reveal',
         'cols.'+ param.colIndex +'.cards.'+ param.cardIndex +'.reveal', param.val
         )
     )

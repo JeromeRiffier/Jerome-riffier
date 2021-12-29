@@ -128,6 +128,7 @@ export default {
     this.$store.dispatch('menu/init')
     this.$store.dispatch('cv/init')
     this.$store.dispatch('pros/init')
+    this.$store.dispatch('home/init')
   }
 }
 </script>
@@ -141,12 +142,12 @@ export default {
 .theme--light .v-main {
     background: linear-gradient(-45deg, #cbdcec, #9abef5, #59d3ff, #daeeff);
     background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+    animation: gradient 50s ease infinite;
 }
 .theme--dark .v-main {
-    background: linear-gradient(-45deg, #10508f, #05285c, #1b637e, #002542);
+    background: linear-gradient(-45deg, #10508f,  #1b637e, #2f4267, #002542);
     background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+    animation: gradient 50s ease infinite;
 }
 @keyframes gradient {
     0% {

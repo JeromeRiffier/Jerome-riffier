@@ -1,295 +1,399 @@
-
 {
-    "MENU": {
-        "class": "primary",
-        "img": "/portrait.png",
-        "title": "Jérôme Riffier",
-        "subtitle": "Développeur / Concepteur",
-        "description": "Passionné d'innovation et d'intelligence artificielle",
-        "items": [
-            {
-                "icon": "mdi-card-account-details",
-                "link": "/CV",
-                "title": "CV",
-                "group": false
-            },
-            {
-                "icon": "mdi-briefcase",
-                "link": "/professionalExperience",
-                "title": "Experience professionel",
-                "group": false
-            },
-            {
-                "icon": "mdi-folder",
-                "title": "Projet personnel",
-                "group": [
-                    {
-                        "title": "Lancement spatiaux",
-                        "link": "/projects/space"
-                    },
-                    {
-                        "title": "Conjecture de Collatz",
-                        "link": "/projects/conjecture"
-                    }
-                ]
-            },
-            {
-                "icon": "mdi-folder",
-                "title": "Jeux",
-                "group": [
-                    {
-                        "title": "Découverte de PixiJs",
-                        "link": "/games/decouverte_pixi"
-                    },
-                    {
-                        "title": "Simulation de la Gravité",
-                        "link": "/games/gravity"
-                    }
-                ]
-            },
-            {
-                "icon": "mdi-email",
-                "link": "/contact",
-                "title": "Me contacter",
-                "group": false
-            }
+  "MENU": {
+    "class": "primary",
+    "img": "/portrait.png",
+    "title": "Jérôme Riffier",
+    "subtitle": "Développeur / Concepteur",
+    "description": "Passionné d'innovation et d'intelligence artificielle",
+    "items": [
+      {
+        "icon": "mdi-card-account-details",
+        "link": "/CV",
+        "title": "CV",
+        "group": false
+      },
+      {
+        "icon": "mdi-briefcase",
+        "link": "/professionalExperience",
+        "title": "Experience professionel",
+        "group": false
+      },
+      {
+        "icon": "mdi-folder",
+        "title": "Projet personnel",
+        "group": [
+          {
+            "title": "Lancement spatiaux",
+            "link": "/projects/space"
+          },
+          {
+            "title": "Conjecture de Collatz",
+            "link": "/projects/conjecture"
+          }
         ]
-    },
-    "CV": {
-        "header" : {
-            "nom":"Jérôme Riffier",
-            "qualificatif":"Développeur / Concepteur",
-            "accroche":"Passionné d'innovation et d'intelligence artificielle"
-
+      },
+      {
+        "icon": "mdi-folder",
+        "title": "Jeux",
+        "group": [
+          {
+            "title": "Découverte de PixiJs",
+            "link": "/games/decouverte_pixi"
+          },
+          {
+            "title": "Simulation de la Gravité",
+            "link": "/games/gravity"
+          }
+        ]
+      },
+      {
+        "icon": "mdi-email",
+        "link": "/contact",
+        "title": "Me contacter",
+        "group": false
+      }
+    ]
+  },
+  "HOME": {
+    "timeline": [
+      {
+        "date": {
+          "year" : "2019 - Aujourd'hui",
+          "color" : "orange"
         },
-        "contacts" : [
-            {
-                "icon":"mdi-card-account-details",
-                "text":"Jerome.riffier@hotmail.fr"
-            },
-            {
-                "icon":"mdi-cellphone",
-                "text":"06 66 89 94 37"
-            },
-            {
-                "icon":"mdi-at",
-                "text":"jerome-riffier.fr"
-            },
-            {
-                "icon":"mdi-map-legend",
-                "text":"69420 Longes"
-            }
-        ],
-        "competences" : [
-            "PHP",
-            "Laravel",
-            "Symfony",
-            "Nuxt",
-            "PWA",
-            "Docker",
-            "JS",
-            "Windev"
-        ],
-        "experiences" : [
-                {
-                    "titre":"Analyste Développeur",
-                    "entreprise":"Tenor",
-                    "periode":"02/2020 – Aujourd'hui",
-                    "lieu":"Oullin",
-                    "description":"Concepteur de site client pour grand compte",
-                    "postes":[
-                        { "id": 0, "text": "Conception de site metier" },
-                        { "id": 1, "text": "Conception de site metier" },
-                        { "id": 2, "text": "Maintenance de site metier" }
-                    ],
-                    "technologies":"Symfony/Laravel/Nuxt/VueJS"
-                },
-                {
-                    "titre":"Développeur web / Responsable Informatique",
-                    "entreprise":"Mediamarket",
-                    "periode":"02/2018 – 02/2020",
-                    "lieu":"Villeurbanne",
-                    "description":"Régie publicitaire '<b>Print</b>' et '<b>Internet</b>'",
-                    "postes":[
-                        { "id": 0, "text": "Création from scratch et maintenance d'une page publicitaire pour les sites de Europe1/ Public.fr/ TV7 Jours/ ParisMatch (rubrique le carnet)" },
-                        { "id": 1, "text": "Responsable des outils informatiques de la société" }
-                    ],
-                    "technologies":"PHP/Iframe/HTML5/Bootstrap/CSS3/Js/Ajax"
-                },
-                {
-                    "titre":"Développeur Windev",
-                    "entreprise":"The Web House",
-                    "periode":"01/2017 – 02/2017",
-                    "lieu":"Apt",
-                    "description":"Gestion informatique pour prestataire",
-                    "postes":[
-                        { "id": 0, "text": "Stage / Découverte de Windev 21 / Création d'une base de donnée" },
-                        { "id": 1, "text": "Création d'un logiciel-métier de gestion interne permettant de gérer les informations clients de la prise de commande a la facturation" }
-                    ],
-                    "technologies":"Windev"
-                },
-                {
-                    "titre":"Développeur C++" ,
-                    "entreprise":"Atechsys",
-                    "periode":"06/2015 – 10/2015",
-                    "lieu":"Pourrières",
-                    "description":"Startup de recherche et développement de Drone a usage commercial ou militaire. Notamment connus pour prototyper la livraison par drone pour le groupe La Poste",
-                    "postes":[
-                        { "id": 0, "text": "Stage / Participation au développement du projet de livraison de colis par drone sous la maîtrise d’œuvre du groupe La Poste" },
-                        { "id": 1, "text": "Adaptation d'une interface graphique de contrôle de drone en C++ via le Framework QT" }
-                    ],
-                    "technologies":"C++/ Qt"
-                }
-        ],
-        "formations" : [
-            {
-                "titre":"EPSI",
-                "periode":"10/2016 – 05/2017",
-                "lieu":"Lyon"
-            },
-            {
-                "titre":"SUPINFO",
-                "periode":"10/2014 – 06/2016",
-                "lieu":"Lyon"
-            },
-            {
-                "titre":"BAC STI2D SIN",
-                "periode":"2014",
-                "lieu":"Bourg en Bresse"
-            }
-        ],
-        "interets" : [
-            "IA",
-            "Nouvelle technologie",
-            "Musique",
-            "Espace"
-        ],
-        "projets" : [
-            { "titre":"Deep learning", "description": "Implémentation d'une solution de deep learning sur Ubuntu permettant de modifier le style d'une image"},
-            { "titre":"Serveur personnel", "description":"Création d'un serveur privé sur Raspberry Pi me permettant de présenter mes projets web dans le cadre scolaire."},
-            { "titre":"Bloqueur de publicité", "description":"Ajout d'un serveur DNS modifié au raspberry pour bloquer toute les requette DNS de mon reseaux privé cherchant a me connecter a une publicité."}
-        ],
-        "point_forts" : [
-            "Autonome, passionné, motivé et inventif.",
-            "Grande capacité d'apprentissage."
-        ]
+        "title": "CDI: Tenor EDI Services",
+        "town": "Oullin",
+        "description":  "",
+        "companyLogo": "/company-logo/tenor.png",
+        "techLogo": []
+      },
+      {
+        "date": {
+          "year" : "2017 - 2019",
+          "color" : "amber"
+        },
+        "title": "CDI: Mediamarket",
+        "town": "Villeurbanne",
+        "description":  "",
+        "companyLogo": "/company-logo/mediamarket.jfif",
+        "techLogo": []
+      },
+      {
+        "date": {
+          "year" : "2017",
+          "color" : "green"
+        },
+        "title": "Stage: The Web House",
+        "town": "Apt",
+        "description":  "Création d'un logiciel-métier de gestion interne permettant de gérer les informations clients de la prise de commande a la facturation",
+        "companyLogo": null,
+        "techLogo": []
+      },
+      {
+        "date": {
+          "year" : "2015",
+          "color" : "red"
+        },
+        "title": "Atechsys",
+        "town": "Pourrières",
+        "description":  "Adaptation d'une interface graphique de contrôle de drone en C++ via le Framework QT",
+        "companyLogo": "/company-logo/atechsys.svg",
+        "techLogo": []
+      },
+      {
+        "date": {
+          "year" : "2014 - 2017",
+          "color" : "green"
+        },
+        "title": "Supinfo",
+        "town": "Lyon",
+        "description":  null,
+        "companyLogo": "/company-logo/supinfo.png",
+        "techLogo": []
+      },
+      {
+        "date": {
+          "year" : "2014",
+          "color" : "cyan"
+        },
+        "title": "Bac",
+        "town": "Bourg en Bresse",
+        "description": "BAC STI2D specialité  Système d'Information et Numérique (SIN)",
+        "companyh-logo":null,
+        "techLogo":[]
+      }
+    ]
+  },
+  "CV": {
+    "header": {
+      "nom": "Jérôme Riffier",
+      "qualificatif": "Développeur / Concepteur",
+      "accroche": "Passionné d'innovation et d'intelligence artificielle"
     },
-    "PROS": {
-        "cols": [
-            {
-                "size": 4,
-                "cards": [
-                    {
-                        "title": "Mediamarket-pub.com",
-                        "details" : [
-                            "Site vitrinne de présentation de l'entreprise Mediamarket. Créez sur base d'un template.",
-                            "Comprennant aussi un script de formulaire Mail et un liens a une page de paiement en ligne."
-                        ],
-                        "imgs": [
-                            "/screens/mediamarket-pub.jpg"
-                        ],
-                        "flex": 12,
-                        "height": "530px",
-                        "reveal": false
-                    }
-                ]
-            },
-            {
-                "size": 8,
-                "cards": [
-                    {
-                        "title": "Six9 Media",
-                        "details" : [
-                            "Site vitrinne de présentation de l'entreprise Six9 Media. Créez sur base d'un template."
-                        ],
-                        "imgs": [
-                            "/screens/69media.jpg"
-                        ],
-                        "flex": 12,
-                        "height": "210px",
-                        "class": "",
-                        "reveal": false
-                    },
-                    {
-                        "title": "Le Carnet",
-                        "subtitle": "Europe 1/ Public.fr/ Tv7 Jours/ Parismatch ",
-                        "details" : [
-                            "Site Publi-redactionel",
-                            "Site réalisé en PHP/HTML5/CSS/MySQL/AJAX. Ce site etait placé dans une iframe sur le site de Europe 1"
-                        ],
-                        "imgs": [
-                            "/screens/carnet-europe1.jpg",
-                            "/screens/carnet-public.jpg",
-                            "/screens/carnet-parismatch.jpg",
-                            "/screens/carnet-tv7.jpg"
-                        ],
-                        "flex": 12,
-                        "height": "200px",
-                        "class": "d-none d-md-block",
-                        "reveal": false
-                    },
-                    {
-                        "title": "Le Carnet",
-                        "subtitle": "Europe 1",
-                        "details" : [
-                            "Site Publi-redactionel",
-                            "Site réalisé en PHP/HTML5/CSS/MySQL/AJAX. Ce site etait placé dans une iframe sur le site de Europe 1"
-                        ],
-                        "imgs": [
-                            "/screens/carnet-europe1.jpg"
-                        ],
-                        "flex": 0,
-                        "height": "200px",
-                        "class": "d-sm-block d-md-none",
-                        "reveal": false
-                    },
-                    {
-                        "title": "Le Carnet",
-                        "subtitle": " Public.fr",
-                        "details" : [
-                            "Site Publi-redactionel",
-                            "Site réalisé en PHP/HTML5/CSS/MySQL/AJAX. Ce site etait placé dans une iframe sur le site de Europe 1"
-                        ],
-                        "imgs": [
-                            "/screens/carnet-public.jpg"
-                        ],
-                        "flex": 0,
-                        "height": "200px",
-                        "class": "d-sm-block d-md-none",
-                        "reveal": false
-                    },
-                    {
-                        "title": "Le Carnet",
-                        "subtitle": "Tv7 Jours",
-                        "details" : [
-                            "Site Publi-redactionel",
-                            "Site réalisé en PHP/HTML5/CSS/MySQL/AJAX. Ce site etait placé dans une iframe sur le site de Europe 1"
-                        ],
-                        "imgs": [
-                            "/screens/carnet-parismatch.jpg"
-                        ],
-                        "flex": 0,
-                        "height": "200px",
-                        "class": "d-sm-block d-md-none",
-                        "reveal": false
-                    },
-                    {
-                        "title": "Le Carnet",
-                        "subtitle": "Parismatch",
-                        "details" : [
-                            "Site Publi-redactionel",
-                            "Site réalisé en PHP/HTML5/CSS/MySQL/AJAX. Ce site etait placé dans une iframe sur le site de Europe 1"
-                        ],
-                        "imgs": [
-                            "/screens/carnet-tv7.jpg"
-                        ],
-                        "flex": 0,
-                        "height": "200px",
-                        "class": "d-sm-block d-md-none",
-                        "reveal": false
-                    }
-                ]
-            }
+    "contacts": [
+      {
+        "icon": "mdi-card-account-details",
+        "text": "Jerome.riffier@hotmail.fr"
+      },
+      {
+        "icon": "mdi-cellphone",
+        "text": "06 66 89 94 37"
+      },
+      {
+        "icon": "mdi-at",
+        "text": "jerome-riffier.fr"
+      },
+      {
+        "icon": "mdi-map-legend",
+        "text": "69420 Longes"
+      }
+    ],
+    "competences": [
+      "PHP",
+      "Laravel",
+      "Symfony",
+      "Nuxt",
+      "PWA",
+      "Docker",
+      "JS",
+      "Windev"
+    ],
+    "experiences": [
+      {
+        "titre": "Analyste Développeur",
+        "entreprise": "Tenor",
+        "periode": "02/2020 – Aujourd'hui",
+        "lieu": "Oullin",
+        "description": "Concepteur de site client pour grand compte",
+        "postes": [
+          {
+            "id": 0,
+            "text": "Conception de site metier"
+          },
+          {
+            "id": 1,
+            "text": "Conception de site metier"
+          },
+          {
+            "id": 2,
+            "text": "Maintenance de site metier"
+          }
+        ],
+        "technologies": "Symfony/Laravel/Nuxt/VueJS"
+      },
+      {
+        "titre": "Développeur web / Responsable Informatique",
+        "entreprise": "Mediamarket",
+        "periode": "02/2018 – 02/2020",
+        "lieu": "Villeurbanne",
+        "description": "Régie publicitaire '<b>Print</b>' et '<b>Internet</b>'",
+        "postes": [
+          {
+            "id": 0,
+            "text": "Création from scratch et maintenance d'une page publicitaire pour les sites de Europe1/ Public.fr/ TV7 Jours/ ParisMatch (rubrique le carnet)"
+          },
+          {
+            "id": 1,
+            "text": "Responsable des outils informatiques de la société"
+          }
+        ],
+        "technologies": "PHP/Iframe/HTML5/Bootstrap/CSS3/Js/Ajax"
+      },
+      {
+        "titre": "Développeur Windev",
+        "entreprise": "The Web House",
+        "periode": "01/2017 – 02/2017",
+        "lieu": "Apt",
+        "description": "Gestion informatique pour prestataire",
+        "postes": [
+          {
+            "id": 0,
+            "text": "Stage / Découverte de Windev 21 / Création d'une base de donnée"
+          },
+          {
+            "id": 1,
+            "text": "Création d'un logiciel-métier de gestion interne permettant de gérer les informations clients de la prise de commande a la facturation"
+          }
+        ],
+        "technologies": "Windev"
+      },
+      {
+        "titre": "Développeur C++",
+        "entreprise": "Atechsys",
+        "periode": "06/2015 – 10/2015",
+        "lieu": "Pourrières",
+        "description": "Startup de recherche et développement de Drone a usage commercial ou militaire. Notamment connus pour prototyper la livraison par drone pour le groupe La Poste",
+        "postes": [
+          {
+            "id": 0,
+            "text": "Stage / Participation au développement du projet de livraison de colis par drone sous la maîtrise d’œuvre du groupe La Poste"
+          },
+          {
+            "id": 1,
+            "text": "Adaptation d'une interface graphique de contrôle de drone en C++ via le Framework QT"
+          }
+        ],
+        "technologies": "C++/ Qt"
+      }
+    ],
+    "formations": [
+      {
+        "titre": "EPSI",
+        "periode": "10/2016 – 05/2017",
+        "lieu": "Lyon"
+      },
+      {
+        "titre": "SUPINFO",
+        "periode": "10/2014 – 06/2016",
+        "lieu": "Lyon"
+      },
+      {
+        "titre": "BAC STI2D SIN",
+        "periode": "2014",
+        "lieu": "Bourg en Bresse"
+      }
+    ],
+    "interets": [
+      "IA",
+      "Nouvelle technologie",
+      "Musique",
+      "Espace"
+    ],
+    "projets": [
+      {
+        "titre": "Deep learning",
+        "description": "Implémentation d'une solution de deep learning sur Ubuntu permettant de modifier le style d'une image"
+      },
+      {
+        "titre": "Serveur personnel",
+        "description": "Création d'un serveur privé sur Raspberry Pi me permettant de présenter mes projets web dans le cadre scolaire."
+      },
+      {
+        "titre": "Bloqueur de publicité",
+        "description": "Ajout d'un serveur DNS modifié au raspberry pour bloquer toute les requette DNS de mon reseaux privé cherchant a me connecter a une publicité."
+      }
+    ],
+    "point_forts": [
+      "Autonome, passionné, motivé et inventif.",
+      "Grande capacité d'apprentissage."
+    ]
+  },
+  "PROS": {
+    "cols": [
+      {
+        "size": 4,
+        "cards": [
+          {
+            "title": "Mediamarket-pub.com",
+            "details": [
+              "Site vitrinne de présentation de l'entreprise Mediamarket. Créez sur base d'un template.",
+              "Comprennant aussi un script de formulaire Mail et un liens a une page de paiement en ligne."
+            ],
+            "imgs": [
+              "/screens/mediamarket-pub.jpg"
+            ],
+            "flex": 12,
+            "height": "530px",
+            "reveal": false
+          }
         ]
-    }
+      },
+      {
+        "size": 8,
+        "cards": [
+          {
+            "title": "Six9 Media",
+            "details": [
+              "Site vitrinne de présentation de l'entreprise Six9 Media. Créez sur base d'un template."
+            ],
+            "imgs": [
+              "/screens/69media.jpg"
+            ],
+            "flex": 12,
+            "height": "210px",
+            "class": "",
+            "reveal": false
+          },
+          {
+            "title": "Le Carnet",
+            "subtitle": "Europe 1/ Public.fr/ Tv7 Jours/ Parismatch ",
+            "details": [
+              "Site Publi-redactionel",
+              "Site réalisé en PHP/HTML5/CSS/MySQL/AJAX. Ce site etait placé dans une iframe sur le site de Europe 1"
+            ],
+            "imgs": [
+              "/screens/carnet-europe1.jpg",
+              "/screens/carnet-public.jpg",
+              "/screens/carnet-parismatch.jpg",
+              "/screens/carnet-tv7.jpg"
+            ],
+            "flex": 12,
+            "height": "200px",
+            "class": "d-none d-md-block",
+            "reveal": false
+          },
+          {
+            "title": "Le Carnet",
+            "subtitle": "Europe 1",
+            "details": [
+              "Site Publi-redactionel",
+              "Site réalisé en PHP/HTML5/CSS/MySQL/AJAX. Ce site etait placé dans une iframe sur le site de Europe 1"
+            ],
+            "imgs": [
+              "/screens/carnet-europe1.jpg"
+            ],
+            "flex": 0,
+            "height": "200px",
+            "class": "d-sm-block d-md-none",
+            "reveal": false
+          },
+          {
+            "title": "Le Carnet",
+            "subtitle": " Public.fr",
+            "details": [
+              "Site Publi-redactionel",
+              "Site réalisé en PHP/HTML5/CSS/MySQL/AJAX. Ce site etait placé dans une iframe sur le site de Europe 1"
+            ],
+            "imgs": [
+              "/screens/carnet-public.jpg"
+            ],
+            "flex": 0,
+            "height": "200px",
+            "class": "d-sm-block d-md-none",
+            "reveal": false
+          },
+          {
+            "title": "Le Carnet",
+            "subtitle": "Tv7 Jours",
+            "details": [
+              "Site Publi-redactionel",
+              "Site réalisé en PHP/HTML5/CSS/MySQL/AJAX. Ce site etait placé dans une iframe sur le site de Europe 1"
+            ],
+            "imgs": [
+              "/screens/carnet-parismatch.jpg"
+            ],
+            "flex": 0,
+            "height": "200px",
+            "class": "d-sm-block d-md-none",
+            "reveal": false
+          },
+          {
+            "title": "Le Carnet",
+            "subtitle": "Parismatch",
+            "details": [
+              "Site Publi-redactionel",
+              "Site réalisé en PHP/HTML5/CSS/MySQL/AJAX. Ce site etait placé dans une iframe sur le site de Europe 1"
+            ],
+            "imgs": [
+              "/screens/carnet-tv7.jpg"
+            ],
+            "flex": 0,
+            "height": "200px",
+            "class": "d-sm-block d-md-none",
+            "reveal": false
+          }
+        ]
+      }
+    ]
+  }
 }
