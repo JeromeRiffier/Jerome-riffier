@@ -1,17 +1,17 @@
 <template>
     <h3 data-tooltip="Lu / Écrit / Parlé" data-inverted="" data-position="left center" class=" info--text pb-5">
-        Anglais 
+        Anglais
+        <span class="level info"></span>
+        <span class="level info"></span>
+        <span class="level info"></span>
+        <span class="level info"></span>
         <span class="level info not"></span>
-        <span class="level info"></span>
-        <span class="level info"></span>
-        <span class="level info"></span>
-        <span class="level info"></span>
     </h3>
 </template>
 
 <script>
     export default {
-        
+
     }
 </script>
 
