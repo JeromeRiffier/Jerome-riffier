@@ -140,12 +140,12 @@ export default {
     background-size: 100%;
 }
 .theme--light .v-main {
-    background: linear-gradient(-45deg, #cbdcec, #9abef5, #59d3ff, #daeeff);
+    background: linear-gradient(-45deg, #cbdcec, #bbd2f5, #dfeff5, #daeeff);
     background-size: 400% 400%;
     animation: gradient 50s ease infinite;
 }
 .theme--dark .v-main {
-    background: linear-gradient(-45deg, #10508f,  #1b637e, #2f4267, #002542);
+    background: linear-gradient(-45deg, #4d6b89,  #507381, #444e60, #223442);
     background-size: 400% 400%;
     animation: gradient 50s ease infinite;
 }
