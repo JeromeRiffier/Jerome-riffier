@@ -1,12 +1,43 @@
 <template>
-  <v-card class="py-4" :class="classAlternate">
-    <v-card-title  :class="`pt-0 headline font-weight-light mb-4 ${item.date.color}--text`">
-      <v-img v-if="item.companyLogo" :src="item.companyLogo" max-width="300" max-height="150" contain></v-img>
-      <h2 v-else>{{ item.title }}</h2>
-    </v-card-title>
-    <v-card-subtitle> {{ item.town }}</v-card-subtitle>
-    <v-card-text v-if="item.description">{{ item.description }}</v-card-text>
-  </v-card>
+    <v-dialog
+      v-model="dialog"
+      width="500"
+    >
+      <template v-slot:activator="{ on, attrs }">
+        <v-btn
+          v-bind="attrs"
+          height="auto"
+          v-on="on"
+          class="pa-2"
+        >
+          <v-img v-if="item.companyLogo" :src="item.companyLogo" max-width="300" max-height="150" contain></v-img>
+          <h2 v-else :class="`${item.date.color}--text`">{{ item.title }}</h2>
+        </v-btn>
+      </template>
+
+      <v-card class="py-4"  :class="classAlternate">
+        <v-card-title  :class="`pt-0 headline font-weight-light mb-4 ${item.date.color}--text`">
+          <v-img v-if="item.companyLogo" :src="item.companyLogo" max-width="300" max-height="150" contain></v-img>
+          <h2 v-else>{{ item.title }}</h2>
+        </v-card-title>
+        <v-card-subtitle> {{ item.town }}</v-card-subtitle>
+        <v-card-text v-if="item.description">{{ item.description }}</v-card-text>
+        <v-row>
+          <v-col
+            v-for="n in item.techLogo.length"
+            :key="n"
+            class="d-flex child-flex"
+            :cols="Math.floor(12 / item.techLogo.length)"
+          >
+            <v-img
+              :src="item.techLogo[n-1]"
+              max-height="50px"
+              contain
+            ></v-img>
+          </v-col>
+        </v-row>
+      </v-card>
+    </v-dialog>
 </template>
 <!--TODO AJOUTER LES LOGO DES ENTREPRISE A COTé DU TITRE-->
 <!-- PLUS AJOUTER LES LOGO DES TECHNOLOGIE DE l'autre coté vers les dates-->
@@ -16,6 +47,10 @@ export default {
   props : {
     item :  Array,
     index : Number
+  },
+  data() {
+    return {
+    }
   },
   computed: {
     classAlternate () {
@@ -31,6 +66,11 @@ export default {
     padding: 1rem;
     background-color: rgba(255, 255, 255, .15);
     backdrop-filter: blur(5px);
+  }
+  .v-btn{
+    background-color: transparent!important;
+    box-shadow: none!important;
+    width: fit-content!important;
   }
 
 </style>

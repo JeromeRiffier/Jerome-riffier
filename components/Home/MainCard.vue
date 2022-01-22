@@ -1,31 +1,36 @@
 <template>
   <v-card
-    class="mx-auto "
-    max-width="600"
+    class="mx-auto pa-0 mt-4"
+    max-width="800"
     tile
     elevation=4
   >
-    <v-img
-      height="100%"
-      class="white"
-      src="/logo-perso.svg"
-    >
-    </v-img>
-    <v-row
-      align="end"
-      class="fill-height"
-      color="rgba(0, 0, 0, .4)"
-    >
+    <v-row>
       <v-col
-        cols="12">
+        cols="7"
+        class="pa-0"
+      >
+        <v-img
+          height="100%"
+          class="white"
+          src="/logo-perso.svg"
+        >
+        </v-img>
+      </v-col>
+      <v-col
+        cols="5"
+        class="fill-height"
+      >
         <v-list-item
-          color="rgba(0, 0, 0, .4)"
         >
           <v-list-item-content>
             <v-list-item-title class="text-h6">
-              Jérôme Riffier
+              Qui suis-je ?
             </v-list-item-title>
-            <v-list-item-subtitle>Analyste/ Developpeur web</v-list-item-subtitle>
+            <v-list-item-subtitle class="caption">Salut et bienvenue sur mon site ! </v-list-item-subtitle>
+            <v-list-item-subtitle class="caption">Je m'appel jérôme et je suis developpeur full-stack depuis 2017.</v-list-item-subtitle>
+            <v-list-item-subtitle class="caption">Specialisé en framework PHP et Javascript, je vous laisse explorer ce site pour en apprendre plus sur moi.</v-list-item-subtitle>
+            <v-list-item-subtitle>Et qui sait, peut être me contacté pour qu'on commence a travailler ensemble 🤷‍♂️</v-list-item-subtitle>
           </v-list-item-content>
         </v-list-item>
       </v-col>
@@ -41,8 +46,6 @@ export default {
 
 <style scoped>
 .v-card{
-  background-color: rgba(255, 255, 255, .15);
-  backdrop-filter: blur(5px);
   margin-bottom: 12px;
 }
 </style>

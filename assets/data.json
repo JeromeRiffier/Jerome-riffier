@@ -65,7 +65,13 @@
         "town": "Oullin",
         "description":  "",
         "companyLogo": "/company-logo/tenor.png",
-        "techLogo": []
+        "techLogo": [
+          "/tech-logo/Laravel.svg",
+          "/tech-logo/Nuxt-White.svg",
+          "/tech-logo/Docker.png",
+          "/tech-logo/Symfony.svg",
+          "/tech-logo/VueJs.svg "
+        ]
       },
       {
         "date": {
@@ -76,7 +82,11 @@
         "town": "Villeurbanne",
         "description":  "",
         "companyLogo": "/company-logo/mediamarket.jfif",
-        "techLogo": []
+        "techLogo": [
+          "/tech-logo/PHP.png",
+          "/tech-logo/JQuery.png",
+          "/tech-logo/Bootstrap.svg"
+        ]
       },
       {
         "date": {
@@ -87,7 +97,9 @@
         "town": "Apt",
         "description":  "Création d'un logiciel-métier de gestion interne permettant de gérer les informations clients de la prise de commande a la facturation",
         "companyLogo": null,
-        "techLogo": []
+        "techLogo": [
+          "/tech-logo/Windev.png"
+        ]
       },
       {
         "date": {
@@ -98,7 +110,10 @@
         "town": "Pourrières",
         "description":  "Adaptation d'une interface graphique de contrôle de drone en C++ via le Framework QT",
         "companyLogo": "/company-logo/atechsys.svg",
-        "techLogo": []
+        "techLogo": [
+          "/tech-logo/c++.svg",
+          "/tech-logo/QT.png"
+        ]
       },
       {
         "date": {
@@ -120,7 +135,12 @@
         "town": "Bourg en Bresse",
         "description": "BAC STI2D specialité  Système d'Information et Numérique (SIN)",
         "companyh-logo":null,
-        "techLogo":[]
+        "techLogo":[
+          "/tech-logo/HTML.svg",
+          "/tech-logo/JS.png",
+          "/tech-logo/CSS.svg",
+          "/tech-logo/Arduino.svg"
+        ]
       }
     ]
   },

@@ -30,10 +30,14 @@ html { overflow-y: auto!important }
 .v-btn--fab.v-btn--absolute, .v-btn--fab.v-btn--fixed {
   z-index: 8;
 }
-.theme--dark.v-sheet {
-  background-color: #0e122d;
-  border-color: #0e122d;
-  color: #FFFFFF;
+.theme--dark.v-sheet, .theme--dark.v-card {
+  background-color: #0e122d!important;
+  border-color: #0e122d!important;
+  color: #FFFFFF!important;
+}
+.theme--light.v-sheet, .theme--light.v-card {
+  background-color: var(--v-primary-base) !important;
+  border-color: var(--v-primary-base) !important;
 }
 .theme--dark.v-application .primary--text .v-list-item--active{
   color: white!important;
@@ -63,6 +67,10 @@ body::-webkit-scrollbar-thumb {
 v-image:hover .v-image__image {
   background-size: 110% auto;
   animation: 10s linear infinite img_top;
+}
+
+.v-list-item__title, .v-list-item__subtitle{
+  white-space: inherit!important;
 }
 
 @keyframes img_top {

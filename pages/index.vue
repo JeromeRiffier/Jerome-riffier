@@ -1,7 +1,6 @@
 <template>
   <div>
     <home-main-Card/>
-    <h1 class="text-center">TEST TITRE TIMELINE</h1>
     <v-timeline>
       <v-timeline-item
         v-for="(timelineItem, index) in HOME.timeline"
