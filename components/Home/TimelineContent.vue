@@ -15,7 +15,7 @@
         </v-btn>
       </template>
 
-      <v-card class="py-4"  :class="classAlternate">
+      <v-sheet class="py-4 transparent"  :class="classAlternate">
         <v-card-title  :class="`pt-0 headline font-weight-light mb-4 ${item.date.color}--text`">
           <v-img v-if="item.companyLogo" :src="item.companyLogo" max-width="300" max-height="150" contain></v-img>
           <h2 v-else>{{ item.title }}</h2>
@@ -36,11 +36,9 @@
             ></v-img>
           </v-col>
         </v-row>
-      </v-card>
+      </v-sheet>
     </v-dialog>
 </template>
-<!--TODO AJOUTER LES LOGO DES ENTREPRISE A COTé DU TITRE-->
-<!-- PLUS AJOUTER LES LOGO DES TECHNOLOGIE DE l'autre coté vers les dates-->
 
 <script>
 export default {
@@ -61,12 +59,6 @@ export default {
 </script>
 
 <style scoped>
-  .v-card{
-    width: fit-content;
-    padding: 1rem;
-    background-color: rgba(255, 255, 255, .15);
-    backdrop-filter: blur(5px);
-  }
   .v-btn{
     background-color: transparent!important;
     box-shadow: none!important;

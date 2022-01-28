@@ -80,15 +80,21 @@
           <v-divider :key="item.title"></v-divider>
 
         </template>
-         <v-switch
-          v-model="$vuetify.theme.dark"
-          class="pl-5"
-          inset
-          color="secondary"
-          label="Clair/ Sombre"
-        ></v-switch>
-      </v-list>
 
+      </v-list>
+        <v-btn
+          icon
+          absolute
+          bottom
+          color="warning"
+          @click="switchMode"
+          elevation="2"
+          class="ml-4"
+        >
+          <v-icon>
+            mdi-theme-light-dark
+          </v-icon>
+        </v-btn>
     </v-navigation-drawer>
     <v-main>
       <v-container>
@@ -129,35 +135,15 @@ export default {
     this.$store.dispatch('cv/init')
     this.$store.dispatch('pros/init')
     this.$store.dispatch('home/init')
+  },
+  methods: {
+      switchMode() {
+        this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
+      }
   }
 }
 </script>
 
 <style scoped>
-.v-application{
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100%;
-}
-.theme--light .v-main {
-    background: linear-gradient(-45deg, #cbdcec, #bbd2f5, #dfeff5, #daeeff);
-    background-size: 400% 400%;
-    animation: gradient 50s ease infinite;
-}
-.theme--dark .v-main {
-    background: linear-gradient(-45deg, #4d6b89,  #507381, #444e60, #223442);
-    background-size: 400% 400%;
-    animation: gradient 50s ease infinite;
-}
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
+
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <v-sheet justify="center" align="left" cols="7" md="7" sd="12" class="ma-md-10">
+    <v-card justify="center" align="left" cols="7" md="7" sd="12" class="ma-md-10">
         <v-row class="header pa-10 indigo darken-1" no-gutters>
             <v-col md="8" class="pl-10 pt-5" >
                 <h1>{{ CV.header.nom }}</h1>
@@ -39,7 +39,7 @@
                     <cv-interet :Interets=CV.interets />
             </v-col>
         </v-row>
-    </v-sheet>
+    </v-card>
 </template>
 
 <script>
@@ -61,7 +61,6 @@ export default {
 
 <style scoped>
     .header{
-        background-color: #293d5b;
         color: white;
         height: 13rem;
         padding: 1rem!important;

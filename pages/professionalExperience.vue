@@ -14,7 +14,7 @@
               :sm="12"
               :class="card.class"
             >
-              <v-card class="pa-2 primary"  elevation="2">
+              <v-card class="pa-2"  elevation="2">
                 <v-row >
                   <v-col
                       v-for="(img, index) in card.imgs"

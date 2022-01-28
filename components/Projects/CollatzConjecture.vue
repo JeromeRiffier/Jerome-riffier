@@ -1,5 +1,6 @@
 <template>
-    <v-sheet color="rgba(0, 0, 0, .12)">
+    <v-card class="mb-10">
+        <v-card-title>Conjecture de Collatz</v-card-title>
         <v-sparkline
           :value="spark.range"
           :gradient="['#ff0000', '#cec404']"
@@ -36,7 +37,7 @@
                 ></v-slider>
             </v-col>
         </v-row>
-      </v-sheet>
+      </v-card>
 </template>
 
 <script>

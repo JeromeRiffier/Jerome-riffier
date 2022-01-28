@@ -87,28 +87,28 @@ export default {
     customProperties: true,
     theme: {
       dark: false,
-      themes: {
-        light: {
-          primary: colors.blueGrey.lighten5,
-          accent: colors.blueGrey.lighten4,
-          secondary: colors.blue.base,
-          info: colors.blue.darken1,
-          warning: colors.amber.base,
-          error: colors.deepOrange.accent4,
-          success: colors.green.accent3,
-          anchor: colors.blue
-        },
-         dark: {
-          primary: '#0e122d',
-          accent: colors.blue.darken4,
-          secondary: colors.teal.accent3,
-          info: colors.indigo.darken1,
-          warning: colors.amber.base,
-          error: colors.deepOrange.accent4,
-          success: colors.green.accent3,
-          anchor: colors.blue
-        }
-      },
+      // themes: {
+      //   light: {
+      //     primary: colors.blueGrey.lighten5,
+      //     accent: colors.blueGrey.lighten4,
+      //     secondary: colors.blue.base,
+      //     info: colors.blue.darken1,
+      //     warning: colors.amber.base,
+      //     error: colors.deepOrange.accent4,
+      //     success: colors.green.accent3,
+      //     anchor: colors.blue
+      //   },
+      //    dark: {
+      //     primary: colors.indigo,
+      //     accent: colors.blue.darken4,
+      //     secondary: colors.teal.accent3,
+      //     info: colors.indigo.darken1,
+      //     warning: colors.amber.base,
+      //     error: colors.deepOrange.accent4,
+      //     success: colors.green.accent3,
+      //     anchor: colors.blue
+      //   }
+      // },
       options: { customProperties: true },
     },
     breakpoint: {

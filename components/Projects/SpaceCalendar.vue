@@ -1,8 +1,9 @@
 <template>
-    <v-sheet class="rounded">
-        <v-sheet
+    <v-card class="mb-10">
+      <v-card-title>Calendrier des lancements spatiaux</v-card-title>
+      <v-sheet
             tile
-            class="primary pl-5 pr-5"
+            class="pl-5 pr-5"
         >
             <v-row >
                 <v-col cols="12" md="6" align-self="center">
@@ -104,7 +105,7 @@
                 </v-row>
             </v-card>
         </v-dialog>
-    </v-sheet>
+    </v-card>
 </template>
 
 <script>

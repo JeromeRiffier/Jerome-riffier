@@ -1,6 +1,6 @@
 {
   "MENU": {
-    "class": "primary",
+    "class": "",
     "img": "/portrait.png",
     "title": "Jérôme Riffier",
     "subtitle": "Développeur / Concepteur",
@@ -19,18 +19,10 @@
         "group": false
       },
       {
-        "icon": "mdi-folder",
+        "icon": "mdi-brush",
+        "link": "/projets",
         "title": "Projet personnel",
-        "group": [
-          {
-            "title": "Lancement spatiaux",
-            "link": "/projects/space"
-          },
-          {
-            "title": "Conjecture de Collatz",
-            "link": "/projects/conjecture"
-          }
-        ]
+        "group": false
       },
       {
         "icon": "mdi-folder",
@@ -122,9 +114,13 @@
         },
         "title": "Supinfo",
         "town": "Lyon",
-        "description":  null,
+        "description":  "Equivalence Bac +2 \"Associate of science\"",
         "companyLogo": "/company-logo/supinfo.png",
-        "techLogo": []
+        "techLogo": [
+          "/tech-logo/HTML.svg",
+          "/tech-logo/JS.png",
+          "/tech-logo/CSS.svg"
+        ]
       },
       {
         "date": {
