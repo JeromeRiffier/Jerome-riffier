@@ -2,6 +2,15 @@ import colors from 'vuetify/es5/util/colors'
 
 
 export default {
+
+  //Dev tools
+  vue: {
+    config: {
+      productionTip: false,
+      devtools: true
+    }
+  },
+
   // server host
   server: {
     host: 0 // default: localhost

@@ -10,18 +10,15 @@ const actions = {
   init({ commit }) {
     commit('SET_BLOG', BLOG)
   },
-  getArticle({ dispatch, commit }, id) {
-    dispatch('api/blog/show', id, {
-      root: true
-    }).then((data) => {
-      //
-    })
-  },
 }
 
 const getters = {
   // make all getters (optional)
-  ...make.getters(state)
+  ...make.getters(state),
+  article: (state) =>  {
+    console.log(this.$router.params.id)
+    state.BLOG.find((article) => article.id === this.$router.params.id)
+  },
 }
 
 const mutations = {
