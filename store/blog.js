@@ -1,7 +1,7 @@
 import { make } from 'vuex-pathify'
 import { BLOG } from '~/assets/data.json'
 const state = {
-  BLOG : []
+  BLOG : [],
 }
 
 
@@ -15,10 +15,7 @@ const actions = {
 const getters = {
   // make all getters (optional)
   ...make.getters(state),
-  article: (state) =>  {
-    console.log(this.$router.params.id)
-    state.BLOG.find((article) => article.id === this.$router.params.id)
-  },
+  article: (rootState) => (id) => rootState.BLOG.find((article) => parseInt(article.id) === parseInt(id)),
 }
 
 const mutations = {

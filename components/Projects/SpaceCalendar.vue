@@ -1,6 +1,5 @@
 <template>
     <v-card class="mb-10">
-      <v-card-title>Calendrier des lancements spatiaux</v-card-title>
       <v-sheet
             tile
             class="pl-5 pr-5"
@@ -64,8 +63,7 @@
                 </v-col>
             </v-row>
         </v-sheet>
-        <v-dialog v-model="dialog.state">
-            <v-card v-if="dialog.content">
+        <v-dialog v-if="dialog.content" v-model="dialog.state">
                 <v-card-title class="text-h5" v-bind="dialog">
                     {{dialog.title}}
                     <v-btn
@@ -76,7 +74,6 @@
                         Fermer
                     </v-btn>
                 </v-card-title>
-
                 <v-row no-gutters>
                     <v-col cols="12" md="4">
                         <v-img :src="dialog.img" contain class="ma-5 mt-0 mt-md-0"></v-img>
@@ -103,7 +100,6 @@
                         <v-img v-if="dialog.content.pad" class="ma-5 mt-0 ma-md-0" :src="dialog.content.pad.map_image"></v-img>
                     </v-col>
                 </v-row>
-            </v-card>
         </v-dialog>
     </v-card>
 </template>

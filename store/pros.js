@@ -15,8 +15,8 @@ const actions = {
     commit(
       'SET_PROS',
       new Payload(
-        'PROS@cols.'+ param.colIndex +'.cards.'+ param.cardIndex +'.reveal',
-        'cols.'+ param.colIndex +'.cards.'+ param.cardIndex +'.reveal', param.val
+        'PROS@companies.'+ param.companyIndex + '.cols.'+ param.colIndex +'.cards.'+ param.cardIndex +'.reveal',
+        'companies.'+ param.companyIndex + '.cols.'+ param.colIndex +'.cards.'+ param.cardIndex +'.reveal', param.val
         )
     )
   }

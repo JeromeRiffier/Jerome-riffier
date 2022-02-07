@@ -30,7 +30,6 @@
         "title": "Blog",
         "group": false
       },
-
       {
         "icon": "mdi-email",
         "link": "/contact",
@@ -51,6 +50,7 @@
         "IA",
         "Machine Learning",
         "Raspberry",
+        "Arduino",
         "Crypto Currency"
       ],
       "technologies": {
@@ -91,7 +91,7 @@
         },
         "title": "CDI: Tenor EDI Services",
         "town": "Oullin",
-        "description":  "",
+        "description":  "Concepteur de site client pour grand compte.\nRecherche des besoin, conception de l'architecture des sites et base de données, réalisation et maintenance des application",
         "companyLogo": "/company-logo/tenor.png",
         "techLogo": [
           "/tech-logo/Laravel.svg",
@@ -108,7 +108,7 @@
         },
         "title": "CDI: Mediamarket",
         "town": "Villeurbanne",
-        "description":  "",
+        "description":  "Création from scratch et maintenance d'une page publicitaire pour les sites de Europe1/ Public.fr/ TV7 Jours/ ParisMatch (rubrique le carnet)\nResponsable des outils informatiques de la société",
         "companyLogo": "/company-logo/mediamarket.jfif",
         "techLogo": [
           "/tech-logo/PHP.png",
@@ -150,7 +150,7 @@
         },
         "title": "Supinfo",
         "town": "Lyon",
-        "description":  "Equivalence Bac +2 \"Associate of science\"",
+        "description":  "Formation Bac +2 en developpement",
         "companyLogo": "/company-logo/supinfo.png",
         "techLogo": [
           "/tech-logo/HTML.svg",
@@ -224,7 +224,7 @@
           },
           {
             "id": 1,
-            "text": "Conception de site metier"
+            "text": "Création de site metier"
           },
           {
             "id": 2,
@@ -331,118 +331,144 @@
     ]
   },
   "PROS": {
-    "cols": [
+    "companies" : [
       {
-        "size": 4,
-        "cards": [
+        "name": "Tenor",
+        "cols": [
           {
-            "title": "Mediamarket-pub.com",
-            "details": [
-              "Site vitrinne de présentation de l'entreprise Mediamarket. Créez sur base d'un template.",
-              "Comprennant aussi un script de formulaire Mail et un liens a une page de paiement en ligne."
-            ],
-            "imgs": [
-              "/screens/mediamarket-pub.jpg"
-            ],
-            "flex": 12,
-            "height": "530px",
-            "reveal": false
+            "size": 4,
+            "cards": [
+              {
+                "title": "Site de gestion pour un grand groupe automobile",
+                "details": [
+                  "Product owner",
+                  "Maintient d'un site sous Symfony 3",
+                  "Comprennant aussi un script de formulaire Mail et un liens a une page de paiement en ligne."
+                ],
+                "flex": 12,
+                "height": "530px",
+                "reveal": false
+              }
+            ]
           }
         ]
       },
       {
-        "size": 8,
-        "cards": [
+        "name": "MediaMarket",
+        "cols": [
           {
-            "title": "Six9 Media",
-            "details": [
-              "Site vitrinne de présentation de l'entreprise Six9 Media. Créez sur base d'un template."
-            ],
-            "imgs": [
-              "/screens/69media.jpg"
-            ],
-            "flex": 12,
-            "height": "210px",
-            "class": "",
-            "reveal": false
+            "size": 4,
+            "cards": [
+              {
+                "title": "Mediamarket-pub.com",
+                "details": [
+                  "Site vitrinne de présentation de l'entreprise Mediamarket. Créez sur base d'un template.",
+                  "Comprennant aussi un script de formulaire Mail et un liens a une page de paiement en ligne."
+                ],
+                "imgs": [
+                  "/screens/mediamarket-pub.jpg"
+                ],
+                "flex": 12,
+                "height": "530px",
+                "reveal": false
+              }
+            ]
           },
           {
-            "title": "Le Carnet",
-            "subtitle": "Europe 1/ Public.fr/ Tv7 Jours/ Parismatch ",
-            "details": [
-              "Site Publi-redactionel",
-              "Site réalisé en PHP/HTML5/CSS/MySQL/AJAX. Ce site etait placé dans une iframe sur le site de Europe 1"
-            ],
-            "imgs": [
-              "/screens/carnet-europe1.jpg",
-              "/screens/carnet-public.jpg",
-              "/screens/carnet-parismatch.jpg",
-              "/screens/carnet-tv7.jpg"
-            ],
-            "flex": 12,
-            "height": "200px",
-            "class": "d-none d-md-block",
-            "reveal": false
-          },
-          {
-            "title": "Le Carnet",
-            "subtitle": "Europe 1",
-            "details": [
-              "Site Publi-redactionel",
-              "Site réalisé en PHP/HTML5/CSS/MySQL/AJAX. Ce site etait placé dans une iframe sur le site de Europe 1"
-            ],
-            "imgs": [
-              "/screens/carnet-europe1.jpg"
-            ],
-            "flex": 0,
-            "height": "200px",
-            "class": "d-sm-block d-md-none",
-            "reveal": false
-          },
-          {
-            "title": "Le Carnet",
-            "subtitle": " Public.fr",
-            "details": [
-              "Site Publi-redactionel",
-              "Site réalisé en PHP/HTML5/CSS/MySQL/AJAX. Ce site etait placé dans une iframe sur le site de Europe 1"
-            ],
-            "imgs": [
-              "/screens/carnet-public.jpg"
-            ],
-            "flex": 0,
-            "height": "200px",
-            "class": "d-sm-block d-md-none",
-            "reveal": false
-          },
-          {
-            "title": "Le Carnet",
-            "subtitle": "Tv7 Jours",
-            "details": [
-              "Site Publi-redactionel",
-              "Site réalisé en PHP/HTML5/CSS/MySQL/AJAX. Ce site etait placé dans une iframe sur le site de Europe 1"
-            ],
-            "imgs": [
-              "/screens/carnet-parismatch.jpg"
-            ],
-            "flex": 0,
-            "height": "200px",
-            "class": "d-sm-block d-md-none",
-            "reveal": false
-          },
-          {
-            "title": "Le Carnet",
-            "subtitle": "Parismatch",
-            "details": [
-              "Site Publi-redactionel",
-              "Site réalisé en PHP/HTML5/CSS/MySQL/AJAX. Ce site etait placé dans une iframe sur le site de Europe 1"
-            ],
-            "imgs": [
-              "/screens/carnet-tv7.jpg"
-            ],
-            "flex": 0,
-            "height": "200px",
-            "class": "d-sm-block d-md-none",
-            "reveal": false
+            "size": 8,
+            "cards": [
+              {
+                "title": "Six9 Media",
+                "details": [
+                  "Site vitrinne de présentation de l'entreprise Six9 Media. Créez sur base d'un template."
+                ],
+                "imgs": [
+                  "/screens/69media.jpg"
+                ],
+                "flex": 12,
+                "height": "210px",
+                "class": "",
+                "reveal": false
+              },
+              {
+                "title": "Le Carnet",
+                "subtitle": "Europe 1/ Public.fr/ Tv7 Jours/ Parismatch ",
+                "details": [
+                  "Site Publi-redactionel",
+                  "Site réalisé en PHP/HTML5/CSS/MySQL/AJAX. Ce site etait placé dans une iframe sur le site de Europe 1"
+                ],
+                "imgs": [
+                  "/screens/carnet-europe1.jpg",
+                  "/screens/carnet-public.jpg",
+                  "/screens/carnet-parismatch.jpg",
+                  "/screens/carnet-tv7.jpg"
+                ],
+                "flex": 12,
+                "height": "200px",
+                "class": "d-none d-md-block",
+                "reveal": false
+              },
+              {
+                "title": "Le Carnet",
+                "subtitle": "Europe 1",
+                "details": [
+                  "Site Publi-redactionel",
+                  "Site réalisé en PHP/HTML5/CSS/MySQL/AJAX. Ce site etait placé dans une iframe sur le site de Europe 1"
+                ],
+                "imgs": [
+                  "/screens/carnet-europe1.jpg"
+                ],
+                "flex": 0,
+                "height": "200px",
+                "class": "d-sm-block d-md-none",
+                "reveal": false
+              },
+              {
+                "title": "Le Carnet",
+                "subtitle": " Public.fr",
+                "details": [
+                  "Site Publi-redactionel",
+                  "Site réalisé en PHP/HTML5/CSS/MySQL/AJAX. Ce site etait placé dans une iframe sur le site de Europe 1"
+                ],
+                "imgs": [
+                  "/screens/carnet-public.jpg"
+                ],
+                "flex": 0,
+                "height": "200px",
+                "class": "d-sm-block d-md-none",
+                "reveal": false
+              },
+              {
+                "title": "Le Carnet",
+                "subtitle": "Tv7 Jours",
+                "details": [
+                  "Site Publi-redactionel",
+                  "Site réalisé en PHP/HTML5/CSS/MySQL/AJAX. Ce site etait placé dans une iframe sur le site de Europe 1"
+                ],
+                "imgs": [
+                  "/screens/carnet-parismatch.jpg"
+                ],
+                "flex": 0,
+                "height": "200px",
+                "class": "d-sm-block d-md-none",
+                "reveal": false
+              },
+              {
+                "title": "Le Carnet",
+                "subtitle": "Parismatch",
+                "details": [
+                  "Site Publi-redactionel",
+                  "Site réalisé en PHP/HTML5/CSS/MySQL/AJAX. Ce site etait placé dans une iframe sur le site de Europe 1"
+                ],
+                "imgs": [
+                  "/screens/carnet-tv7.jpg"
+                ],
+                "flex": 0,
+                "height": "200px",
+                "class": "d-sm-block d-md-none",
+                "reveal": false
+              }
+            ]
           }
         ]
       }
@@ -455,7 +481,7 @@
       "title": "Decouverte API \"TheSpaceDevs\"",
       "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
       "component": "projects-space-calendar",
-      "external-links": [
+      "externalLinks": [
         {
           "href": "https://thespacedevs.com/",
           "icon": "mdi-link",
@@ -469,8 +495,8 @@
       "date": "19/01/2022",
       "title": "Essais sur la Conjecture de Collatz",
       "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
-      "component": "projects-space-calendar",
-      "external-links": [
+      "component": "projects-collatz-conjecture",
+      "externalLinks": [
         {
           "href": "https://www.youtube.com/watch?v=094y1Z2wpJg",
           "icon": "mdi-youtube",
@@ -483,8 +509,8 @@
       "date": "07/01/2022",
       "title": "Découverte de PixiJS",
       "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
-      "component": "decouverte_pixi",
-      "external-links": [
+      "component": "projects-decouverte-pixi",
+      "externalLinks": [
         {
           "href": "https://pixijs.com/",
           "icon": "mdi-link",

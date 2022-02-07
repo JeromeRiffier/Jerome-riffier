@@ -1,6 +1,5 @@
 <template>
     <v-card class="mb-10">
-        <v-card-title>Conjecture de Collatz</v-card-title>
         <v-sparkline
           :value="spark.range"
           :gradient="['#ff0000', '#cec404']"
@@ -10,7 +9,7 @@
           stroke-linecap="round"
           smooth
         >
-          <template v-slot:label="range">
+          <template #label="range">
               <p>
                 {{ range.index + 1}}
               </p>

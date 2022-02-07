@@ -19,8 +19,16 @@ export default {
       app : ''
     }
   },
+  head() {
+    return {
+      title: this.pageTitle,
+    }
+  },
   mounted() {
     this.startPixi();
+  },
+  beforeDestroy() {
+    this.app.destroy()
   },
   methods: {
     startPixi() {
@@ -118,14 +126,6 @@ export default {
     },
     randomIntFromInterval(min, max) { // min and max included
       return Math.floor(Math.random() * (max - min + 1) + min)
-    }
-  },
-  beforeDestroy() {
-    this.app.destroy()
-  },
-  head() {
-    return {
-      title: this.pageTitle,
     }
   }
 }

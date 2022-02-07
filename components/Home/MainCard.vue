@@ -1,6 +1,6 @@
 <template>
   <v-card
-    class="mx-4 pa-4 mt-4 mb-4"
+    class="mx-auto pa-4 mt-4 mb-4"
     max-width="1200"
     tile
     elevation=4
@@ -8,8 +8,8 @@
     <v-row>
       <v-col cols="2">
         <v-avatar
-          class="ma-4 elevation-4"
-          size="90"
+          class="ma-4 w-full elevation-4"
+          size="140"
           right
         >
           <v-img
@@ -20,7 +20,7 @@
       </v-col>
       <v-divider class="d-none d-lg-block" vertical></v-divider>
       <v-col lg="5" cols="12">
-        <v-card-title>Presentation</v-card-title>
+        <v-card-title>Présentation</v-card-title>
         <v-card-subtitle>Nom</v-card-subtitle>
         <v-card-text style="white-space: break-spaces;">{{ card.name }}</v-card-text>
         <v-card-subtitle>Emploi actuel</v-card-subtitle>
@@ -35,8 +35,8 @@
       <v-divider class="d-none d-lg-block" vertical></v-divider>
       <v-col lg="5" cols="12">
         <v-card-subtitle>Reseaux sociaux</v-card-subtitle>
-        <v-btn v-for="(link, name) of card.socials" :key="link" :href="link" class="ma-2"><v-icon>mdi-{{name}}</v-icon> {{ name }}</v-btn>
-        <v-card-subtitle>Présentation</v-card-subtitle>
+        <v-btn v-for="(link, name) of card.socials" :key="link" :href="link" target='_blank' class="ma-2"><v-icon>mdi-{{name}}</v-icon> {{ name }}</v-btn>
+        <v-card-subtitle>Qui je suis</v-card-subtitle>
         <v-card-text style="white-space: break-spaces;">{{ card.aboutMe }}</v-card-text>
       </v-col>
     </v-row>
@@ -53,6 +53,11 @@ export default {
 
 <style scoped>
 .v-card__subtitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.v-card__subtitle {
   font-size: 1rem;
+  font-weight: bold;
 }
 </style>

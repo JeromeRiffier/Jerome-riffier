@@ -23,14 +23,6 @@
         nav
         dense
       >
-         <v-list-item v-if="$vuetify.breakpoint.mobile">
-           <v-list-item-icon class="secondary--text">
-             <v-icon>mdi-home</v-icon>
-           </v-list-item-icon>
-           <v-list-item-content>
-             <v-list-item-title>Accueil</v-list-item-title>
-           </v-list-item-content>
-         </v-list-item>
         <template v-for="item in MENU.items">
           <v-list-group
             v-if="item.group"
@@ -84,9 +76,9 @@
           absolute
           bottom
           color="warning"
-          @click="switchMode"
           elevation="2"
           class="ml-4"
+          @click="switchMode"
         >
           <v-icon>
             mdi-theme-light-dark

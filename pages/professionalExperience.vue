@@ -1,8 +1,12 @@
 <template>
    <v-container fluid>
-      <v-row >
+     <v-row
+       v-for="(company, companyIndex) in PROS.companies"
+       :key="companyIndex"
+     >
+       <v-col cols="12"><h1>{{ company.name }}</h1></v-col>
         <v-col
-          v-for="(col, colIndex) in PROS.cols"
+          v-for="(col, colIndex) in company.cols"
           :key="colIndex"
           :md=col.size
         >
@@ -32,15 +36,15 @@
                 </v-row>
                  <v-toolbar color="rgba(0,0,0,0)" elevation="0">
                    <div>
-                    <v-card-title v-text="card.title" class="subtitle-1"></v-card-title>
-                    <v-card-subtitle v-text="card.subtitle" class="subtitle-1"></v-card-subtitle>
+                    <v-card-title class="subtitle-1" v-text="card.title"></v-card-title>
+                    <v-card-subtitle class="subtitle-1" v-text="card.subtitle"></v-card-subtitle>
                    </div>
 
                     <v-spacer></v-spacer>
-                    <v-btn icon
-                      v-model="card.reveal"
-                      @click="toggle({'cardIndex':cardIndex, 'colIndex':colIndex, 'val': true})"
+                    <v-btn v-model="card.reveal"
+                      icon
                       color="secondary"
+                      @click="toggle({'companyIndex':companyIndex, 'cardIndex':cardIndex, 'colIndex':colIndex, 'val': true})"
                     >
                       <v-icon>mdi-chevron-up</v-icon>
                     </v-btn>
@@ -66,8 +70,8 @@
                           right
                           absolute
                           color="secondary"
-                          @click="toggle({'cardIndex':cardIndex, 'colIndex':colIndex, 'val': false})"
                           class="mb-15"
+                          @click="toggle({'companyIndex':companyIndex, 'cardIndex':cardIndex, 'colIndex':colIndex, 'val': false})"
                         >
                           <v-icon>mdi-chevron-down</v-icon>
                         </v-btn>

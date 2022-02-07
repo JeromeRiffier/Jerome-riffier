@@ -12,24 +12,30 @@
       </v-btn>
     </v-card-actions>
 
-    <v-card>
-      <h1>{{ id }}</h1>
+    <v-card class="my-4">
+      <v-card-title>{{ article.title }}</v-card-title>
+      <v-card-subtitle><em>{{ article.date }}</em></v-card-subtitle>
+      <v-card-text>{{ article.description }}</v-card-text>
+      <v-card-subtitle>Liens externe: </v-card-subtitle>
+      <v-btn v-for="button of article.externalLinks" :key="button.link" :href="button.link" target='_blank' class="ma-4 mt-0">
+        <v-icon>{{ button.icon }}</v-icon>
+        {{ button.name }}
+      </v-btn>
+      <v-divider class="my-4"></v-divider>
+      <div :is="article.component"></div>
     </v-card>
 
   </v-container>
 </template>
 
 <script>
-import { get } from 'vuex-pathify'
-
 export default {
-  // eslint-disable-next-line require-await
-  async asyncData({ params }) {
-    const id = params.id // En appelant /abc, le slug sera "abc".
-    return { id }
-  },
   computed: {
-    ...get('blog/', ['article']),
+    article() {
+      return this.$store.getters['blog/article'](
+        this.$route.params.id
+      )
+    }
   },
 
 }

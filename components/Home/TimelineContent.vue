@@ -2,16 +2,22 @@
     <v-dialog
       v-model="dialog"
       width="500"
+      max-width="fit-content"
     >
-      <template v-slot:activator="{ on, attrs }">
+      <template #activator="{ on, attrs }">
         <v-btn
           v-bind="attrs"
           height="auto"
-          v-on="on"
           class="pa-2"
-        >
-          <v-img v-if="item.companyLogo" :src="item.companyLogo" max-width="300" max-height="150" contain></v-img>
-          <h2 v-else :class="`${item.date.color}--text`">{{ item.title }}</h2>
+          v-on="on">
+          <v-img v-if="item.companyLogo" :src="item.companyLogo" max-width="300" max-height="140" contain></v-img>
+          <h2
+            v-else
+            :class="`${item.date.color}--text`"
+            class="py-3 my-8"
+          >
+            {{ item.title }}
+          </h2>
         </v-btn>
       </template>
 
@@ -21,13 +27,13 @@
           <h2 v-else>{{ item.title }}</h2>
         </v-card-title>
         <v-card-subtitle> {{ item.town }}</v-card-subtitle>
-        <v-card-text v-if="item.description">{{ item.description }}</v-card-text>
+        <v-card-text v-if="item.description"  style="white-space: break-spaces;">{{ item.description }}</v-card-text>
         <v-row>
           <v-col
             v-for="n in item.techLogo.length"
             :key="n"
-            class="d-flex child-flex"
             :cols="Math.floor(12 / item.techLogo.length)"
+            class="d-flex child-flex"
           >
             <v-img
               :src="item.techLogo[n-1]"

@@ -1,7 +1,7 @@
 <template>
     <v-container fluid>
       <v-card>
-        <v-form v-model="valid" ref="form">
+        <v-form ref="form" v-model="valid">
           <v-container>
             <v-row>
               <v-col
@@ -62,8 +62,8 @@
                 <v-btn
                   primary
                   :disabled="!valid"
-                  @click="submit"
-                  class="float-right">
+                  class="float-right"
+                  @click="submit">
                   Envoyer
                 </v-btn>
               </v-col>
@@ -83,34 +83,31 @@ export default {
     firstname: '',
     lastname: '',
     nameRules: [
-      v => !!v || 'Name is required',
-      v => v.length <= 10 || 'Name must be less than 10 characters',
+      v => !!v || 'Le nom est requis',
     ],
     email: '',
     emailRules: [
-      v => !!v || 'E-mail is required',
-      v => /.+@.+/.test(v) || 'E-mail must be valid',
+      v => !!v || 'L\'E-mail est requis',
+      v => /.+@.+/.test(v) || 'E-mail invalide',
     ],
   }),
+  head() {
+    return {
+      title: this.pageTitle,
+    }
+  },
   methods: {
     submit () {
       this.sending = true
       this.$refs.observer.validate()
     },
-  },
-  head() {
-    return {
-      title: this.pageTitle,
-    }
   }
 }
 </script>
 
 <style scoped>
-.v-card {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-.theme--dark .v-card {
-  background-color: rgba(0, 0, 0, 0.3);
+.v-text-field, .v-text-field .v-label{
+  color: black!important;
+  caret-color: black!important;
 }
 </style>

@@ -11,9 +11,9 @@
 */
 
 :root {
-    --headings-size-h1: 24px;
-    --headings-size-h2: 20px;
-    --headings-size-h3: 18px;
+    --headings-size-h1: 20px;
+    --headings-size-h2: 18px;
+    --headings-size-h3: 16px;
     @media #{map-get($display-breakpoints, 'lg-and-up')} {
         --headings-size-h1: 32px;
         --headings-size-h2: 26px;
