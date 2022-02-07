@@ -1,7 +1,7 @@
 <template>
   <div>
-    <home-main-Card/>
-    <v-timeline>
+    <home-main-Card :card="HOME.card"/>
+    <v-timeline class="d-none">
       <v-timeline-item
         v-for="(timelineItem, index) in HOME.timeline"
         :key="timelineItem.date"

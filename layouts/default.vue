@@ -8,26 +8,14 @@
       app
       bottom
     >
-      <v-list>
-        <v-list-item class="px-2"  link nuxt to="/">
-          <v-list-item-avatar>
-            <v-img
-            :src="MENU.img"
-            aspect-ratio="1:1"
-            ></v-img>
-          </v-list-item-avatar>
-          <v-list-item-title class="text-h6">
-              {{ MENU.title }}
-            </v-list-item-title>
-        </v-list-item>
-
-        <v-list-item>
-          <v-list-item-content>
-            <v-list-item-title>
-              {{ MENU.subtitle }}
-            </v-list-item-title>
-            <v-list-item-subtitle>{{ MENU.description }}</v-list-item-subtitle>
-          </v-list-item-content>
+      <v-list v-if="!$vuetify.breakpoint.mobile">
+        <v-list-item class="pa-0 mt-0"  link nuxt to="/">
+          <v-img
+            height="100%"
+            class="white"
+            src="/logo-perso.svg"
+          >
+          </v-img>
         </v-list-item>
       </v-list>
 
@@ -35,6 +23,14 @@
         nav
         dense
       >
+         <v-list-item v-if="$vuetify.breakpoint.mobile">
+           <v-list-item-icon class="secondary--text">
+             <v-icon>mdi-home</v-icon>
+           </v-list-item-icon>
+           <v-list-item-content>
+             <v-list-item-title>Accueil</v-list-item-title>
+           </v-list-item-content>
+         </v-list-item>
         <template v-for="item in MENU.items">
           <v-list-group
             v-if="item.group"

@@ -21,7 +21,7 @@
       {
         "icon": "mdi-brush",
         "link": "/projets",
-        "title": "Projet personnel",
+        "title": "Blog",
         "group": false
       },
       {
@@ -47,6 +47,49 @@
     ]
   },
   "HOME": {
+    "card": {
+      "avatar": "/portrait.png",
+      "name": "Jérôme Riffier",
+      "job": "Développeur  Full Stack",
+      "interests": [
+        "Web Developement",
+        "Nuxt",
+        "Laravel",
+        "IA",
+        "Machine Learning",
+        "Raspberry",
+        "Crypto Currency"
+      ],
+      "technologies": {
+        "laravel": {
+          "src":"/tech-logo/Laravel.svg",
+          "width": 100
+        },
+        "nuxt": {
+          "src":"/tech-logo/Nuxt-White.svg",
+          "width":  100
+        },
+        "docker": {
+          "src":"/tech-logo/Docker.png",
+          "width":  100
+        },
+        "vuejs": {
+          "src": "/tech-logo/VueJs.svg",
+          "width":  50
+        },
+        "symfony": {
+          "src":"/tech-logo/Symfony.svg",
+          "width":  50
+        }
+      },
+      "address": "69420 Longes",
+      "socials": {
+        "email": "contact@jerome-riffier.fr",
+        "github": "https://github.com/JeromeRiffier",
+        "linkedin": "https://www.linkedin.com/in/j%C3%A9r%C3%B4me-riffier-289752174/"
+      },
+      "aboutMe": "Salut et bienvenue sur mon site !\nJe suis developpeur full-stack depuis 2017.\nSpecialisé en framework PHP et Javascript, je vous laisse explorer ce site pour en apprendre plus sur moi.\nEt qui sait, peut être me contacté pour qu'on commence a travailler ensemble \uD83E\uDD37\u200D♂️"
+    },
     "timeline": [
       {
         "date": {
