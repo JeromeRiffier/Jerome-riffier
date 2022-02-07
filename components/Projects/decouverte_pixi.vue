@@ -1,9 +1,7 @@
 <template>
-    <v-container fluid>
-        <div id="game-container" class="d-flex justify-center">
-          <canvas id="pixi-canvas"></canvas>
-        </div>
-    </v-container>
+  <div id="game-container" class="d-flex justify-center">
+    <canvas id="pixi-canvas"></canvas>
+  </div>
 </template>
 
 <script>

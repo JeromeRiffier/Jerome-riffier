@@ -7,6 +7,12 @@
     "description": "Passionné d'innovation et d'intelligence artificielle",
     "items": [
       {
+        "icon": "mdi-home",
+        "link": "/",
+        "title": "Accueil",
+        "group": false
+      },
+      {
         "icon": "mdi-card-account-details",
         "link": "/CV",
         "title": "CV",
@@ -20,24 +26,11 @@
       },
       {
         "icon": "mdi-brush",
-        "link": "/projets",
+        "link": "/blog",
         "title": "Blog",
         "group": false
       },
-      {
-        "icon": "mdi-folder",
-        "title": "Jeux",
-        "group": [
-          {
-            "title": "Découverte de PixiJs",
-            "link": "/games/decouverte_pixi"
-          },
-          {
-            "title": "Simulation de la Gravité",
-            "link": "/games/gravity"
-          }
-        ]
-      },
+
       {
         "icon": "mdi-email",
         "link": "/contact",
@@ -454,5 +447,50 @@
         ]
       }
     ]
-  }
+  },
+  "BLOG": [
+    {
+      "id": 1,
+      "date": "07/01/2022",
+      "title": "Decouverte API \"TheSpaceDevs\"",
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+      "component": "projects-space-calendar",
+      "external-links": [
+        {
+          "href": "https://thespacedevs.com/",
+          "icon": "mdi-link",
+          "name":  "thespacedevs.com"
+        }
+      ]
+
+    },
+    {
+      "id": 2,
+      "date": "19/01/2022",
+      "title": "Essais sur la Conjecture de Collatz",
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+      "component": "projects-space-calendar",
+      "external-links": [
+        {
+          "href": "https://www.youtube.com/watch?v=094y1Z2wpJg",
+          "icon": "mdi-youtube",
+          "name":  "The Simplest Math Problem No One Can Solve - Collatz Conjecture"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "date": "07/01/2022",
+      "title": "Découverte de PixiJS",
+      "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+      "component": "decouverte_pixi",
+      "external-links": [
+        {
+          "href": "https://pixijs.com/",
+          "icon": "mdi-link",
+          "name":  "PixiJS"
+        }
+      ]
+    }
+  ]
 }

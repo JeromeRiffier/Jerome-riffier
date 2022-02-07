@@ -9,7 +9,7 @@
       bottom
     >
       <v-list v-if="!$vuetify.breakpoint.mobile">
-        <v-list-item class="pa-0 mt-0"  link nuxt to="/">
+        <v-list-item class="pa-0 mt-0" >
           <v-img
             height="100%"
             class="white"
@@ -131,6 +131,7 @@ export default {
     this.$store.dispatch('cv/init')
     this.$store.dispatch('pros/init')
     this.$store.dispatch('home/init')
+    this.$store.dispatch('blog/init')
   },
   methods: {
       switchMode() {
