@@ -8,7 +8,7 @@
       app
       bottom
     >
-      <v-list v-if="!$vuetify.breakpoint.mobile">
+      <v-list v-if="!$vuetify.breakpoint.mobile" class="pt-0">
         <v-list-item class="pa-0 mt-0" >
           <v-img
             height="100%"
@@ -66,7 +66,8 @@
             :key="item.title + 'sub list'"
             link
             nuxt
-            :to="item.link">
+            :to="item.link"
+           class="my-1">
             <v-list-item-icon class="secondary--text">
               <v-icon>{{ item.icon }}</v-icon>
             </v-list-item-icon>

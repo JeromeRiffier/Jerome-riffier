@@ -26,7 +26,7 @@
       },
       {
         "icon": "mdi-brush",
-        "link": "/blog",
+        "link": "/blog/home",
         "title": "Blog",
         "group": false
       },

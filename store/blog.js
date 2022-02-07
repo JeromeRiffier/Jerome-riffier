@@ -9,7 +9,14 @@ const actions = {
   // automatically create only `setItems()` action
   init({ commit }) {
     commit('SET_BLOG', BLOG)
-  }
+  },
+  getArticle({ dispatch, commit }, id) {
+    dispatch('api/blog/show', id, {
+      root: true
+    }).then((data) => {
+      //
+    })
+  },
 }
 
 const getters = {
