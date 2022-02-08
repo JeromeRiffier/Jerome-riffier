@@ -3,11 +3,11 @@
         <h2>{{ experience.titre }}</h2>
         <h3>{{ experience.entreprise }}</h3>
         <div class="span-container">
-            <span class="Date secondary--text">{{ experience.periode }}</span>
-            <span class="Lieu secondary--text">{{ experience.lieu}}</span>
-            <span class="Description" v-html="experience.description"></span>
+            <span class="Date accent--text">{{ experience.periode }}</span>
+            <span class="Lieu accent--text">{{ experience.lieu}}</span>
+            <span class="Description accent--text text--darken-2" v-html="experience.description"></span>
         </div>
-        <span class="Poste secondary--text text-lighten1"></span>
+        <span class="Poste accent--text text-lighten1"></span>
         <ul class="list">
             <li v-for="poste in experience.postes" :key="poste.id">{{ poste.text }}</li>
         </ul>
@@ -17,7 +17,7 @@
 
 <script>
     export default {
-        props:  [ 'experience' ] 
+        props:  [ 'experience' ]
     }
 </script>
 
@@ -56,10 +56,6 @@ h3 {
     font-size: 0.8rem;
     line-height: 1rem;
     float: left;
-    color: #84919e;
-}
-.theme--dark .Description {
-    color: #f0f8ff;
 }
 .list {
     margin-left: 1.25rem;
@@ -93,7 +89,7 @@ span.technologie {
 }
 span.technologie::before {
     content: 'Technologie : ';
-    color: var(--v-secondary-lighten1)!important;
+    color: var(--v-accent-base)!important;
 }
 ul {
     list-style: none; /* Remove default bullets */
@@ -104,7 +100,7 @@ ul li::before {
   width: 1em; /* Also needed for space (tweak if needed) */
   margin-left: -1em; /* Also needed for space (tweak if needed) */
   margin-right: 1em; /* Also needed for space (tweak if needed) */
-  
+
 }
 .theme--dark .Lieu, .theme--dark .Date, .theme--dark span.Poste, .theme--dark span.technologie::before, .theme--dark ul li::before {
     color: #a1ddff;

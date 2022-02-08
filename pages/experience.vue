@@ -43,7 +43,7 @@
                     <v-spacer></v-spacer>
                     <v-btn v-model="card.reveal"
                       icon
-                      color="secondary"
+                      color="accent"
                       @click="toggle({'companyIndex':companyIndex, 'cardIndex':cardIndex, 'colIndex':colIndex, 'val': true})"
                     >
                       <v-icon>mdi-chevron-up</v-icon>
@@ -69,7 +69,7 @@
                           small
                           right
                           absolute
-                          color="secondary"
+                          color="accent"
                           class="mb-15"
                           @click="toggle({'companyIndex':companyIndex, 'cardIndex':cardIndex, 'colIndex':colIndex, 'val': false})"
                         >

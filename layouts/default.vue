@@ -34,8 +34,8 @@
           >
             <template #activator>
              <v-list-item class="pl-0">
-                <v-list-item-icon class="secondary--text">
-                  <v-icon>{{ item.icon }}</v-icon>
+                <v-list-item-icon>
+                  <v-icon color="accent">{{ item.icon }}</v-icon>
                 </v-list-item-icon>
                 <v-list-item-content>
                   <v-list-item-title>{{ item.title }}</v-list-item-title>
@@ -61,8 +61,9 @@
             link
             nuxt
             :to="item.link"
-           class="my-1">
-            <v-list-item-icon class="secondary--text">
+            class="my-1"
+           >
+            <v-list-item-icon class="accent--text">
               <v-icon>{{ item.icon }}</v-icon>
             </v-list-item-icon>
             <v-list-item-title>{{ item.title }}</v-list-item-title>

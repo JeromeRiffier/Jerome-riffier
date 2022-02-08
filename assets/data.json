@@ -14,7 +14,7 @@
       },
       {
         "icon": "mdi-card-account-details",
-        "link": "/CV",
+        "link": "/cv",
         "title": "CV",
         "group": false
       },
@@ -26,7 +26,7 @@
       },
       {
         "icon": "mdi-briefcase",
-        "link": "/professionalExperience",
+        "link": "/experience",
         "title": "Expérience professionelle",
         "group": false
       },

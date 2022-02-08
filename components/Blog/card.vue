@@ -1,7 +1,7 @@
 <template>
   <v-card>
     <v-card-title>{{ article.title }}</v-card-title>
-    <v-card-subtitle><em>{{ article.date }}</em></v-card-subtitle>
+    <v-card-subtitle><em class="accent--text">{{ article.date }}</em></v-card-subtitle>
     <v-card-text style="white-space: break-spaces">{{ shortDescription }}</v-card-text>
     <v-card-actions>
       <v-spacer></v-spacer>
@@ -10,6 +10,7 @@
         rounded
         text
         link
+        color="accent"
         :to="'/blog/'+article.id"
       >
         Lire
