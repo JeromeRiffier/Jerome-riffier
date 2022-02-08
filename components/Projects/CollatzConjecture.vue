@@ -1,5 +1,5 @@
 <template>
-    <v-card class="mb-10">
+    <v-sheet class="mb-10">
         <v-sparkline
           :value="spark.range"
           :gradient="['#ff0000', '#cec404']"
@@ -36,7 +36,7 @@
                 ></v-slider>
             </v-col>
         </v-row>
-      </v-card>
+      </v-sheet>
 </template>
 
 <script>
