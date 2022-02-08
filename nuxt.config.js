@@ -76,7 +76,7 @@ export default {
       background_color: '#daeeff'
     },
     workbox: {
-      enabled: false, // or use a global variable to track the current NODE_ENV, etc to determine dev mode
+      enabled: true, // or use a global variable to track the current NODE_ENV, etc to determine dev mode
       cacheAssets: false,
       offline: true,
       offlineStrategy: 'CacheFirst'

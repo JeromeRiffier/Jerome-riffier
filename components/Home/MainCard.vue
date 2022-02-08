@@ -15,6 +15,7 @@
           <v-img
             :src="card.avatar"
             aspect-ratio="1:1"
+            contain
           ></v-img>
         </v-avatar>
       </v-col>

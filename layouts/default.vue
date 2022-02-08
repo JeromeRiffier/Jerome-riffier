@@ -11,9 +11,11 @@
       <v-list v-if="!$vuetify.breakpoint.mobile" class="pt-0">
         <v-list-item class="pa-0 mt-0" >
           <v-img
-            height="100%"
+            width="100%"
+            contain
             class="white"
             src="/logo-perso.svg"
+            aspect-ratio="16:9"
           >
           </v-img>
         </v-list-item>
