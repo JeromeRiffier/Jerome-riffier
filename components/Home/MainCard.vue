@@ -25,9 +25,9 @@
         <v-card-text style="white-space: break-spaces;">{{ card.name }}</v-card-text>
         <v-card-subtitle>Emploi actuel</v-card-subtitle>
         <v-card-text style="white-space: break-spaces;">{{ card.job }}</v-card-text>
-        <v-card-subtitle>Centre d'intérêt</v-card-subtitle>
+        <v-card-subtitle>Centres d'intérêts</v-card-subtitle>
         <v-chip v-for="interest of card.interests" :key="interest" class="ma-1">{{ interest }}</v-chip>
-        <v-card-subtitle>Technologie d'intérêt</v-card-subtitle>
+        <v-card-subtitle>Technologies d'intérêts</v-card-subtitle>
         <v-chip  v-for="img of card.technologies" :key="img.src"  class="ma-1">
             <v-img  :src="img.src" height="28" :max-width="img.width" contain></v-img>
         </v-chip>
