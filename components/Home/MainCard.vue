@@ -24,7 +24,7 @@
         <v-card-subtitle>{{ $t('Nom') }}</v-card-subtitle>
         <v-card-text style="white-space: break-spaces;">{{ card.name }}</v-card-text>
         <v-card-subtitle>{{ $t('Emploi actuel') }}</v-card-subtitle>
-        <v-card-text style="white-space: break-spaces;">{{ card.job }}</v-card-text>
+        <v-card-text style="white-space: break-spaces;">{{ card.job[$i18n.locale] }}</v-card-text>
         <v-card-subtitle>{{ $t('Centres d\'intérêts') }}</v-card-subtitle>
         <v-chip v-for="interest of card.interests" :key="interest" class="ma-1">{{ interest }}</v-chip>
         <v-card-subtitle>{{ $t('Technologies d\'intérêts') }}</v-card-subtitle>
@@ -37,7 +37,7 @@
         <v-card-subtitle>{{ $t('Reseaux sociaux') }}</v-card-subtitle>
         <v-btn v-for="(link, name) of card.socials" :key="link" :href="link" target='_blank' class="ma-2"><v-icon>mdi-{{name}}</v-icon> {{ name }}</v-btn>
         <v-card-subtitle>{{ $t('Qui je suis') }}</v-card-subtitle>
-        <v-card-text style="white-space: break-spaces;">{{ card.aboutMe }}</v-card-text>
+        <v-card-text style="white-space: break-spaces;">{{ card.aboutMe[$i18n.locale] }}</v-card-text>
       </v-col>
     </v-row>
   </v-card>
