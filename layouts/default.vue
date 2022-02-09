@@ -38,7 +38,7 @@
                   <v-icon color="accent">{{ item.icon }}</v-icon>
                 </v-list-item-icon>
                 <v-list-item-content>
-                  <v-list-item-title>{{ item.title }}</v-list-item-title>
+                  <v-list-item-title>{{ $t(item.title) }}</v-list-item-title>
                 </v-list-item-content>
              </v-list-item>
             </template>
@@ -50,7 +50,7 @@
               nuxt
               :to="item.link">
               <v-list-item-content>
-                <v-list-item-title >{{ item.title }}</v-list-item-title>
+                <v-list-item-title >{{ $t(item.title) }}</v-list-item-title>
               </v-list-item-content>
             </v-list-item>
           </v-list-group>
@@ -66,27 +66,52 @@
             <v-list-item-icon class="accent--text">
               <v-icon>{{ item.icon }}</v-icon>
             </v-list-item-icon>
-            <v-list-item-title>{{ item.title }}</v-list-item-title>
+            <v-list-item-title>{{ $t(item.title) }}</v-list-item-title>
           </v-list-item>
 
           <v-divider :key="item.title"></v-divider>
 
         </template>
-
       </v-list>
-        <v-btn
-          icon
-          absolute
-          bottom
-          color="warning"
-          elevation="2"
-          class="ml-4"
-          @click="switchMode"
-        >
-          <v-icon>
-            mdi-theme-light-dark
-          </v-icon>
-        </v-btn>
+
+      <template #append>
+        <div class="w-full pa-4">
+          <v-btn
+            icon
+            color="warning"
+            elevation="2"
+            class="ml-4"
+            @click="switchMode"
+          >
+            <v-icon>
+              mdi-theme-light-dark
+            </v-icon>
+          </v-btn>
+
+          <v-btn
+            v-if="$i18n.locale !== 'fr'"
+            icon
+            flat
+            color="warning"
+            elevation="2"
+            class="ml-4"
+            @click="$i18n.setLocale('fr')"
+          >
+            <v-img src="/fr.png" height="28" width="28" contain></v-img>
+          </v-btn>
+          <v-btn
+            v-if="$i18n.locale !== 'en'"
+            icon
+            flat
+            color="warning"
+            elevation="2"
+            class="ml-4"
+            @click="$i18n.setLocale('en')"
+          >
+            <v-img src="/en.png" height="28" width="28" contain></v-img>
+          </v-btn>
+        </div>
+      </template>
     </v-navigation-drawer>
     <v-main>
       <v-container>
@@ -115,6 +140,7 @@
 
 <script>
 import {get} from 'vuex-pathify'
+
 export default {
   computed: {
     ...get('menu/', ['MENU'])

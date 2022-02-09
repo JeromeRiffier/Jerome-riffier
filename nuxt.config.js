@@ -62,8 +62,30 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    '@nuxtjs/i18n',
     '@nuxtjs/color-mode'
   ],
+
+  // i18n localisation config
+  i18n: {
+    locales: [
+      {
+        code: 'fr',
+        file: 'fr-FR.js'
+      },
+      {
+        code: 'en',
+        file: 'en-EN.js'
+      }
+    ],
+    defaultLocale: 'fr',
+    vueI18n: {
+      fallbackLocale: 'fr'
+    },
+    strategy: 'no_prefix',
+    lazy: true,
+    langDir: 'lang/'
+  },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {

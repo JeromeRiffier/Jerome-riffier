@@ -15,7 +15,7 @@ const actions = {
 const getters = {
   // make all getters (optional)
   ...make.getters(state),
-  article: (rootState) => (id) => rootState.BLOG.find((article) => parseInt(article.id) === parseInt(id)),
+  article: (rootState) => (id, locale) => rootState.BLOG[locale].find((article) => parseInt(article.id) === parseInt(id)),
 }
 
 const mutations = {
