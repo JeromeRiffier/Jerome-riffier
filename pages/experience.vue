@@ -60,7 +60,7 @@
                           </h3>
                           <v-divider></v-divider>
                         <ul class="mt-1">
-                          <li v-for="(detail, index) in card.details" :key="index">{{ detail }}</li>
+                          <li v-for="(detail, index) in card.details[$i18n.locale]" :key="index">{{ detail }}</li>
                         </ul>
                       </v-card-text>
                       <v-card-actions>

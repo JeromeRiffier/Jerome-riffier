@@ -34,7 +34,8 @@ export default {
   computed: {
     article() {
       return this.$store.getters['blog/article'](
-        this.$route.params.id
+        this.$route.params.id,
+        this.$i18n.locale
       )
     }
   },

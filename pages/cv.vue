@@ -2,9 +2,9 @@
     <v-card justify="center" align="left" cols="7" md="7" sd="12" class="ma-md-10">
         <v-row class="header pa-10 indigo darken-1" no-gutters>
             <v-col md="8" cols="12" class="pl-10 pt-5 ">
-                <h1 class="w-full">{{ CV.header.nom }}</h1>
-                <h2 class="w-full">{{ CV.header.qualificatif }}</h2>
-                <h3 class="w-full pb-4">{{ CV.header.accroche }}</h3>
+                <h1 class="w-full">{{ CV.header[$i18n.locale].nom }}</h1>
+                <h2 class="w-full">{{ CV.header[$i18n.locale].qualificatif }}</h2>
+                <h3 class="w-full pb-4">{{ CV.header[$i18n.locale].accroche }}</h3>
             </v-col>
             <v-col md="4" class="d-none d-sm-block">
                 <div class="portrait"></div>
@@ -13,13 +13,13 @@
         <cv-contact :contacts="CV.contacts" />
         <v-row class="pa-5">
             <v-col md="6" col="12">
-                <h1 class="category info--text">EXPÉRIENCE PROFESSIONNELLE</h1>
+                <h1 class="category info--text">{{ $t('EXPÉRIENCE PROFESSIONNELLE') }}</h1>
                 <cv-experience
-                    v-for='experience in CV.experiences'
+                    v-for='experience in CV.experiences[$i18n.locale]'
                     :key='experience.titre'
                     :experience='experience'
                 />
-                <h1 class="category info--text">FORMATION</h1>
+                <h1 class="category info--text">{{ $t('FORMATION') }}</h1>
                 <cv-formation
                     v-for='formation in CV.formations'
                     :key='formation.titre'
@@ -27,16 +27,16 @@
                 />
             </v-col>
             <v-col md="6" col="12">
-                <h1 class="category info--text">COMPÉTENCE</h1>
+                <h1 class="category info--text">{{ $t('COMPÉTENCES') }}</h1>
                     <cv-competence  :competences=CV.competences />
-                <h1 class="category info--text">POINT FORTS</h1>
-                    <p v-for="point_fort in CV.point_forts" :key="point_fort" class="subtitle-1 mb-1">{{ point_fort }}</p>
-                <h1 class="category info--text">PROJETS PERSONNELS</h1>
-                    <cv-projet v-for="projet in CV.projets" :key="projet.titre" :projet=projet />
-                <h1 class="category info--text">LANGUES</h1>
+                <h1 class="category info--text">{{ $t('POINT FORTS') }}</h1>
+                    <p v-for="point_fort in CV.point_forts[$i18n.locale]" :key="point_fort" class="subtitle-1 mb-1">{{ point_fort }}</p>
+                <h1 class="category info--text">{{ $t('PROJETS PERSONNELS') }}</h1>
+                    <cv-projet v-for="projet in CV.projets[$i18n.locale]" :key="projet.titre" :projet=projet />
+                <h1 class="category info--text">{{ $t('LANGUES') }}</h1>
                     <cv-langue width="100%"/>
-                <h1 class="category info--text">INTÉRÊTS</h1>
-                    <cv-interet :interets=CV.interets />
+                <h1 class="category info--text">{{ $t('INTÉRÊTS') }}</h1>
+                    <cv-interet :interets=CV.interets[$i18n.locale] />
             </v-col>
         </v-row>
     </v-card>

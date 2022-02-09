@@ -178,9 +178,16 @@
   },
   "CV": {
     "header": {
-      "nom": "Jérôme Riffier",
-      "qualificatif": "Développeur / Concepteur",
-      "accroche": "Passionné d'innovation et d'intelligence artificielle"
+      "fr": {
+        "nom": "Jérôme Riffier",
+        "qualificatif": "Développeur / Concepteur",
+        "accroche": "Passionné d'innovation et d'intelligence artificielle"
+      },
+      "en": {
+        "nom": "Jérôme Riffier",
+        "qualificatif": "Developer / Designer",
+        "accroche": "Passionate about innovation and artificial intelligence"
+      }
     },
     "contacts": [
       {
@@ -210,84 +217,164 @@
       "JS",
       "Windev"
     ],
-    "experiences": [
-      {
-        "titre": "Analyste Développeur",
-        "entreprise": "Tenor",
-        "periode": "02/2020 – Aujourd'hui",
-        "lieu": "Oullin",
-        "description": "Concepteur de site client pour grand compte",
-        "postes": [
-          {
-            "id": 0,
-            "text": "Conception de site metier"
-          },
-          {
-            "id": 1,
-            "text": "Création de site metier"
-          },
-          {
-            "id": 2,
-            "text": "Maintenance de site metier"
-          }
-        ],
-        "technologies": "Symfony/Laravel/Nuxt/VueJS"
-      },
-      {
-        "titre": "Développeur web / Responsable Informatique",
-        "entreprise": "Mediamarket",
-        "periode": "02/2018 – 02/2020",
-        "lieu": "Villeurbanne",
-        "description": "Régie publicitaire '<b>Print</b>' et '<b>Internet</b>'",
-        "postes": [
-          {
-            "id": 0,
-            "text": "Création from scratch et maintenance d'une page publicitaire pour les sites de Europe1/ Public.fr/ TV7 Jours/ ParisMatch (rubrique le carnet)"
-          },
-          {
-            "id": 1,
-            "text": "Responsable des outils informatiques de la société"
-          }
-        ],
-        "technologies": "PHP/Iframe/HTML5/Bootstrap/CSS3/Js/Ajax"
-      },
-      {
-        "titre": "Développeur Windev",
-        "entreprise": "The Web House",
-        "periode": "01/2017 – 02/2017",
-        "lieu": "Apt",
-        "description": "Gestion informatique pour prestataire",
-        "postes": [
-          {
-            "id": 0,
-            "text": "Stage / Découverte de Windev 21 / Création d'une base de donnée"
-          },
-          {
-            "id": 1,
-            "text": "Création d'un logiciel-métier de gestion interne permettant de gérer les informations clients de la prise de commande a la facturation"
-          }
-        ],
-        "technologies": "Windev"
-      },
-      {
-        "titre": "Développeur C++",
-        "entreprise": "Atechsys",
-        "periode": "06/2015 – 10/2015",
-        "lieu": "Pourrières",
-        "description": "Startup de recherche et développement de Drone a usage commercial ou militaire. Notamment connus pour prototyper la livraison par drone pour le groupe La Poste",
-        "postes": [
-          {
-            "id": 0,
-            "text": "Stage / Participation au développement du projet de livraison de colis par drone sous la maîtrise d’œuvre du groupe La Poste"
-          },
-          {
-            "id": 1,
-            "text": "Adaptation d'une interface graphique de contrôle de drone en C++ via le Framework QT"
-          }
-        ],
-        "technologies": "C++/ Qt"
-      }
-    ],
+    "experiences": {
+      "fr": [
+        {
+          "titre": "Analyste Développeur",
+          "entreprise": "Tenor",
+          "periode": "02/2020 – Aujourd'hui",
+          "lieu": "Oullin",
+          "description": "Concepteur de site client pour grand compte",
+          "postes": [
+            {
+              "id": 0,
+              "text": "Conception de site metier"
+            },
+            {
+              "id": 1,
+              "text": "Création de site metier"
+            },
+            {
+              "id": 2,
+              "text": "Maintenance de site metier"
+            }
+          ],
+          "technologies": "Symfony/Laravel/Nuxt/VueJS"
+        },
+        {
+          "titre": "Développeur web / Responsable Informatique",
+          "entreprise": "Mediamarket",
+          "periode": "02/2018 – 02/2020",
+          "lieu": "Villeurbanne",
+          "description": "Régie publicitaire '<b>Print</b>' et '<b>Internet</b>'",
+          "postes": [
+            {
+              "id": 0,
+              "text": "Création from scratch et maintenance d'une page publicitaire pour les sites de Europe1/ Public.fr/ TV7 Jours/ ParisMatch (rubrique le carnet)"
+            },
+            {
+              "id": 1,
+              "text": "Responsable des outils informatiques de la société"
+            }
+          ],
+          "technologies": "PHP/Iframe/HTML5/Bootstrap/CSS3/Js/Ajax"
+        },
+        {
+          "titre": "Développeur Windev",
+          "entreprise": "The Web House",
+          "periode": "01/2017 – 02/2017",
+          "lieu": "Apt",
+          "description": "Gestion informatique pour prestataire",
+          "postes": [
+            {
+              "id": 0,
+              "text": "Stage / Découverte de Windev 21 / Création d'une base de donnée"
+            },
+            {
+              "id": 1,
+              "text": "Création d'un logiciel-métier de gestion interne permettant de gérer les informations clients de la prise de commande a la facturation"
+            }
+          ],
+          "technologies": "Windev"
+        },
+        {
+          "titre": "Développeur C++",
+          "entreprise": "Atechsys",
+          "periode": "06/2015 – 10/2015",
+          "lieu": "Pourrières",
+          "description": "Startup de recherche et développement de Drone a usage commercial ou militaire. Notamment connus pour prototyper la livraison par drone pour le groupe La Poste",
+          "postes": [
+            {
+              "id": 0,
+              "text": "Stage / Participation au développement du projet de livraison de colis par drone sous la maîtrise d’œuvre du groupe La Poste"
+            },
+            {
+              "id": 1,
+              "text": "Adaptation d'une interface graphique de contrôle de drone en C++ via le Framework QT"
+            }
+          ],
+          "technologies": "C++/ Qt"
+        }
+      ],
+      "en": [
+        {
+          "titre": "Analyst Developer",
+          "entreprise": "Tenor",
+          "periode": "02/2020 – Today",
+          "lieu": "Oullin",
+          "description": "Client site designer for large accounts customer",
+          "postes": [
+            {
+              "id": 0,
+              "text": "Business website design"
+            },
+            {
+              "id": 1,
+              "text": "Business site creation"
+            },
+            {
+              "id": 2,
+              "text": "Business site maintenance"
+            }
+          ],
+          "technologies": "Symfony/Laravel/Nuxt/VueJS"
+        },
+        {
+          "titre": "Web Developer / IT Manager",
+          "entreprise": "Mediamarket",
+          "periode": "02/2018 – 02/2020",
+          "lieu": "Villeurbanne",
+          "description": "Advertising management '<b>Print</b>' et '<b>Internet</b>'",
+          "postes": [
+            {
+              "id": 0,
+              "text": "Creation from scratch and maintenance of an advertising page for the sites of Europe1/ Public.fr/ TV7 Jours/ ParisMatch (section the notebook)"
+            },
+            {
+              "id": 1,
+              "text": "Responsible for the company's IT tools"
+            }
+          ],
+          "technologies": "PHP/Iframe/HTML5/Bootstrap/CSS3/Js/Ajax"
+        },
+        {
+          "titre": "Windev Developer",
+          "entreprise": "The Web House",
+          "periode": "01/2017 – 02/2017",
+          "lieu": "Apt",
+          "description": "IT management for service provider",
+          "postes": [
+            {
+              "id": 0,
+              "text": "Internship / Discovery of Windev 21 / Creation of a database"
+            },
+            {
+              "id": 1,
+              "text": "Creation of an internal management business software to manage customer information from order taking to invoicing"
+            }
+          ],
+          "technologies": "Windev"
+        },
+        {
+          "titre": "C++ Developer",
+          "entreprise": "Atechsys",
+          "periode": "06/2015 – 10/2015",
+          "lieu": "Pourrières",
+          "description": "Drone research and development startup for commercial or military use. Notably known for prototyping delivery by drone for the La Poste group",
+          "postes": [
+            {
+              "id": 0,
+              "text": "Internship / Participation in the development of the parcel delivery project by drone under the project management of the La Poste group"
+            },
+            {
+              "id": 1,
+              "text": "Adaptation of a drone control graphical interface in C++ via the QT Framework"
+            }
+          ],
+          "technologies": "C++/ Qt"
+        }
+      ]
+    },
     "formations": [
       {
         "titre": "EPSI",
@@ -305,30 +392,61 @@
         "lieu": "Bourg en Bresse"
       }
     ],
-    "interets": [
-      "IA",
-      "Nouvelle technologie",
-      "Musique",
-      "Espace"
-    ],
-    "projets": [
-      {
-        "titre": "Deep learning",
-        "description": "Implémentation d'une solution de deep learning sur Ubuntu permettant de modifier le style d'une image"
-      },
-      {
-        "titre": "Serveur personnel",
-        "description": "Création d'un serveur privé sur Raspberry Pi me permettant de présenter mes projets web dans le cadre scolaire."
-      },
-      {
-        "titre": "Bloqueur de publicité",
-        "description": "Ajout d'un serveur DNS modifié au raspberry pour bloquer toute les requette DNS de mon reseaux privé cherchant a me connecter a une publicité."
-      }
-    ],
-    "point_forts": [
-      "Autonome, passionné, motivé et inventif.",
-      "Grande capacité d'apprentissage."
-    ]
+    "interets": {
+      "fr": [
+        "IA",
+        "Nouvelle technologie",
+        "Musique",
+        "Espace"
+      ],
+      "en": [
+        "AI",
+        "New technology",
+        "Music",
+        "Space"
+      ]
+    },
+    "projets": {
+      "fr": [
+        {
+          "titre": "Deep learning",
+          "description": "Implémentation d'une solution de deep learning sur Ubuntu permettant de modifier le style d'une image"
+        },
+        {
+          "titre": "Serveur personnel",
+          "description": "Création d'un serveur privé sur Raspberry Pi me permettant de présenter mes projets web dans le cadre scolaire."
+        },
+        {
+          "titre": "Bloqueur de publicité",
+          "description": "Ajout d'un serveur DNS modifié au raspberry pour bloquer toute les requette DNS de mon reseaux privé cherchant a me connecter a une publicité."
+        }
+      ],
+      "en": [
+        {
+          "titre": "Deep learning",
+          "description": "Implementation of a deep learning solution on Ubuntu allowing to modify the style of an image"
+        },
+        {
+          "titre": "Personal server",
+          "description": "Creation of a private server on Raspberry Pi allowing me to present my web projects at school."
+        },
+        {
+          "titre": "ad blocker",
+          "description": "Addition of a modified DNS server to raspberry to block all DNS requests from my private network seeking to connect to an advertisement."
+        }
+      ]
+    },
+    "point_forts": {
+      "fr": [
+        "Autonome, passionné, motivé et inventif.",
+        "Grande capacité d'apprentissage."
+      ],
+      "en": [
+        "Autonomous, passionate, motivated and inventive.",
+        "Great learning ability."
+      ]
+    }
+
   },
   "PROS": {
     "companies" : [
@@ -340,10 +458,16 @@
             "cards": [
               {
                 "title": "Mediamarket-pub.com",
-                "details": [
-                  "Site vitrinne de présentation de l'entreprise Mediamarket. Créez sur base d'un template.",
-                  "Comprennant aussi un script de formulaire Mail et un liens a une page de paiement en ligne."
-                ],
+                "details": {
+                  "fr": [
+                    "Site vitrinne de présentation de l'entreprise Mediamarket. Créez sur base d'un template.",
+                    "Comprennant aussi un script de formulaire Mail et un liens a une page de paiement en ligne."
+                  ],
+                  "en": [
+                    "Showcase website for the presentation of the Mediamarket company. Create based on a template.",
+                    "Also including a Mail form script and a link to an online payment page."
+                  ]
+                },
                 "imgs": [
                   "/screens/mediamarket-pub.jpg"
                 ],
@@ -358,9 +482,14 @@
             "cards": [
               {
                 "title": "Six9 Media",
-                "details": [
-                  "Site vitrinne de présentation de l'entreprise Six9 Media. Créez sur base d'un template."
-                ],
+                "details": {
+                  "fr": [
+                    "Site vitrinne de présentation de l'entreprise Six9 Media. Créez sur base d'un template."
+                  ],
+                  "en": [
+                    "Presentation site of the company Six9 Media. Create based on a template."
+                  ]
+                },
                 "imgs": [
                   "/screens/69media.jpg"
                 ],
@@ -372,10 +501,16 @@
               {
                 "title": "Le Carnet",
                 "subtitle": "Europe 1/ Public.fr/ Tv7 Jours/ Parismatch ",
-                "details": [
-                  "Site Publi-redactionel",
-                  "Site réalisé en PHP/HTML5/CSS/MySQL/AJAX. Ce site etait placé dans une iframe sur le site de Europe 1"
-                ],
+                "details": {
+                  "fr": [
+                    "Site Publi-redactionel",
+                    "Site réalisé en PHP/HTML5/CSS/MySQL/AJAX. Ce site etait placé dans une iframe sur le site de Tv7 Jours"
+                  ],
+                  "en": [
+                    "Editorial website",
+                    "Site made in PHP/HTML5/CSS/MySQL/AJAX. This site was placed in an iframe on the Tv7 Jours site"
+                  ]
+                },
                 "imgs": [
                   "/screens/carnet-europe1.jpg",
                   "/screens/carnet-public.jpg",
@@ -390,10 +525,16 @@
               {
                 "title": "Le Carnet",
                 "subtitle": "Europe 1",
-                "details": [
-                  "Site Publi-redactionel",
-                  "Site réalisé en PHP/HTML5/CSS/MySQL/AJAX. Ce site etait placé dans une iframe sur le site de Europe 1"
-                ],
+                "details": {
+                  "fr": [
+                    "Site Publi-redactionel",
+                    "Site réalisé en PHP/HTML5/CSS/MySQL/AJAX. Ce site etait placé dans une iframe sur le site de Europe 1"
+                  ],
+                  "en": [
+                    "Editorial website",
+                    "Site made in PHP/HTML5/CSS/MySQL/AJAX. This site was placed in an iframe on the Europe 1 site"
+                  ]
+                },
                 "imgs": [
                   "/screens/carnet-europe1.jpg"
                 ],
@@ -405,10 +546,16 @@
               {
                 "title": "Le Carnet",
                 "subtitle": " Public.fr",
-                "details": [
-                  "Site Publi-redactionel",
-                  "Site réalisé en PHP/HTML5/CSS/MySQL/AJAX. Ce site etait placé dans une iframe sur le site de Europe 1"
-                ],
+                "details": {
+                  "fr": [
+                    "Site Publi-redactionel",
+                    "Site réalisé en PHP/HTML5/CSS/MySQL/AJAX. Ce site etait placé dans une iframe sur le site de Public.fr"
+                  ],
+                  "en": [
+                    "Editorial website",
+                    "Site made in PHP/HTML5/CSS/MySQL/AJAX. This site was placed in an iframe on the Public.fr site"
+                  ]
+                },
                 "imgs": [
                   "/screens/carnet-public.jpg"
                 ],
@@ -420,12 +567,18 @@
               {
                 "title": "Le Carnet",
                 "subtitle": "Tv7 Jours",
-                "details": [
-                  "Site Publi-redactionel",
-                  "Site réalisé en PHP/HTML5/CSS/MySQL/AJAX. Ce site etait placé dans une iframe sur le site de Europe 1"
-                ],
+                "details": {
+                  "fr": [
+                    "Site Publi-redactionel",
+                    "Site réalisé en PHP/HTML5/CSS/MySQL/AJAX. Ce site etait placé dans une iframe sur le site de Tv7 Jours"
+                  ],
+                  "en": [
+                    "Editorial website",
+                    "Site made in PHP/HTML5/CSS/MySQL/AJAX. This site was placed in an iframe on the Tv7 Jours site"
+                  ]
+                },
                 "imgs": [
-                  "/screens/carnet-parismatch.jpg"
+                  "/screens/carnet-tv7.jpg"
                 ],
                 "flex": 0,
                 "height": "200px",
@@ -435,12 +588,18 @@
               {
                 "title": "Le Carnet",
                 "subtitle": "Parismatch",
-                "details": [
-                  "Site Publi-redactionel",
-                  "Site réalisé en PHP/HTML5/CSS/MySQL/AJAX. Ce site etait placé dans une iframe sur le site de Europe 1"
-                ],
+                "details":{
+                  "fr": [
+                    "Site Publi-redactionel",
+                    "Site réalisé en PHP/HTML5/CSS/MySQL/AJAX. Ce site etait placé dans une iframe sur le site de Parismatch"
+                  ],
+                  "en": [
+                    "Editorial website",
+                    "Site made in PHP/HTML5/CSS/MySQL/AJAX. This site was placed in an iframe on the Parismatch site"
+                  ]
+                },
                 "imgs": [
-                  "/screens/carnet-tv7.jpg"
+                  "/screens/carnet-parismatch.jpg"
                 ],
                 "flex": 0,
                 "height": "200px",
@@ -453,68 +612,134 @@
       }
     ]
   },
-  "BLOG": [
-    {
-      "id": 1,
-      "date": "07/01/2022",
-      "title": "A propos de ce site",
-      "description": "Cet article ne correspond pas vraiment à une decouverte ou un essai sur une technologie a proprement parler. \n\nJe me dis juste qu’il serait pas mal d’expliquer un peut comment ce site est réaliser, bien que toute les sources soit disponible sur mon Github si vous souhaiter voir de plus prés ma création.\nMais avant de commencer un peut de contexte, ce site est mon deuxieme site personnel (les sources du premier sont aussi disponible sur mon Github).\n\n J’ai décider qu’il était temps de le remplacer car avec mes 5ans en tant que développeur web, le premier commençait serieusement à devenir obselete et ne demontrait plus mon savoir faire.\nEn effet il était réalisé entierement en html et Javascript sans framework...\n\nBien qu’habituer au devlopement php sous Symfony dans un premier temps et plus recement Laravel pour mon travail. Je souhaitais m’évité les frais d’un serveur VPS et donc generer mon site en static.\n\nJ’ai cependant aussi utilisé dans mon travail un framework JS parfait pour mon cas de figure Nuxt JS et c’est avec ce framework que j’ai créer le site sur lequel vous vous trouvez actuelment.\n\nNuxt JS est un framework français (cocorico) basé sur la technologie Vue JS, permettant la création de site moderne. Il permet un rendu coté serveur comme un deploiement static des sites. \nEn plus ce framework possedent plusieur atout très agreable pour un developpeur :\n\n-\tPremierement il utilise le système de store VueX qui couplé a VueJS permet de stocker les données utiles au site et les réutiliser au besoin dans les pages un peut à la manière d’une base de données. Ce qui m’a permis de rassembler toute mes données dans un fichier JSON que vous trouverer dans assets/data.json dans les sources du site\n\n-\tDeuxiement il permet un cache poussé et une utilisation horsligne de l’application ainsi que la possibilité d’enregistré le site en tant que PWA dans votre appareil\n\n-\tEnfin VueJs étant un framework très populaire, il existe beaucoup de plugin pour encore augmenter les capaciter du site, j’ai par exemple utilisé Vuetify en tant que librairy graphique, Pathify pour simplifier l’utilisation du store ou encore NuxtJs/Color-mode pour prendre en compte vos preferences système est afficher le mode Claire ou sombre en conséquence.",
-      "component": null,
-      "externalLinks": []
+  "BLOG": {
+    "fr": [
+      {
+        "id": 1,
+        "date": "07/01/2022",
+        "title": "A propos de ce site",
+        "description": "Cet article ne correspond pas vraiment à une decouverte ou un essai sur une technologie a proprement parler. \n\nJe me dis juste qu’il serait pas mal d’expliquer un peut comment ce site est réaliser, bien que toute les sources soit disponible sur mon Github si vous souhaiter voir de plus prés ma création.\nMais avant de commencer un peut de contexte, ce site est mon deuxieme site personnel (les sources du premier sont aussi disponible sur mon Github).\n\n J’ai décider qu’il était temps de le remplacer car avec mes 5ans en tant que développeur web, le premier commençait serieusement à devenir obselete et ne demontrait plus mon savoir faire.\nEn effet il était réalisé entierement en html et Javascript sans framework...\n\nBien qu’habituer au devlopement php sous Symfony dans un premier temps et plus recement Laravel pour mon travail. Je souhaitais m’évité les frais d’un serveur VPS et donc generer mon site en static.\n\nJ’ai cependant aussi utilisé dans mon travail un framework JS parfait pour mon cas de figure Nuxt JS et c’est avec ce framework que j’ai créer le site sur lequel vous vous trouvez actuelment.\n\nNuxt JS est un framework français (cocorico) basé sur la technologie Vue JS, permettant la création de site moderne. Il permet un rendu coté serveur comme un deploiement static des sites. \nEn plus ce framework possedent plusieur atout très agreable pour un developpeur :\n\n-\tPremierement il utilise le système de store VueX qui couplé a VueJS permet de stocker les données utiles au site et les réutiliser au besoin dans les pages un peut à la manière d’une base de données. Ce qui m’a permis de rassembler toute mes données dans un fichier JSON que vous trouverer dans assets/data.json dans les sources du site\n\n-\tDeuxiement il permet un cache poussé et une utilisation horsligne de l’application ainsi que la possibilité d’enregistré le site en tant que PWA dans votre appareil\n\n-\tEnfin VueJs étant un framework très populaire, il existe beaucoup de plugin pour encore augmenter les capaciter du site, j’ai par exemple utilisé Vuetify en tant que librairy graphique, Pathify pour simplifier l’utilisation du store ou encore NuxtJs/Color-mode pour prendre en compte vos preferences système est afficher le mode Claire ou sombre en conséquence.",
+        "component": null,
+        "externalLinks": []
 
-    },
-    {
-      "id": 2,
-      "date": "07/01/2022",
-      "title": "Decouverte API \"TheSpaceDevs\"",
-      "description": "En me baladant sur internet j’ai decouvert l’existence d’une API créer par des passioner de l’espace.\nCette API permet notament de récuperer les informations des prochains décollages de fusée ainsi que les détails concernant le type de lanceur, la base de lancement et l’entreprise gerant la mission.\nJ’ai donc décidé de me créer un calendrier basé sur ces données.\n",
-      "component": "projects-space-calendar",
-      "externalLinks": [
-        {
-          "href": "https://thespacedevs.com/",
-          "icon": "mdi-link",
-          "name":  "thespacedevs.com"
-        }
-      ]
+      },
+      {
+        "id": 2,
+        "date": "07/01/2022",
+        "title": "Decouverte API \"TheSpaceDevs\"",
+        "description": "En me baladant sur internet j’ai decouvert l’existence d’une API créer par des passioner de l’espace.\nCette API permet notament de récuperer les informations des prochains décollages de fusée ainsi que les détails concernant le type de lanceur, la base de lancement et l’entreprise gerant la mission.\nJ’ai donc décidé de me créer un calendrier basé sur ces données.\n",
+        "component": "projects-space-calendar",
+        "externalLinks": [
+          {
+            "href": "https://thespacedevs.com/",
+            "icon": "mdi-link",
+            "name":  "thespacedevs.com"
+          }
+        ]
 
-    },
-    {
-      "id": 3,
-      "date": "19/01/2022",
-      "title": "Essais sur la Conjecture de Collatz",
-      "description": "Étant passioné de science et de technologie, je suis abonné a plusieur chaine de vulgarisation scientifique sur youtube (fr/ en). \n\nL’une de ces chaine « Veritassium » à publier une video sur un probleme mathematique très simple à comprendre mais impossible à résoudre.\n\nÉtant intrigué par ce probleme j’ai voulus me pencher sur une visualisation de ce probleme.\n",
-      "component": "projects-collatz-conjecture",
-      "externalLinks": [
-        {
-          "href": "https://www.youtube.com/watch?v=094y1Z2wpJg",
-          "icon": "mdi-youtube",
-          "name":  "The Simplest Math Problem No One Can Solve - Collatz Conjecture"
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "date": "07/01/2022",
-      "title": "Découverte de PixiJS",
-      "description": "Une chaine youtube gerer par un confrere developpeur « Sebastian Lague » auquel je suis abonné depuis quelques temps. A sortie une vidéo sur la façon dont on peut generer des réaction complex à partir de regle simple. Notament en immitant le fonctionnement d’organisme vivant simple comme les fourmis ou les bacterie. \n\nDans le but d’essayer de reproduire ce principe je me suis mis en recherche d’un moteur graphique JS me permettant de refaire ce genre de création. Il me fallait un moteur JS pour qu’il puisse tournée depuis ce site mais suffisament leger et rapide pour gerer beaucoup d’entité sumiltanement.\n\nMon choix c’est donc tourner sur le moteur PixiJs qui est l’un des plus leger disponible.\n\nCette page est donc un essai pour integrer ce moteur dans une page NuxtJs",
-      "component": "projects-decouverte-pixi",
-      "externalLinks": [
-        {
-          "href": "https://pixijs.com/",
-          "icon": "mdi-link",
-          "name":  "PixiJS"
-        },
-        {
-          "href": "https://www.youtube.com/c/SebastianLague",
-          "icon": "mdi-youtube",
-          "name": "Sebastian Lague"
-        },
-        {
-          "href": "https://www.youtube.com/watch?v=kzwT3wQWAHE",
-          "icon": "mdi-youtube",
-          "name": "Complex Behaviour from Simple Rules: 3 Simulations"
-        }
-      ]
-    }
-  ]
+      },
+      {
+        "id": 3,
+        "date": "19/01/2022",
+        "title": "Essais sur la Conjecture de Collatz",
+        "description": "Étant passioné de science et de technologie, je suis abonné a plusieur chaine de vulgarisation scientifique sur youtube (fr/ en). \n\nL’une de ces chaine « Veritassium » à publier une video sur un probleme mathematique très simple à comprendre mais impossible à résoudre.\n\nÉtant intrigué par ce probleme j’ai voulus me pencher sur une visualisation de ce probleme.\n",
+        "component": "projects-collatz-conjecture",
+        "externalLinks": [
+          {
+            "href": "https://www.youtube.com/watch?v=094y1Z2wpJg",
+            "icon": "mdi-youtube",
+            "name":  "The Simplest Math Problem No One Can Solve - Collatz Conjecture"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "date": "07/01/2022",
+        "title": "Découverte de PixiJS",
+        "description": "Une chaine youtube gerer par un confrere developpeur « Sebastian Lague » auquel je suis abonné depuis quelques temps. A sortie une vidéo sur la façon dont on peut generer des réaction complex à partir de regle simple. Notament en immitant le fonctionnement d’organisme vivant simple comme les fourmis ou les bacterie. \n\nDans le but d’essayer de reproduire ce principe je me suis mis en recherche d’un moteur graphique JS me permettant de refaire ce genre de création. Il me fallait un moteur JS pour qu’il puisse tournée depuis ce site mais suffisament leger et rapide pour gerer beaucoup d’entité sumiltanement.\n\nMon choix c’est donc tourner sur le moteur PixiJs qui est l’un des plus leger disponible.\n\nCette page est donc un essai pour integrer ce moteur dans une page NuxtJs",
+        "component": "projects-decouverte-pixi",
+        "externalLinks": [
+          {
+            "href": "https://pixijs.com/",
+            "icon": "mdi-link",
+            "name":  "PixiJS"
+          },
+          {
+            "href": "https://www.youtube.com/c/SebastianLague",
+            "icon": "mdi-youtube",
+            "name": "Sebastian Lague"
+          },
+          {
+            "href": "https://www.youtube.com/watch?v=kzwT3wQWAHE",
+            "icon": "mdi-youtube",
+            "name": "Complex Behaviour from Simple Rules: 3 Simulations"
+          }
+        ]
+      }
+    ],
+    "en": [
+      {
+        "id": 1,
+        "date": "07/01/2022",
+        "title": "About this site",
+        "description": "This article does not really correspond to a discovery or a test on a technology strictly speaking.\n\nI just think it would be nice to explain a bit how this site is made, although all the sources are available on my Github if you want to see my creation more closely.\nBut before starting a bit of background, this site is my second personal site (the sources of the first are also available on my Github).\n\n I decided it was time to replace it because with my 5 years as a web developer, the first one was seriously starting to become obsolete and no longer demonstrated my expertise.\nIndeed it was made entirely in html and Javascript without framework...\n\nAlthough used to php development under Symfony at first and more recently Laravel for my work. I wanted to avoid the costs of a VPS server and therefore generate my site in static.\n\nHowever, I also used in my work a perfect JS framework for my case Nuxt JS and it is with this framework that I created the site on which you are currently.\n\nNuxt JS is a French framework (cocorico) based on Vue JS technology, allowing the creation of modern sites. It allows server-side rendering as a static deployment of sites.\nIn addition, this framework has several very pleasant assets for a developer:\n\n- Firstly, it uses the VueX store system which, coupled with VueJS, makes it possible to store the data useful to the site and reuse it if necessary in the pages one can in the manner of a database. Which allowed me to gather all my data in a JSON file that you will find in assets/data.json in the sources of the site\n\n- Secondly it allows a pushed cache and offline use of the application as well as the possibility of saving the site as a PWA in your device\n\n- Finally VueJs being a very popular framework, there are many plugins to further increase the capacity of the site, for example I used Vuetify as a graphic library, Pathify to simplify the use of the store or NuxtJs/Color-mode to take into account your system preferences is display light or dark mode accordingly.",
+        "component": null,
+        "externalLinks": []
+
+      },
+      {
+        "id": 2,
+        "date": "07/01/2022",
+        "title": "Discovery API \"TheSpaceDevs\"",
+        "description": "While browsing the internet I discovered the existence of an API created by space enthusiasts.\nThis API notably makes it possible to retrieve information on the next rocket take-offs as well as details concerning the type of launcher, the launch base and the company managing the mission.\nSo I decided to create a calendar based on this data.",
+        "component": "projects-space-calendar",
+        "externalLinks": [
+          {
+            "href": "https://thespacedevs.com/",
+            "icon": "mdi-link",
+            "name":  "thespacedevs.com"
+          }
+        ]
+
+      },
+      {
+        "id": 3,
+        "date": "19/01/2022",
+        "title": "Essays on the Collatz Conjecture",
+        "description": "Being passionate about science and technology, I subscribe to several science popularization channels on youtube (fr/en).\n\nOne of these channel \"Veritassium\" to publish a video on a mathematical problem very simple to understand but impossible to solve.\n\nBeing intrigued by this problem, I wanted to look into a visualization of this problem.",
+        "component": "projects-collatz-conjecture",
+        "externalLinks": [
+          {
+            "href": "https://www.youtube.com/watch?v=094y1Z2wpJg",
+            "icon": "mdi-youtube",
+            "name":  "The Simplest Math Problem No One Can Solve - Collatz Conjecture"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "date": "07/01/2022",
+        "title": "Discovery of PixiJS",
+        "description": "A youtube channel managed by a fellow developer \"Sebastian Lague\" to which I have subscribed for some time. Released a video on how you can generate complex reactions from simple rules. Notably by imitating the functioning of simple living organisms such as ants or bacteria.\n\nIn order to try to reproduce this principle I started looking for a JS graphics engine allowing me to redo this kind of creation. I needed a JS engine so that it could run from this site but light and fast enough to manage a lot of entities simultaneously.\n\nMy choice is therefore to run on the PixiJs engine which is one of the lightest available.\n\nThis page is therefore an attempt to integrate this engine into a NuxtJs page",
+        "component": "projects-decouverte-pixi",
+        "externalLinks": [
+          {
+            "href": "https://pixijs.com/",
+            "icon": "mdi-link",
+            "name":  "PixiJS"
+          },
+          {
+            "href": "https://www.youtube.com/c/SebastianLague",
+            "icon": "mdi-youtube",
+            "name": "Sebastian Lague"
+          },
+          {
+            "href": "https://www.youtube.com/watch?v=kzwT3wQWAHE",
+            "icon": "mdi-youtube",
+            "name": "Complex Behaviour from Simple Rules: 3 Simulations"
+          }
+        ]
+      }
+    ]
+  }
 }
