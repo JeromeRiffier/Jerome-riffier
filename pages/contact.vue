@@ -12,7 +12,7 @@
                   v-model="firstname"
                   :rules="nameRules"
                   :counter="10"
-                  label="Nom"
+                  :label="$t('Nom')"
                   required
                 >
                 </v-text-field>
@@ -26,7 +26,7 @@
                   v-model="lastname"
                   :rules="nameRules"
                   :counter="10"
-                  label="Entreprise"
+                  :label="$t('Entreprise')"
                   required
                 >
                 </v-text-field>

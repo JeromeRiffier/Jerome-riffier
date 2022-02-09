@@ -13,13 +13,13 @@
         <cv-contact :contacts="CV.contacts" />
         <v-row class="pa-5">
             <v-col md="6" col="12">
-                <h1 class="category info--text">EXPÉRIENCE PROFESSIONNELLE</h1>
+                <h1 class="category info--text">{{ $t('EXPÉRIENCE PROFESSIONNELLE') }}</h1>
                 <cv-experience
                     v-for='experience in CV.experiences'
                     :key='experience.titre'
                     :experience='experience'
                 />
-                <h1 class="category info--text">FORMATION</h1>
+                <h1 class="category info--text">{{ $t('FORMATION') }}</h1>
                 <cv-formation
                     v-for='formation in CV.formations'
                     :key='formation.titre'
@@ -27,15 +27,15 @@
                 />
             </v-col>
             <v-col md="6" col="12">
-                <h1 class="category info--text">COMPÉTENCE</h1>
+                <h1 class="category info--text">{{ $t('COMPÉTENCES') }}</h1>
                     <cv-competence  :competences=CV.competences />
-                <h1 class="category info--text">POINT FORTS</h1>
+                <h1 class="category info--text">{{ $t('POINT FORTS') }}</h1>
                     <p v-for="point_fort in CV.point_forts" :key="point_fort" class="subtitle-1 mb-1">{{ point_fort }}</p>
-                <h1 class="category info--text">PROJETS PERSONNELS</h1>
+                <h1 class="category info--text">{{ $t('PROJETS PERSONNELS') }}</h1>
                     <cv-projet v-for="projet in CV.projets" :key="projet.titre" :projet=projet />
-                <h1 class="category info--text">LANGUES</h1>
+                <h1 class="category info--text">{{ $t('LANGUES') }}</h1>
                     <cv-langue width="100%"/>
-                <h1 class="category info--text">INTÉRÊTS</h1>
+                <h1 class="category info--text">{{ $t('INTÉRÊTS') }}</h1>
                     <cv-interet :interets=CV.interets />
             </v-col>
         </v-row>
