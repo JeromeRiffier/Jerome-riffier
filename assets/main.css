@@ -31,8 +31,8 @@ html { overflow-y: auto!important }
   z-index: 8;
 }
 .theme--dark.v-sheet, .theme--dark.v-card {
-  /*background-color: #0e122d!important;*/
-  /*border-color: #0e122d!important;*/
+  background-color: #363636!important;
+  border-color: #363636!important;
   /*color: #FFFFFF!important;*/
 }
 .theme--light.v-sheet, .theme--light.v-card {
@@ -94,6 +94,11 @@ v-image:hover .v-image__image {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100%;
+}
+
+.first-color-accent::first-letter{
+  color: var(--v-accent-base);
+  font-size: 110%;
 }
 
 @keyframes gradient {

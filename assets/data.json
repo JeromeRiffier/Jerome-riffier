@@ -40,10 +40,13 @@
   },
   "HOME": {
     "card": {
-      "avatar": "/portrait.png",
-      "name": "Jérôme Riffier",
+      "avatar": "/moi.jpg",
+      "name": {
+        "fr": "<strong>Jérôme Riffier</strong>, 5 ans d'experience dans le dévelopement web (et beaucoup de café)",
+        "en": "<strong>Jérôme Riffier</strong>, 5 ans d'experience dans le dévelopement web et beaucoup de café"
+      },
       "job": {
-        "fr": "Développeur  Full Stack",
+        "fr": "Actuellement Developeur web à Tenor EDI Service, Ouvert aux propositions",
         "en": "Full Stack Developer"
       },
       "interests": [
@@ -80,9 +83,30 @@
       },
       "address": "69420 Longes",
       "socials": {
-        "email": "contact@jerome-riffier.fr",
-        "github": "https://github.com/JeromeRiffier",
-        "linkedin": "https://www.linkedin.com/in/j%C3%A9r%C3%B4me-riffier-289752174/"
+        "Contact": {
+          "href": null,
+          "to": "/contact",
+          "isLink": true,
+          "target": null,
+          "hover": "Merci d'avance \uD83D\uDE09",
+          "icon": "email"
+        },
+        "Github": {
+          "href": "https://github.com/JeromeRiffier?tab=repositories",
+          "to": null,
+          "isLink": true,
+          "target":  "_blank",
+          "hover": "Les sources de mes projets personnels uniquement",
+          "icon": "github"
+        },
+        "Linkedin": {
+          "href": "https://www.linkedin.com/in/j%C3%A9r%C3%B4me-riffier-289752174/",
+          "to": null,
+          "isLink": true,
+          "target":  "_blank",
+          "hover": null,
+          "icon": "linkedin"
+        }
       },
       "aboutMe": {
         "fr": "Salut et bienvenue sur mon site !\nJe suis developpeur full-stack depuis 2017.\nSpecialisé en framework PHP et Javascript, je vous laisse explorer ce site pour en apprendre plus sur moi.\nEt qui sait, peut être me contacter pour qu'on commence a travailler ensemble \uD83E\uDD37\u200D♂️",
@@ -187,7 +211,7 @@
       "fr": {
         "nom": "Jérôme Riffier",
         "qualificatif": "Développeur / Concepteur",
-        "accroche": "Passionné d'innovation et d'intelligence artificielle"
+        "accroche": "5 Ans d'expérience en developement web, Back End et Front End."
       },
       "en": {
         "nom": "Jérôme Riffier",
@@ -197,20 +221,20 @@
     },
     "contacts": [
       {
-        "icon": "mdi-card-account-details",
-        "text": "Jerome.riffier@hotmail.fr"
+        "icon": "mdi-email",
+        "text": "contact@jerome-riffier.fr"
       },
       {
-        "icon": "mdi-cellphone",
+        "icon": "mdi-phone",
         "text": "06 66 89 94 37"
       },
       {
-        "icon": "mdi-at",
-        "text": "jerome-riffier.fr"
+        "icon": "mdi-home",
+        "text": "69420 Longes"
       },
       {
-        "icon": "mdi-map-legend",
-        "text": "69420 Longes"
+        "icon": "mdi-linkedin",
+        "text": "Jérôme Riffier"
       }
     ],
     "competences": [
@@ -747,5 +771,33 @@
         ]
       }
     ]
+  },
+  "CONTACT": {
+    "cards": {
+      "Email": {
+        "icon": "mdi-email",
+        "link": "mailTo:contact@jerome-riffier.fr",
+        "text": "contact@jerome-riffier.fr",
+        "copy": true
+      },
+      "Téléphone": {
+        "icon": "mdi-phone",
+        "link": "tel:+33666899437",
+        "text": "06 66 89 94 37",
+        "copy":  true
+      },
+      "Adresse": {
+        "icon": "mdi-home",
+        "link":  null,
+        "text":  "69420 Longes, Rhone Alpes",
+        "copy":  false
+      },
+      "LinkedIn": {
+        "icon": "mdi-linkedin",
+        "link": "https://www.linkedin.com/in/j%C3%A9r%C3%B4me-riffier-289752174/",
+        "text":  "Jérôme Riffier",
+        "copy":  false
+      }
+    }
   }
 }
