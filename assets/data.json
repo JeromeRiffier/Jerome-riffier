@@ -230,7 +230,7 @@
       },
       {
         "icon": "mdi-home",
-        "text": "69420 Longes"
+        "text": "Longes 69420"
       },
       {
         "icon": "mdi-linkedin",
@@ -253,20 +253,12 @@
           "titre": "Analyste Développeur",
           "entreprise": "Tenor",
           "periode": "02/2020 – Aujourd'hui",
-          "lieu": "Oullin",
+          "lieu": "Oullin 69600",
           "description": "Concepteur de site client pour grand compte",
           "postes": [
             {
               "id": 0,
-              "text": "Conception de site metier"
-            },
-            {
-              "id": 1,
-              "text": "Création de site metier"
-            },
-            {
-              "id": 2,
-              "text": "Maintenance de site metier"
+              "text": "Concevoir, créer et maintenir des site metier"
             }
           ],
           "technologies": "Symfony/Laravel/Nuxt/VueJS"
@@ -275,7 +267,7 @@
           "titre": "Développeur web / Responsable Informatique",
           "entreprise": "Mediamarket",
           "periode": "02/2018 – 02/2020",
-          "lieu": "Villeurbanne",
+          "lieu": "Villeurbanne 69100",
           "description": "Régie publicitaire '<b>Print</b>' et '<b>Internet</b>'",
           "postes": [
             {
@@ -293,7 +285,7 @@
           "titre": "Développeur Windev",
           "entreprise": "The Web House",
           "periode": "01/2017 – 02/2017",
-          "lieu": "Apt",
+          "lieu": "Apt 84400",
           "description": "Gestion informatique pour prestataire",
           "postes": [
             {
@@ -311,7 +303,7 @@
           "titre": "Développeur C++",
           "entreprise": "Atechsys",
           "periode": "06/2015 – 10/2015",
-          "lieu": "Pourrières",
+          "lieu": "Pourrières 83910",
           "description": "Startup de recherche et développement de Drone a usage commercial ou militaire. Notamment connus pour prototyper la livraison par drone pour le groupe La Poste",
           "postes": [
             {
@@ -408,12 +400,12 @@
     "formations": [
       {
         "titre": "EPSI",
-        "periode": "10/2016 – 05/2017",
+        "periode": "2016 – 2017",
         "lieu": "Lyon"
       },
       {
         "titre": "SUPINFO",
-        "periode": "10/2014 – 06/2016",
+        "periode": "2014 – 2016",
         "lieu": "Lyon"
       },
       {

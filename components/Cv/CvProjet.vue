@@ -1,9 +1,9 @@
 <template>
-    <div class="projet pb-1" 
-            data-tooltip="Ouvrir 'Projet personnels' pour une démo" 
-            data-inverted="" 
+    <div class="projet pb-1 ml-5"
+            data-tooltip="Ouvrir 'Projet personnels' pour une démo"
+            data-inverted=""
             data-position="left center">
-        <h3 class="info--text">{{ projet.titre }}</h3>
+        <h3 class="cv--text">{{ projet.titre }}</h3>
         <p>{{ projet.description }}</p>
     </div>
 </template>
@@ -19,12 +19,9 @@
 <style scoped>
 h3 {
     margin-bottom: 0.5rem;
-    font-size: 1rem;
     margin: 0px;
 }
 p {
-    color: #6f6e6e;
-    font-size: .7rem;
     margin-bottom: 0px;
 }
 .projet {

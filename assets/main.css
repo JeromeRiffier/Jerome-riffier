@@ -14,7 +14,7 @@
 /*::-webkit-scrollbar-thumb:hover {*/
 /*  background: #5d6393;*/
 /*}*/
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 .page-enter-active {
     animation: .3s ease-out 0s 1 apparition;
 }
