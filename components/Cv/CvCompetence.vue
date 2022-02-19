@@ -1,6 +1,6 @@
 <template>
     <div class="btn-container">
-        <v-btn small class="info" v-for="competence in competences" :key="competence">{{ competence }}</v-btn>
+        <v-btn v-for="competence in competences" :key="competence" small class="background">{{ competence }}</v-btn>
     </div>
 </template>
 
