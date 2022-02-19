@@ -9,9 +9,9 @@ export default {
   'Nom': 'Nom',
   'Emploi actuel': 'Emploi actuel',
   'Centres d\'intérêts': 'Centres d\'intérêts',
-  'Technologies d\'intérêts': 'Technologies d\'intérêts',
   'Reseaux sociaux': 'Reseaux sociaux',
   'Qui je suis': 'Qui je suis',
+  'Mes compétences principales': 'Mes compétences principales',
 
   'Entreprise': 'Entreprise',
 

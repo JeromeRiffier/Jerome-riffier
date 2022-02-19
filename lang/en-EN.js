@@ -12,6 +12,7 @@ export default {
   'Technologies d\'intérêts': 'Technologies of interest',
   'Reseaux sociaux': 'Social networks',
   'Qui je suis': 'Who I am',
+  'Mes compétences principales': 'My main skills',
 
   'Entreprise': 'Company',
 
