@@ -89,3 +89,8 @@ Et si on veux les encapsuler ensemble il suffit de les regrouper sous cette form
     }
   ]
 },
+
+### 'Blog'
+Le articles du blog sont stoquer et recupérer a partir de fichier .md dans content/articles/ grace a @Nuxt/content
+Ces fichiers .md sont eux générer grace a Forestry, un services de CMS headless  https://app.forestry.io
+Integrer a ce site grace a ce tuto https://nuxt-content-and-forestry.netlify.app
