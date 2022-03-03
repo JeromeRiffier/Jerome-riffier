@@ -5,8 +5,6 @@ description: En me baladant sur internet j’ai découvert l’existence d’une
   par des passionner de l’espace. Je vous propose d'y jeter un coup d'œil.
 
 ---
-### L'API
-
 Cette **API** permet entre autre chose de récupérer les informations des prochains décollages de fusée ainsi que les détails concernant le type de lanceur, la base de lancement et l’entreprise gérant la mission.
 
 Je me suis dis qu'il pourrait être amusant de créer un petit Calendrier des prochaines missions spatial.
