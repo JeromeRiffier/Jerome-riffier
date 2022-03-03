@@ -1,30 +1,53 @@
-import { make } from 'vuex-pathify'
-import { BLOG } from '~/assets/data.json'
-const state = {
-  BLOG : [],
+import {make, Payload} from 'vuex-pathify'
+const state = () => {
+  return {
+    articles: []
+  }
 }
 
 
 const actions = {
-  // automatically create only `setItems()` action
-  init({ commit }) {
-    commit('SET_BLOG', BLOG)
+  ...make.actions(state),
+  init({ commit, dispatch }) {
+    dispatch('initArticles')
   },
+  initArticles({ dispatch }) {
+    dispatch('api/blog/index', null, { root: true }).then((data) => {
+      dispatch('setArticles', data)
+    })
+  },
+  getArticle({dispatch, slug}) {
+    dispatch('api/blog/show', slug, { root: true })
+  }
 }
 
 const getters = {
   // make all getters (optional)
   ...make.getters(state),
-  article: (rootState) => (id, locale) => rootState.BLOG[locale].find((article) => parseInt(article.id) === parseInt(id)),
+  article: (state) => (slug,locale) => {
+    state.articles[locale].find((article) => article.slug === slug)
+  },
 }
 
 const mutations = {
-  ...make.mutations(state)
+  ...make.mutations(state),
+  SET_ARTICLES: (state, payload) => {
+    // if we have a Payload, do something with it
+    if (payload instanceof Payload) {
+      // either, update using payload...
+      state.articles = payload.update(state.sort)
+      // ...or, update using dot-notation `path`
+      this.set(state.articles, payload.path, payload.value)
+    }
+    // otherwise, handle normally
+    else {
+      state.articles = payload
+    }
+  }
 }
 
 
 export default {
-  // namespaced: true, // add this if in module
   state,
   mutations,
   actions,

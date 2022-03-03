@@ -3,7 +3,7 @@ import colors from 'vuetify/es5/util/colors'
 
 export default {
 
-  //Dev tools
+  // Dev tools
   vue: {
     config: {
       productionTip: false,
@@ -68,29 +68,9 @@ export default {
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
     '@nuxtjs/i18n',
+    '@nuxt/content',
     '@nuxtjs/color-mode'
   ],
-
-  // i18n localisation config
-  i18n: {
-    locales: [
-      {
-        code: 'fr',
-        file: 'fr-FR.js'
-      },
-      {
-        code: 'en',
-        file: 'en-EN.js'
-      }
-    ],
-    defaultLocale: 'fr',
-    vueI18n: {
-      fallbackLocale: 'fr'
-    },
-    strategy: 'no_prefix',
-    lazy: true,
-    langDir: 'lang/'
-  },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
@@ -115,6 +95,32 @@ export default {
     meta: {
       theme_color: '#daeeff'
     }
+  },
+
+  // i18n localisation config
+  i18n: {
+    locales: [
+      {
+        code: 'fr',
+        file: 'fr-FR.js'
+      },
+      {
+        code: 'en',
+        file: 'en-EN.js'
+      }
+    ],
+    defaultLocale: 'fr',
+    vueI18n: {
+      fallbackLocale: 'fr'
+    },
+    strategy: 'no_prefix',
+    lazy: true,
+    langDir: 'lang/'
+  },
+
+  // Nuxt Content module configuration
+  content: {
+    // Options
   },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify

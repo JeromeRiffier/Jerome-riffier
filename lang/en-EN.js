@@ -21,5 +21,7 @@ export default {
   'POINT FORTS': 'STRENGTHS',
   'PROJETS PERSONNELS': 'PERSONAL PROJECTS',
   'LANGUES': 'LANGUAGES',
-  'INTÉRÊTS': 'INTERESTS'
+  'INTÉRÊTS': 'INTERESTS',
+  'Lire': 'Read',
+  'Retour': 'Back'
 }
