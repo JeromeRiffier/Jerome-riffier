@@ -139,21 +139,18 @@ export default {
           // error: '#fb3939',
           // success: '#A7EFA9',
           // anchor: '#FB8239'
-          background: '#A7C1EF'
+          background: '#A7C1EF',
+          cv: '#FB8239'
         },
          dark: {
-          // primary: '#2b313d',
            accent:  '#A7EFA9',
-          // secondary: colors.teal.accent3,
-          // info: colors.indigo.darken1,
-          // warning: colors.amber.base,
-          // error: colors.deepOrange.accent4,
-          // success: colors.green.accent3,
-          // anchor: colors.blue
-           background: '#6984B3'
+           background: '#6984B3',
+           cv: '#ff9e63'
         }
       },
-      options: { customProperties: true },
+      options: {
+        customProperties: true,
+      },
     },
     breakpoint: {
       mobileBreakpoint: 'sm' // This is equivalent to a value of 960

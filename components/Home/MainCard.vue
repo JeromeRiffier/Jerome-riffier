@@ -23,24 +23,24 @@
       <v-col lg="5" cols="12">
         <v-card-subtitle>
           <v-icon color="accent" class="progress">mdi-account</v-icon>
-          Présentation
+          {{ $t('Présentation') }}
         </v-card-subtitle>
         <v-card-text style="white-space: break-spaces; font-size: 1.15rem;" v-html="card.name[$i18n.locale]"></v-card-text>
         <v-card-subtitle  class="">
           <v-icon color="accent" style="margin-right: 5px">mdi-card-account-mail</v-icon>
-          Emploi actuel
+          {{ $t('Emploi actuel') }}
         </v-card-subtitle>
         <v-card-text  style="white-space: break-spaces; font-size: 1.15rem;">{{ card.job[$i18n.locale] }}</v-card-text>
         <v-card-subtitle  class="">
           <v-icon color="accent" style="margin-right: 5px">mdi-cellphone-link</v-icon>
-          Mes compétences principales
+          {{ $t('Mes compétences principales') }}
         </v-card-subtitle>
         <v-chip  v-for="img of card.technologies" :key="img.src"  class="ma-1">
           <v-img  :src="img.src" height="28" :max-width="img.width" contain></v-img>
         </v-chip>
         <v-card-subtitle  class="">
           <v-icon color="accent">mdi-bookshelf</v-icon>
-          Centre d'intérêt
+          {{ $t('Centres d\'intérêts') }}
         </v-card-subtitle>
         <v-chip v-for="interest of card.interests" :key="interest" class="ma-1">{{ interest }}</v-chip>
       </v-col>
@@ -48,7 +48,7 @@
       <v-col lg="5" cols="12">
         <v-card-subtitle  class="">
           <v-icon color="accent" style="margin-right: 5px">mdi-cellphone-message</v-icon>
-          Me contacter
+          {{ $t('Me contacter') }}
         </v-card-subtitle>
         <v-tooltip
           v-for="(contact, name) of card.socials"
@@ -74,7 +74,7 @@
         </v-tooltip >
         <v-card-subtitle class="">
           <v-icon color="accent" style="margin-right: 5px">mdi-account-question</v-icon>
-          Qui je suis
+          {{ $t('Qui je suis') }}
         </v-card-subtitle>
         <v-card-text style="white-space: break-spaces;font-size: 1.15rem">{{ card.aboutMe[$i18n.locale] }}</v-card-text>
       </v-col>
