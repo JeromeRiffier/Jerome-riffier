@@ -13,6 +13,10 @@ Le seul hic de cette **API** est que les réponse ne sont disponible uniquement 
 
 > Je pense qu'il serais possible d'y remédier dynamiquement en utilisant une API comme Google Traduction par exemple mais ce sera un sujet pour un autre temps.
 
+Cela dis pour une API créer et maintenue et mise a disposition gratuitement par des passionnés je ne pense pas qu'on puisse en tenir rigueur
+
+D'ailleurs, n'hésitez pas à aller y jeter un œil [thespacedevs.com](https://thespacedevs.com/ "thespacedevs.com")
+
 Voici donc le calendrier que j'ai pus créer :
 
 <projects-space-calendar></projects-space-calendar>
