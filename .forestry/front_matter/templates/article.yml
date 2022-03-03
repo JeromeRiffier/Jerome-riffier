@@ -36,3 +36,4 @@ fields:
     l'accueil du blog
 pages:
 - content/articles/a-propos-de-ce-site.md
+- content/articles/decouverte-de-l-api-thespacedevs.md
