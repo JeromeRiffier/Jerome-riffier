@@ -34,3 +34,5 @@ fields:
   label: Description
   description: Une courte description de l'article.<br>Ne sera visible que depuis
     l'accueil du blog
+pages:
+- content/articles/a-propos-de-ce-site.md
