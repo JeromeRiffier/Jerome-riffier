@@ -9,6 +9,8 @@ sections:
   label: Articles
   create: documents
   match: "**/*"
+  templates:
+  - article
 upload_dir: static
 public_path: ''
 front_matter_path: ''
