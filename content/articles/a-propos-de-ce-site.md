@@ -4,15 +4,13 @@ title: A propos de ce site
 description: Quelques détails sur la création de ce site
 
 ---
-# A propos de ce site
-
 Je me dis juste qu’il serait pas mal d’expliquer un peut comment ce site est réaliser, bien que toute les sources soit disponible sur mon GitHub si vous souhaiter voir de plus prés ma création.
 
-#### Un peux d'histoire
+### Un peux d'histoire
 
 Mais avant de commencer un peut de contexte, ce site est mon deuxième site personnel.
 
- J’ai décider qu’il était temps de le remplacer car avec mes 5ans en tant que développeur web, le premier commençait sérieusement à devenir obsolète et ne démontrait plus mon savoir faire.
+J’ai décider qu’il était temps de le remplacer car avec mes 5ans en tant que développeur web, le premier commençait sérieusement à devenir obsolète et ne démontrait plus mon savoir faire.
 
 En effet il était réalisé entièrement en html et Javascript sans Framework
 
@@ -20,9 +18,9 @@ Bien qu’habituer au développement PHP sous Symfony dans un premier temps et p
 
 J’ai cependant aussi utilisé dans mon travail un Framework JS parfait pour mon cas de figure Nuxt JS et c’est avec ce Framework que j’ai créer le site sur lequel vous vous trouvez actuellement.
 
-#### NuxtJs
+### NuxtJs
 
-Nuxt JS est un Framework français (cocorico) basé sur la technologie Vue JS, permettant la création de site moderne. Il permet un rendu coté serveur comme un déploiement statique des sites. 
+Nuxt JS est un Framework français (cocorico) basé sur la technologie Vue JS, permettant la création de site moderne. Il permet un rendu coté serveur comme un déploiement statique des sites.
 
 En plus ce Framework possèdent plusieurs atout très agréable pour un développeur :
 
