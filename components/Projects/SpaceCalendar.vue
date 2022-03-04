@@ -1,8 +1,7 @@
 <template>
-    <v-card class="mb-10">
+    <v-sheet class="mys-10">
       <v-sheet
             tile
-            class="pl-5 pr-5"
         >
             <v-row >
                 <v-col cols="12" md="6" align-self="center">
@@ -101,7 +100,7 @@
                     </v-col>
                 </v-row>
         </v-dialog>
-    </v-card>
+    </v-sheet>
 </template>
 
 <script>

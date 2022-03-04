@@ -43,7 +43,7 @@
       "avatar": "/moi.jpg",
       "name": {
         "fr": "<strong>Jérôme Riffier</strong>, 5 ans d'experience dans le dévelopement web (et beaucoup de café)",
-        "en": "<strong>Jérôme Riffier</strong>, 5 ans d'experience dans le dévelopement web et beaucoup de café"
+        "en": "<strong>Jérôme Riffier</strong>, 5 years of experience in web development (and countless coffes)"
       },
       "job": {
         "fr": "Actuellement Developeur web à Tenor EDI Service, Ouvert aux propositions",
@@ -643,7 +643,6 @@
         "description": "Cet article ne correspond pas vraiment à une decouverte ou un essai sur une technologie a proprement parler. \n\nJe me dis juste qu’il serait pas mal d’expliquer un peut comment ce site est réaliser, bien que toute les sources soit disponible sur mon Github si vous souhaiter voir de plus prés ma création.\nMais avant de commencer un peut de contexte, ce site est mon deuxieme site personnel (les sources du premier sont aussi disponible sur mon Github).\n\n J’ai décider qu’il était temps de le remplacer car avec mes 5ans en tant que développeur web, le premier commençait serieusement à devenir obselete et ne demontrait plus mon savoir faire.\nEn effet il était réalisé entierement en html et Javascript sans framework...\n\nBien qu’habituer au devlopement php sous Symfony dans un premier temps et plus recement Laravel pour mon travail. Je souhaitais m’évité les frais d’un serveur VPS et donc generer mon site en static.\n\nJ’ai cependant aussi utilisé dans mon travail un framework JS parfait pour mon cas de figure Nuxt JS et c’est avec ce framework que j’ai créer le site sur lequel vous vous trouvez actuelment.\n\nNuxt JS est un framework français (cocorico) basé sur la technologie Vue JS, permettant la création de site moderne. Il permet un rendu coté serveur comme un deploiement static des sites. \nEn plus ce framework possedent plusieur atout très agreable pour un developpeur :\n\n-\tPremierement il utilise le système de store VueX qui couplé a VueJS permet de stocker les données utiles au site et les réutiliser au besoin dans les pages un peut à la manière d’une base de données. Ce qui m’a permis de rassembler toute mes données dans un fichier JSON que vous trouverer dans assets/data.json dans les sources du site\n\n-\tDeuxiement il permet un cache poussé et une utilisation horsligne de l’application ainsi que la possibilité d’enregistré le site en tant que PWA dans votre appareil\n\n-\tEnfin VueJs étant un framework très populaire, il existe beaucoup de plugin pour encore augmenter les capaciter du site, j’ai par exemple utilisé Vuetify en tant que librairy graphique, Pathify pour simplifier l’utilisation du store ou encore NuxtJs/Color-mode pour prendre en compte vos preferences système est afficher le mode Claire ou sombre en conséquence.",
         "component": null,
         "externalLinks": []
-
       },
       {
         "id": 2,

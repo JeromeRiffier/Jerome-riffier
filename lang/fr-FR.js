@@ -4,7 +4,7 @@ export default {
   Blog: 'Blog',
   'Expérience professionelle': 'Expérience professionelle',
   'Me contacter': 'Me contacter',
-  'Présentation': 'Présentation',
+  'Presentation': 'Présentation',
   'Nom': 'Nom',
   'Emploi actuel': 'Emploi actuel',
   'Centres d\'intérêts': 'Centres d\'intérêts',

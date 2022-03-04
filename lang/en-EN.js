@@ -4,8 +4,7 @@ export default {
   Blog: 'Blog',
   'Expérience professionelle': 'Professional experience',
   'Me contacter': 'Contact me',
-
-  'Présentation': 'Presentation',
+  'Presentation': 'Presentation',
   'Nom': 'Last name',
   'Emploi actuel': 'Current job',
   'Centres d\'intérêts': 'Interests',
@@ -13,9 +12,7 @@ export default {
   'Reseaux sociaux': 'Social networks',
   'Qui je suis': 'Who I am',
   'Mes compétences principales': 'My main skills',
-
   'Entreprise': 'Company',
-
   'EXPÉRIENCE PROFESSIONNELLE': 'PROFESSIONAL EXPERIENCE',
   'FORMATION': 'TRAINING',
   'COMPÉTENCES': 'SKILLS',

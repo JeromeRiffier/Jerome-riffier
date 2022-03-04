@@ -9,7 +9,7 @@ const actions = {
   },
   show(context, slug) {
     return this.$content('articles')
-      .where({slug})
+      .where({ slug})
       .fetch()
       .then((articles) => { return articles[0]})
   },

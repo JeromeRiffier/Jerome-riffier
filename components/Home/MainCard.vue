@@ -23,7 +23,7 @@
       <v-col lg="5" cols="12">
         <v-card-subtitle>
           <v-icon color="accent" class="progress">mdi-account</v-icon>
-          {{ $t('Présentation') }}
+          {{ $t('Presentation') }}
         </v-card-subtitle>
         <v-card-text style="white-space: break-spaces; font-size: 1.15rem;" v-html="card.name[$i18n.locale]"></v-card-text>
         <v-card-subtitle  class="">

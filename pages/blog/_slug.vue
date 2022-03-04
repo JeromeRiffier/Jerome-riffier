@@ -14,8 +14,8 @@
     </v-card-actions>
 
     <v-card class="my-4 pa-4">
-      <v-card-title>{{ article.title }}</v-card-title>
-      <nuxt-content :document="article" />
+      <v-card-title><h1>{{ article.title }}</h1></v-card-title>
+      <nuxt-content class="pa-4" :document="article" />
     </v-card>
 
   </v-container>
