@@ -3,6 +3,7 @@
     <v-navigation-drawer
       v-model="drawer"
       :class="MENU.class"
+      class="elevation-4"
       :temporary="$vuetify.breakpoint.mobile"
       :permanent="!$vuetify.breakpoint.mobile"
       app
@@ -113,7 +114,7 @@
         </div>
       </template>
     </v-navigation-drawer>
-    <v-main>
+    <v-main class="background">
       <v-container>
         <v-btn
         v-if="$vuetify.breakpoint.mobile"
@@ -154,6 +155,7 @@ export default {
     this.$store.dispatch('pros/init')
     this.$store.dispatch('home/init')
     this.$store.dispatch('blog/init')
+    this.$store.dispatch('contact/init')
   },
   methods: {
       switchMode() {

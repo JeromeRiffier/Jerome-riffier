@@ -40,10 +40,13 @@
   },
   "HOME": {
     "card": {
-      "avatar": "/portrait.png",
-      "name": "Jérôme Riffier",
+      "avatar": "/moi.jpg",
+      "name": {
+        "fr": "<strong>Jérôme Riffier</strong>, 5 ans d'experience dans le dévelopement web (et beaucoup de café)",
+        "en": "<strong>Jérôme Riffier</strong>, 5 years of experience in web development (and countless coffes)"
+      },
       "job": {
-        "fr": "Développeur  Full Stack",
+        "fr": "Actuellement Developeur web à Tenor EDI Service, Ouvert aux propositions",
         "en": "Full Stack Developer"
       },
       "interests": [
@@ -80,9 +83,30 @@
       },
       "address": "69420 Longes",
       "socials": {
-        "email": "contact@jerome-riffier.fr",
-        "github": "https://github.com/JeromeRiffier",
-        "linkedin": "https://www.linkedin.com/in/j%C3%A9r%C3%B4me-riffier-289752174/"
+        "Contact": {
+          "href": null,
+          "to": "/contact",
+          "isLink": true,
+          "target": null,
+          "hover": "Merci d'avance \uD83D\uDE09",
+          "icon": "email"
+        },
+        "Github": {
+          "href": "https://github.com/JeromeRiffier?tab=repositories",
+          "to": null,
+          "isLink": true,
+          "target":  "_blank",
+          "hover": "Les sources de mes projets personnels uniquement",
+          "icon": "github"
+        },
+        "Linkedin": {
+          "href": "https://www.linkedin.com/in/j%C3%A9r%C3%B4me-riffier-289752174/",
+          "to": null,
+          "isLink": true,
+          "target":  "_blank",
+          "hover": null,
+          "icon": "linkedin"
+        }
       },
       "aboutMe": {
         "fr": "Salut et bienvenue sur mon site !\nJe suis developpeur full-stack depuis 2017.\nSpecialisé en framework PHP et Javascript, je vous laisse explorer ce site pour en apprendre plus sur moi.\nEt qui sait, peut être me contacter pour qu'on commence a travailler ensemble \uD83E\uDD37\u200D♂️",
@@ -187,7 +211,7 @@
       "fr": {
         "nom": "Jérôme Riffier",
         "qualificatif": "Développeur / Concepteur",
-        "accroche": "Passionné d'innovation et d'intelligence artificielle"
+        "accroche": "5 Ans d'expérience en developement web, Back End et Front End."
       },
       "en": {
         "nom": "Jérôme Riffier",
@@ -197,20 +221,20 @@
     },
     "contacts": [
       {
-        "icon": "mdi-card-account-details",
-        "text": "Jerome.riffier@hotmail.fr"
+        "icon": "mdi-email",
+        "text": "contact@jerome-riffier.fr"
       },
       {
-        "icon": "mdi-cellphone",
+        "icon": "mdi-phone",
         "text": "06 66 89 94 37"
       },
       {
-        "icon": "mdi-at",
-        "text": "jerome-riffier.fr"
+        "icon": "mdi-home",
+        "text": "Longes 69420"
       },
       {
-        "icon": "mdi-map-legend",
-        "text": "69420 Longes"
+        "icon": "mdi-linkedin",
+        "text": "Jérôme Riffier"
       }
     ],
     "competences": [
@@ -229,20 +253,12 @@
           "titre": "Analyste Développeur",
           "entreprise": "Tenor",
           "periode": "02/2020 – Aujourd'hui",
-          "lieu": "Oullin",
+          "lieu": "Oullin 69600",
           "description": "Concepteur de site client pour grand compte",
           "postes": [
             {
               "id": 0,
-              "text": "Conception de site metier"
-            },
-            {
-              "id": 1,
-              "text": "Création de site metier"
-            },
-            {
-              "id": 2,
-              "text": "Maintenance de site metier"
+              "text": "Concevoir, créer et maintenir des site metier"
             }
           ],
           "technologies": "Symfony/Laravel/Nuxt/VueJS"
@@ -251,7 +267,7 @@
           "titre": "Développeur web / Responsable Informatique",
           "entreprise": "Mediamarket",
           "periode": "02/2018 – 02/2020",
-          "lieu": "Villeurbanne",
+          "lieu": "Villeurbanne 69100",
           "description": "Régie publicitaire '<b>Print</b>' et '<b>Internet</b>'",
           "postes": [
             {
@@ -269,7 +285,7 @@
           "titre": "Développeur Windev",
           "entreprise": "The Web House",
           "periode": "01/2017 – 02/2017",
-          "lieu": "Apt",
+          "lieu": "Apt 84400",
           "description": "Gestion informatique pour prestataire",
           "postes": [
             {
@@ -287,7 +303,7 @@
           "titre": "Développeur C++",
           "entreprise": "Atechsys",
           "periode": "06/2015 – 10/2015",
-          "lieu": "Pourrières",
+          "lieu": "Pourrières 83910",
           "description": "Startup de recherche et développement de Drone a usage commercial ou militaire. Notamment connus pour prototyper la livraison par drone pour le groupe La Poste",
           "postes": [
             {
@@ -384,12 +400,12 @@
     "formations": [
       {
         "titre": "EPSI",
-        "periode": "10/2016 – 05/2017",
+        "periode": "2016 – 2017",
         "lieu": "Lyon"
       },
       {
         "titre": "SUPINFO",
-        "periode": "10/2014 – 06/2016",
+        "periode": "2014 – 2016",
         "lieu": "Lyon"
       },
       {
@@ -627,7 +643,6 @@
         "description": "Cet article ne correspond pas vraiment à une decouverte ou un essai sur une technologie a proprement parler. \n\nJe me dis juste qu’il serait pas mal d’expliquer un peut comment ce site est réaliser, bien que toute les sources soit disponible sur mon Github si vous souhaiter voir de plus prés ma création.\nMais avant de commencer un peut de contexte, ce site est mon deuxieme site personnel (les sources du premier sont aussi disponible sur mon Github).\n\n J’ai décider qu’il était temps de le remplacer car avec mes 5ans en tant que développeur web, le premier commençait serieusement à devenir obselete et ne demontrait plus mon savoir faire.\nEn effet il était réalisé entierement en html et Javascript sans framework...\n\nBien qu’habituer au devlopement php sous Symfony dans un premier temps et plus recement Laravel pour mon travail. Je souhaitais m’évité les frais d’un serveur VPS et donc generer mon site en static.\n\nJ’ai cependant aussi utilisé dans mon travail un framework JS parfait pour mon cas de figure Nuxt JS et c’est avec ce framework que j’ai créer le site sur lequel vous vous trouvez actuelment.\n\nNuxt JS est un framework français (cocorico) basé sur la technologie Vue JS, permettant la création de site moderne. Il permet un rendu coté serveur comme un deploiement static des sites. \nEn plus ce framework possedent plusieur atout très agreable pour un developpeur :\n\n-\tPremierement il utilise le système de store VueX qui couplé a VueJS permet de stocker les données utiles au site et les réutiliser au besoin dans les pages un peut à la manière d’une base de données. Ce qui m’a permis de rassembler toute mes données dans un fichier JSON que vous trouverer dans assets/data.json dans les sources du site\n\n-\tDeuxiement il permet un cache poussé et une utilisation horsligne de l’application ainsi que la possibilité d’enregistré le site en tant que PWA dans votre appareil\n\n-\tEnfin VueJs étant un framework très populaire, il existe beaucoup de plugin pour encore augmenter les capaciter du site, j’ai par exemple utilisé Vuetify en tant que librairy graphique, Pathify pour simplifier l’utilisation du store ou encore NuxtJs/Color-mode pour prendre en compte vos preferences système est afficher le mode Claire ou sombre en conséquence.",
         "component": null,
         "externalLinks": []
-
       },
       {
         "id": 2,
@@ -747,5 +762,33 @@
         ]
       }
     ]
+  },
+  "CONTACT": {
+    "cards": {
+      "Email": {
+        "icon": "mdi-email",
+        "link": "mailTo:contact@jerome-riffier.fr",
+        "text": "contact@jerome-riffier.fr",
+        "copy": true
+      },
+      "Téléphone": {
+        "icon": "mdi-phone",
+        "link": "tel:+33666899437",
+        "text": "06 66 89 94 37",
+        "copy":  true
+      },
+      "Adresse": {
+        "icon": "mdi-home",
+        "link":  null,
+        "text":  "69420 Longes, Rhone Alpes",
+        "copy":  false
+      },
+      "LinkedIn": {
+        "icon": "mdi-linkedin",
+        "link": "https://www.linkedin.com/in/j%C3%A9r%C3%B4me-riffier-289752174/",
+        "text":  "Jérôme Riffier",
+        "copy":  false
+      }
+    }
   }
 }

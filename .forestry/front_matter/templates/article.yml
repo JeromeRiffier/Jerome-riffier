@@ -1,0 +1,40 @@
+---
+label: Article
+hide_body: false
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Titre
+  description: Le titre de l'article
+- name: lang
+  type: select
+  default: fr
+  config:
+    required: true
+    options:
+    - fr
+    - en
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Langue
+  description: La langue de l'article
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description
+  description: Une courte description de l'article.<br>Ne sera visible que depuis
+    l'accueil du blog
+pages:
+- content/articles/a-propos-de-ce-site.md
+- content/articles/decouverte-de-l-api-thespacedevs.md
+- content/articles/divagation-sur-la-conjecture-de-collatz.md

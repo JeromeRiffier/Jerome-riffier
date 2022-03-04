@@ -1,9 +1,9 @@
 <template>
     <div class="formation ml-5">
-        <h2>{{ formation.titre }}</h2>
+        <h2 class="cv--text">{{ formation.titre }}</h2>
         <h3>{{ formation.lieu }}</h3>
         <div class="span-container">
-            <span class="date accent--text">{{ formation.periode }}</span>
+            <p class="float-right">{{ formation.periode }}</p>
         </div>
     </div>
 </template>
@@ -28,9 +28,7 @@
     margin-top: -55px;
 }
 span.date {
-    font-size: 0.8rem;
     float: right;
-    color: #4183c4;
 }
 .formation {
     border-bottom: solid 1px #80808061;

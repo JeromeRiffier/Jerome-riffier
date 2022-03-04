@@ -3,7 +3,7 @@ import colors from 'vuetify/es5/util/colors'
 
 export default {
 
-  //Dev tools
+  // Dev tools
   vue: {
     config: {
       productionTip: false,
@@ -58,34 +58,19 @@ export default {
     '@nuxtjs/vuetify',
   ],
 
+  // Fix code automatically whenever a file is saved
+  eslint: {
+    fix: true
+  },
+
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
     '@nuxtjs/i18n',
+    '@nuxt/content',
     '@nuxtjs/color-mode'
   ],
-
-  // i18n localisation config
-  i18n: {
-    locales: [
-      {
-        code: 'fr',
-        file: 'fr-FR.js'
-      },
-      {
-        code: 'en',
-        file: 'en-EN.js'
-      }
-    ],
-    defaultLocale: 'fr',
-    vueI18n: {
-      fallbackLocale: 'fr'
-    },
-    strategy: 'no_prefix',
-    lazy: true,
-    langDir: 'lang/'
-  },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
@@ -112,6 +97,32 @@ export default {
     }
   },
 
+  // i18n localisation config
+  i18n: {
+    locales: [
+      {
+        code: 'fr',
+        file: 'fr-FR.js'
+      },
+      {
+        code: 'en',
+        file: 'en-EN.js'
+      }
+    ],
+    defaultLocale: 'fr',
+    vueI18n: {
+      fallbackLocale: 'fr'
+    },
+    strategy: 'no_prefix',
+    lazy: true,
+    langDir: 'lang/'
+  },
+
+  // Nuxt Content module configuration
+  content: {
+    // Options
+  },
+
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
@@ -120,27 +131,26 @@ export default {
       dark: false,
       themes: {
         light: {
-          // primary: colors.blueGrey.lighten5,
-          // accent: colors.blueGrey.lighten4,
-          // secondary: colors.blue.base,
-          // info: colors.blue.darken1,
-          // warning: colors.amber.base,
-          // error: colors.deepOrange.accent4,
-          // success: colors.green.accent3,
-          // anchor: colors.blue
+          // primary: '#A7C1EF',
+          accent: colors.amber.darken2,
+          // secondary:  colors.teal,
+          // info: '#A7C1EF',
+          // warning: '#FB8239',
+          // error: '#fb3939',
+          // success: '#A7EFA9',
+          // anchor: '#FB8239'
+          background: '#A7C1EF',
+          cv: '#FB8239'
         },
          dark: {
-          // primary: colors.indigo,
-          accent: colors.amber.lighten1,
-          // secondary: colors.teal.accent3,
-          // info: colors.indigo.darken1,
-          // warning: colors.amber.base,
-          // error: colors.deepOrange.accent4,
-          // success: colors.green.accent3,
-          // anchor: colors.blue
+           accent:  '#A7EFA9',
+           background: '#6984B3',
+           cv: '#ff9e63'
         }
       },
-      options: { customProperties: true },
+      options: {
+        customProperties: true,
+      },
     },
     breakpoint: {
       mobileBreakpoint: 'sm' // This is equivalent to a value of 960
