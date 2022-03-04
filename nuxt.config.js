@@ -63,6 +63,8 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify',
+    // https://google-analytics.nuxtjs.org/
+    '@nuxtjs/google-analytics'
   ],
 
   // Fix code automatically whenever a file is saved
@@ -134,6 +136,11 @@ export default {
   // Nuxt sitemap module configuration
   sitemap: {
     hostname: 'https://jerome-riffier.fr'
+  },
+
+  // Nuxt googleAnalytics module configuration
+  googleAnalytics: {
+    id: 'UA-155856855-1'
   },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
