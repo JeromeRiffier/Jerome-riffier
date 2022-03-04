@@ -1,5 +1,5 @@
 import colors from 'vuetify/es5/util/colors'
-
+import redirectSSL from 'redirect-ssl'
 
 export default {
 
@@ -21,6 +21,13 @@ export default {
 
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
+
+  // Force redirect to https when in production
+  serverMiddleware: [
+    redirectSSL.create({
+      enabled: process.env.NODE_ENV === 'production'
+    }),
+  ],
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -69,7 +76,8 @@ export default {
     '@nuxtjs/pwa',
     '@nuxtjs/i18n',
     '@nuxt/content',
-    '@nuxtjs/color-mode'
+    '@nuxtjs/color-mode',
+    '@nuxtjs/sitemap' // Toujour laisser ce module en dernier
   ],
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
@@ -121,6 +129,11 @@ export default {
   // Nuxt Content module configuration
   content: {
     // Options
+  },
+
+  // Nuxt sitemap module configuration
+  sitemap: {
+    hostname: 'https://jerome-riffier.fr'
   },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
