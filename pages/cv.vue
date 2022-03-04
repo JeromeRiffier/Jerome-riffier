@@ -19,8 +19,8 @@
             </v-col>
         </v-row>
         <cv-contact :contacts="CV.contacts" />
-        <v-row class="pa-5">
-            <v-col md="6" col="12" class="px-4 pr-0 pr-md-8">
+        <v-row class="px-2 pa-sm-5 mx-0">
+            <v-col md="6" col="12" class="pl-0 pl-sm-4 pr-0 pr-sm-8">
                 <h1 class="category info--text">{{ $t('EXPÉRIENCE PROFESSIONNELLE') }}</h1>
                 <cv-experience
                     v-for='experience in CV.experiences[$i18n.locale]'
@@ -28,8 +28,8 @@
                     :experience='experience'
                 />
             </v-col>
-            <v-divider vertical></v-divider>
-            <v-col md="6" col="12" class="px-4 pl-8">
+            <v-divider vertical class="d-none d-md-block"></v-divider>
+            <v-col md="6" col="12" class="pl-0 pl-sm-4 pl-0 pl-sm-8">
                 <h1 class="category info--text">{{ $t('COMPÉTENCES') }}</h1>
                     <cv-competence  :competences=CV.competences />
                 <h1 class="category info--text">{{ $t('POINT FORTS') }}</h1>

@@ -1,5 +1,5 @@
 <template>
-    <v-row class="Experience ml-5 py-4 w-full">
+    <v-row class="Experience mx-0 ml-0 ml-md-5 py-4 w-full">
       <v-col cols="12" class="pa-0 ma-0 pt-2">
         <h2>{{ experience.titre }}</h2>
       </v-col>
@@ -52,8 +52,7 @@ h3 {
 .list {
     margin-left: 1.25rem;
 }
-.theme--dark .list  {
-}
+
 
 ul {
     list-style: none; /* Remove default bullets */

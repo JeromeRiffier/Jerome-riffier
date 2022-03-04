@@ -2,7 +2,7 @@
   <v-card>
     <v-card-title>{{ article.title }}</v-card-title>
     <v-card-subtitle><em class="accent--text">{{ date }}</em></v-card-subtitle>
-    <v-card-text style="white-space: break-spaces">{{ shortDescription }}</v-card-text>
+    <v-card-text style="height:4.125rem; white-space: break-spaces">{{ shortDescription }}</v-card-text>
     <v-card-actions>
       <v-spacer></v-spacer>
       <v-btn
