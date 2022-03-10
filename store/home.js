@@ -1,8 +1,8 @@
 import { make } from 'vuex-pathify'
-import { HOME } from '~/assets/data.json'
-const state = {
+import { HOME } from '~/static/data.json'
+const state = () => ({
   HOME : []
-}
+})
 
 
 const actions = {
@@ -20,7 +20,6 @@ const getters = {
 const mutations = {
     ...make.mutations(state)
 }
-
 
 export default {
   // namespaced: true, // add this if in module

@@ -1,7 +1,10 @@
 import {make, Payload} from 'vuex-pathify'
 const state = () => {
   return {
-    articles: []
+    articles: {
+      fr:[],
+      en:[]
+    }
   }
 }
 

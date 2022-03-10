@@ -45,13 +45,13 @@
             </template>
 
             <v-list-item
-              v-for="item in item.group"
-              :key="item.link + item.index + 'listGroup'"
+              v-for="groupItem in item.group"
+              :key="groupItem.link + groupItem.index + 'listGroup'"
               link
               nuxt
-              :to="item.link">
+              :to="groupItem.link">
               <v-list-item-content>
-                <v-list-item-title >{{ $t(item.title) }}</v-list-item-title>
+                <v-list-item-title >{{ $t(groupItem.title) }}</v-list-item-title>
               </v-list-item-content>
             </v-list-item>
           </v-list-group>
@@ -92,7 +92,7 @@
           <v-btn
             v-if="$i18n.locale !== 'fr'"
             icon
-            flat
+            text
             color="warning"
             elevation="2"
             class="ml-4"
@@ -103,7 +103,7 @@
           <v-btn
             v-if="$i18n.locale !== 'en'"
             icon
-            flat
+            text
             color="warning"
             elevation="2"
             class="ml-4"
@@ -122,7 +122,7 @@
           right
           bottom
           color="secondary"
-          :dark=!dark
+          :dark=!$vuetify.theme.dark
           fab
           @click.stop="drawer = !drawer"
         >
@@ -141,15 +141,11 @@
 
 <script>
 import {get} from 'vuex-pathify'
-
 export default {
-  computed: {
-    ...get('menu/', ['MENU'])
-  },
   data: () => ({
     drawer: false,
   }),
-  beforeMount() {
+  fetch() {
     this.$store.dispatch('menu/init')
     this.$store.dispatch('cv/init')
     this.$store.dispatch('pros/init')
@@ -157,11 +153,20 @@ export default {
     this.$store.dispatch('blog/init')
     this.$store.dispatch('contact/init')
   },
+  computed: {
+    ...get('menu/', ['MENU'])
+  },
+  watch: {
+    '$colorMode.value' () {
+      this.$vuetify.theme.dark = this.$colorMode.value === 'dark'
+    },
+  },
   methods: {
       switchMode() {
         this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
-      }
-  }
+      },
+  },
+
 }
 </script>
 

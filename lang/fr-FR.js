@@ -20,5 +20,7 @@ export default {
   'LANGUES': 'LANGUES',
   'INTÉRÊTS': 'INTÉRÊTS',
   'Lire': 'Lire',
-  'Retour': 'Retour'
+  'Retour': 'Retour',
+  'Téléphone': 'Téléphone',
+  'Adresse': 'Adresse',
 }

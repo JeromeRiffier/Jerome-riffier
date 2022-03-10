@@ -85,7 +85,30 @@
 <script>
 export default {
   props : {
-    card :  Array,
+    card: {
+      type: Object,
+      default() {
+        return {
+          avatar: "",
+          name: {
+            fr: "",
+            en: ""
+          },
+          job: {
+            fr: "",
+            en: ""
+          },
+          interests: [],
+          technologies: {},
+          address: "",
+          socials: {},
+          aboutMe: {
+            fr: "",
+            en: ""
+          }
+        }
+      }
+    }
   }
 }
 </script>

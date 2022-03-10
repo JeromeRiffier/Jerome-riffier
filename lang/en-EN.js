@@ -21,5 +21,7 @@ export default {
   'LANGUES': 'LANGUAGES',
   'INTÉRÊTS': 'INTERESTS',
   'Lire': 'Read',
-  'Retour': 'Back'
+  'Retour': 'Back',
+  'Téléphone': 'Phone',
+  'Adresse': 'Address',
 }

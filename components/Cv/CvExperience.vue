@@ -32,10 +32,16 @@
 
 <script>
     export default {
-        props:  [ 'experience' ]
+        props: {
+          experience: {
+            type: Object,
+            default() {
+              return {}
+            }
+          }
+        }
     }
 </script>
-
 
 <style scoped>
 .Experience {

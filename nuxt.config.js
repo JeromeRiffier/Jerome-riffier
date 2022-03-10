@@ -1,5 +1,4 @@
 import colors from 'vuetify/es5/util/colors'
-import redirectSSL from 'redirect-ssl'
 
 export default {
 
@@ -16,18 +15,12 @@ export default {
     host: 0 // default: localhost
   },
 
-  // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
-  ssr: false,
-
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
-  // Force redirect to https when in production
-  serverMiddleware: [
-    redirectSSL.create({
-      enabled: process.env.NODE_ENV === 'production'
-    }),
-  ],
+  generate: {
+    devtools: false
+  },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -50,9 +43,7 @@ export default {
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-    '~/plugins/colorMode',
-  ],
+  plugins: [],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -63,6 +54,7 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify',
+    '@nuxtjs/color-mode',
     // https://google-analytics.nuxtjs.org/
     '@nuxtjs/google-analytics'
   ],
@@ -78,7 +70,6 @@ export default {
     '@nuxtjs/pwa',
     '@nuxtjs/i18n',
     '@nuxt/content',
-    '@nuxtjs/color-mode',
     '@nuxtjs/sitemap' // Toujour laisser ce module en dernier
   ],
 
@@ -151,14 +142,7 @@ export default {
       dark: false,
       themes: {
         light: {
-          // primary: '#A7C1EF',
           accent: colors.amber.darken2,
-          // secondary:  colors.teal,
-          // info: '#A7C1EF',
-          // warning: '#FB8239',
-          // error: '#fb3939',
-          // success: '#A7EFA9',
-          // anchor: '#FB8239'
           background: '#A7C1EF',
           cv: '#FB8239'
         },
@@ -179,14 +163,14 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    uglify: {
-      uglifyOptions: {
-        compress: true
-      },
-      cache: '/path/to/cache/dir'
-    },
-    optimization: {
-      minimize: true,
-    }
+    // optimization: {
+    //   minimize: true,
+    // }
+  },
+
+  // colorMode Configuration
+  colorMode: {
+    preference: 'system',
+    fallback: 'light',
   }
 }

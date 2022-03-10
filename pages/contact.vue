@@ -1,11 +1,12 @@
 <template>
+  <client-only>
     <v-container fluid>
       <v-container class="my-4 pa-0 pb-4">
         <v-row>
           <v-col
             v-for="(card, title) of CONTACT.cards"
-           :key="card.text"
-           cols="12" md="3"
+            :key="card.text"
+            cols="12" md="3"
             class="mb-2"
           >
             <contact-card :card="card" :title="title"></contact-card>
@@ -16,6 +17,7 @@
         <contact-form></contact-form>
       </v-card>
     </v-container>
+  </client-only>
 </template>
 
 <script>

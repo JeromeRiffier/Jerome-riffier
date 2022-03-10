@@ -9,7 +9,12 @@
 <script>
     export default {
         props : {
-            contacts : Array
+            contacts : {
+              type: Array,
+              default() {
+                return []
+              }
+            }
         }
     }
 </script>

@@ -1,8 +1,32 @@
 import { make } from 'vuex-pathify'
-import { CV } from '~/assets/data.json'
-const state = {
-  CV : []
-}
+import { CV } from '~/static/data.json'
+const state = () => ({
+  CV : {
+    head: {
+      fr: {},
+      en: {}
+    },
+    contacts: [],
+    competences: [],
+    experiences: {
+      "fr": [],
+      "en": []
+    },
+    formations: [],
+    interets: {
+      "fr": [],
+      "en": []
+    },
+    projets: {
+      "fr": [],
+      "en": []
+    },
+    point_forts: {
+      "fr": [],
+      "en": []
+    }
+  }
+})
 
 
 const actions = {
