@@ -10,8 +10,14 @@
 
 <script>
     export default {
-        props: ['formation']
-
+        props: {
+          formation: {
+            type: Object,
+            default() {
+              return {}
+            }
+          }
+        }
     }
 </script>
 

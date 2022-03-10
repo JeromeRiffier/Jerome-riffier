@@ -11,7 +11,12 @@
 <script>
     export default {
         props: {
-            projet : Object
+            projet: {
+              type: Object,
+              default() {
+                return {}
+              }
+            }
         }
     }
 </script>

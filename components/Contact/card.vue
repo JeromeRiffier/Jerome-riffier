@@ -5,7 +5,7 @@
         <v-icon color="accent" large left style="margin-left: 10px">{{ card.icon }}</v-icon>
       </v-col>
       <v-col cols="10" class="pl-5">
-        <v-card-title class="pa-1">{{ title }}</v-card-title>
+        <v-card-title class="pa-1">{{ $t(title) }}</v-card-title>
         <v-card-text class="pa-1">
           {{ card.text }}
           <v-icon v-if="card.copy" right @click.prevent="copyToClipboard(card.text)">mdi-content-copy</v-icon>

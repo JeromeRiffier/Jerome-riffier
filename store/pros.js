@@ -1,9 +1,9 @@
 import { make, Payload } from 'vuex-pathify'
-import { PROS } from '~/assets/data.json'
-const state = {
+import { PROS } from '~/static/data.json'
+const state = () => ({
     PROS : [],
     click : () => {}
-}
+})
 
 
 const actions = {

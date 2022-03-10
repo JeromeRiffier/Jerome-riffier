@@ -1,8 +1,8 @@
 import { make } from 'vuex-pathify'
-import { CONTACT } from '~/assets/data.json'
-const state = {
+import { CONTACT } from '~/static/data.json'
+const state = () => ({
   CONTACT : []
-}
+})
 
 
 const actions = {

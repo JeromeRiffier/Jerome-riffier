@@ -1,8 +1,9 @@
 import { make } from 'vuex-pathify'
-import { MENU } from '~/assets/data.json'
-const state = {
+import { MENU } from '~/static/data.json'
+
+const state = () => ({
   MENU : []
-}
+})
 
 
 const actions = {

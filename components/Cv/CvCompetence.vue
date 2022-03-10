@@ -7,7 +7,12 @@
 <script>
     export default {
         props : {
-            competences : Array
+            competences : {
+              type: Array,
+              default() {
+                return []
+              }
+            }
         }
     }
 </script>
