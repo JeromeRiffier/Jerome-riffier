@@ -14,6 +14,9 @@
 import {get} from 'vuex-pathify'
 
 export default {
+  data: () => ({
+    pageTitle : 'Blog',
+  }),
   fetch() {
     this.$store.dispatch('blog/init')
   },

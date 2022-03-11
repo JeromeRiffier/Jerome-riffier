@@ -30,6 +30,11 @@ export default {
       this.$route.params.slug
     )
   },
+  head() {
+    return {
+      title: this.$route.params.sluge,
+    }
+  },
   computed: {
     ...get('blog/_slug/', ['article'])
   },
