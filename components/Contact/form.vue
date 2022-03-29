@@ -1,5 +1,5 @@
 <template>
-  <v-form ref="form" v-model="valid">
+  <v-form ref="form" v-model="valid" >
     <v-container>
       <v-row>
         <v-col
@@ -45,6 +45,7 @@
           md="12"
         >
           <v-textarea
+            v-model="message"
             :loading="sending"
             outlined
             name="input-7-4"
@@ -70,6 +71,8 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   data: () => ({
     pageTitle : 'Me contacter',
@@ -77,6 +80,7 @@ export default {
     sending: false,
     firstname: '',
     lastname: '',
+    message: '',
     nameRules: [
       v => !!v || 'Le nom ou l\'entreprise est requis',
     ],
@@ -86,11 +90,41 @@ export default {
       v => /.+@.+/.test(v) || 'E-mail invalide',
     ],
   }),
-  methods: {
-    submit () {
-      this.sending = true
-      this.$refs.observer.validate()
+  async mounted() {
+    try {
+      await this.$recaptcha.init()
+    } catch (e) {
+      console.error(e);
     }
+  },
+  beforeDestroy() {
+    this.$recaptcha.destroy()
+  },
+  methods: {
+    async submit() {
+      this.sending = true
+      try {
+        const token = await this.$recaptcha.execute('login')
+        console.log('ReCaptcha token:', token)
+
+        axios.post("https://formspree.io/f/xoqrnwrb", {
+          firstname: this.firstname,
+          lastname: this.lastname,
+          message: this.message,
+          email: this.email,
+          'g-recaptcha-response': token
+        }).then((response) => {
+          console.log(response)
+          this.sending = false
+        }).catch((err) => {
+          console.log(err);
+          this.sending = false
+        })
+        // send token to server alongside your form data
+      } catch (error) {
+        console.log('Login error:', error)
+      }
+    },
   }
 }
 </script>
