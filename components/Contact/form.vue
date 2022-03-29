@@ -87,7 +87,7 @@ export default {
     firstname: '',
     lastname: '',
     message: '',
-    dialog: true,
+    dialog: false,
     error: false,
     nameRules: [
       v => !!v || 'Le nom ou l\'entreprise est requis',
