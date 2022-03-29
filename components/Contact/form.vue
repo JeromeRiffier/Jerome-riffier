@@ -123,15 +123,15 @@ export default {
           this.error = false
           this.dialog = true
           this.sending = false
-        }).catch((err) => {
+        }).catch(() => {
           this.error = true
           this.dialog = true
           this.sending = false
         })
         // send token to server alongside your form data
       } catch (error) {
-        this.error = true
         this.dialog = true
+        this.sending = false
       }
     },
   }
