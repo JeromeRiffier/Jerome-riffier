@@ -66,10 +66,12 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
     '@nuxtjs/i18n',
     '@nuxt/content',
+    '@nuxtjs/recaptcha',
     '@nuxtjs/sitemap' // Toujour laisser ce module en dernier
   ],
 
@@ -132,6 +134,13 @@ export default {
   // Nuxt googleAnalytics module configuration
   googleAnalytics: {
     id: 'UA-155856855-1'
+  },
+
+  // reCAPTCHA module configuration
+  recaptcha: {
+    hideBadge: true,
+    siteKey: '6LcN3s0UAAAAAN45Ud84tqcv0rnMfYklkUsMQYLO',
+    version: 3
   },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
