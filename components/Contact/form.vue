@@ -66,6 +66,12 @@
           </v-btn>
         </v-col>
       </v-row>
+      <v-dialog
+        v-model="dialog"
+        max-width="290"
+      >
+        <contact-dialog-content :error="error"></contact-dialog-content>
+      </v-dialog>
     </v-container>
   </v-form>
 </template>
@@ -81,6 +87,8 @@ export default {
     firstname: '',
     lastname: '',
     message: '',
+    dialog: true,
+    error: false,
     nameRules: [
       v => !!v || 'Le nom ou l\'entreprise est requis',
     ],
@@ -94,7 +102,6 @@ export default {
     try {
       await this.$recaptcha.init()
     } catch (e) {
-      console.error(e);
     }
   },
   beforeDestroy() {
@@ -105,7 +112,6 @@ export default {
       this.sending = true
       try {
         const token = await this.$recaptcha.execute('login')
-        console.log('ReCaptcha token:', token)
 
         axios.post("https://formspree.io/f/xoqrnwrb", {
           firstname: this.firstname,
@@ -114,15 +120,18 @@ export default {
           email: this.email,
           'g-recaptcha-response': token
         }).then((response) => {
-          console.log(response)
+          this.error = false
+          this.dialog = true
           this.sending = false
         }).catch((err) => {
-          console.log(err);
+          this.error = true
+          this.dialog = true
           this.sending = false
         })
         // send token to server alongside your form data
       } catch (error) {
-        console.log('Login error:', error)
+        this.error = true
+        this.dialog = true
       }
     },
   }

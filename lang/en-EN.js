@@ -24,4 +24,8 @@ export default {
   'Retour': 'Back',
   'Téléphone': 'Phone',
   'Adresse': 'Address',
+  'Il semble qu\'il y ait eu un problème avec le serveur de messagerie.': 'It looks like something went wrong with the mail server.',
+  'Mais pas de panique, vous pouvez toujours me joindre via mes autres moyens de contact (ci-dessus': 'But don\'t worry, you can always reach me via my other means of contact (above',
+  'Message envoyé': 'Message sent',
+  'Merci, je vous recontacterais au plus vite.': 'Thank you, I will contact you as soon as possible.'
 }

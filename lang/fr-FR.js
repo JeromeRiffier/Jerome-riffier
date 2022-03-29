@@ -23,4 +23,8 @@ export default {
   'Retour': 'Retour',
   'Téléphone': 'Téléphone',
   'Adresse': 'Adresse',
+  'Il semble qu\'il y ait eu un problème avec le serveur de messagerie.': 'Il semble qu\'il y ait eu un problème avec le serveur de messagerie.',
+  'Mais pas de panique, vous pouvez toujours me joindre via mes autres moyens de contact (ci-dessus': 'Mais pas de panique, vous pouvez toujours me joindre via mes autres moyens de contact (ci-dessus',
+  'Message envoyé': 'Message envoyé',
+  'Merci, je vous recontacterais au plus vite.': 'Merci, je vous recontacterais au plus vite.'
 }
