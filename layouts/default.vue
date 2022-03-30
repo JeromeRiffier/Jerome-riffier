@@ -114,12 +114,12 @@
         </div>
       </template>
     </v-navigation-drawer>
-    <v-main class="background">
-      <v-container>
+    <v-main class="background-gradient">
+      <v-container class="pa-0 pa-md-auto">
         <v-btn
         v-if="$vuetify.breakpoint.mobile"
           fixed
-          right
+          left
           bottom
           color="secondary"
           :dark=!$vuetify.theme.dark

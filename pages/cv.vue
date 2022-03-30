@@ -1,8 +1,28 @@
 <template>
-  <client-only>
-    <v-card justify="center" align="left" cols="7" md="7" sd="12" class="ma-md-10">
+    <v-card justify="center" align="left" cols="7" md="7" sd="12" class="pdf ma-md-10">
+      <v-tooltip left>
+        <template #activator="{ on, attrs }">
+          <v-btn
+            color="pink"
+            fab
+            dark
+            small
+            absolute
+            top
+            right
+            v-bind="attrs"
+            :href="'/CV/' + $i18n.locale + '.pdf'"
+            download="CV - Jérôme Riffier"
+            class="print-hide"
+            v-on="on"
+          >
+            <v-icon>mdi-download</v-icon>
+          </v-btn>
+        </template>
+        <span>{{ $t('Télécharger en PDF') }}</span>
+      </v-tooltip>
       <v-row class="header pa-10" no-gutters>
-        <v-col md="8" cols="12" class="pl-10 pt-5">
+        <v-col sm="8" cols="12" class="pl-10 pt-5">
           <v-row class="pb-4">
             <v-col cols="12" class="pa-2 pa-sm-0">
               <h2 class="text-h2 text-md-h1">{{ CV.head[$i18n.locale].nom }}</h2>
@@ -15,13 +35,13 @@
             </v-col>
           </v-row>
         </v-col>
-        <v-col md="4" class="d-none d-sm-block">
+        <v-col cols="4" class="d-none d-sm-block print">
           <div class="portrait"></div>
         </v-col>
       </v-row>
       <cv-contact :contacts="CV.contacts" />
       <v-row class="px-2 pa-sm-5 mx-0">
-        <v-col md="6" col="12" class="pl-0 pl-sm-4 pr-0 pr-sm-8">
+        <v-col md="6" col="12" class="pl-2 pl-sm-4 pr-2 pr-sm-8">
           <h1 class="category info--text">{{ $t('EXPÉRIENCE PROFESSIONNELLE') }}</h1>
           <cv-experience
             v-for='experience in CV.experiences[$i18n.locale]'
@@ -29,8 +49,8 @@
             :experience='experience'
           />
         </v-col>
-        <v-divider vertical class="d-none d-md-block"></v-divider>
-        <v-col md="6" col="12" class="pl-0 pl-sm-4 pl-0 pl-sm-8">
+        <v-divider vertical class="d-none d-sm-block"></v-divider>
+        <v-col md="6" col="12" class="pl-2 pl-sm-4 pl-2 pl-sm-8">
           <h1 class="category info--text">{{ $t('COMPÉTENCES') }}</h1>
           <cv-competence  :competences=CV.competences />
           <h1 class="category info--text">{{ $t('POINT FORTS') }}</h1>
@@ -50,7 +70,6 @@
         </v-col>
       </v-row>
     </v-card>
-  </client-only>
 </template>
 
 <script>
@@ -61,6 +80,11 @@ export default {
   }),
   computed: {
       ...get('cv/', ['CV'])
+  },
+  methods: {
+    download() {
+      console.log('download')
+    }
   },
   head() {
     return {
