@@ -1,6 +1,6 @@
 <template>
   <v-card
-    class="mx-auto pa-4 mt-4 mb-4"
+    class="pdf mx-auto pa-4 my-0 my-sm-4"
     max-width="1200"
     tile
     elevation=4

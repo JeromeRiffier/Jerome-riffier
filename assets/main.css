@@ -157,18 +157,29 @@ v-image:hover .v-image__image {
     top: 0;
     padding: 15px;
     margin: 0px!important;
+    border: none!important;
+    box-shadow: none!important;
   }
   .v-application .d-none.print {
     display: block !important;
   }
-  .portrait {
+
+  .print-hide{
+    display: none!important;
+  }
+  .v-application .background-gradient, .v-application.theme--dark .background-gradient{
+        background: none;
+  }
+  .v-dialog{
+    background: white;
+  }
+
+
+  .portrait-cv {
     position: absolute;
     right: 20px;
     top: 20px;
     height: 8rem;
     width: 8rem;
-  }
-  .print-hide{
-    display: none!important;
   }
 }

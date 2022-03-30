@@ -36,7 +36,7 @@
           </v-row>
         </v-col>
         <v-col cols="4" class="d-none d-sm-block print">
-          <div class="portrait"></div>
+          <div class="portrait portrait-cv"></div>
         </v-col>
       </v-row>
       <cv-contact :contacts="CV.contacts" />
