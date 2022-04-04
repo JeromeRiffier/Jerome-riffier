@@ -1,5 +1,4 @@
 <template>
-  <client-only>
     <v-container fluid>
       <v-container class="my-4 pa-0 pb-4">
         <v-row>
@@ -13,11 +12,10 @@
           </v-col>
         </v-row>
       </v-container>
-      <v-card class="px-4 py-2">
+      <v-card class="px-4 py-2" rounded="0">
         <contact-form></contact-form>
       </v-card>
     </v-container>
-  </client-only>
 </template>
 
 <script>

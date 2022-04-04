@@ -1,5 +1,5 @@
 <template>
-  <v-card>
+  <v-card rounded="0">
     <v-card-title>{{ article.title }}</v-card-title>
     <v-card-subtitle><em class="accent--text">{{ date }}</em></v-card-subtitle>
     <v-card-text style="height:4.125rem; white-space: break-spaces">{{ shortDescription }}</v-card-text>
@@ -23,7 +23,14 @@
 import moment from 'moment'
 
 export default {
-  props: ['article'],
+  props: {
+    article: {
+      type: Object,
+      default() {
+        return {}
+      }
+    }
+  },
   computed: {
     shortDescription() {
       return this.article.description.slice(0, 200) + (this.article.description.length > 200 ? "..." : "");

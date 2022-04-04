@@ -83,10 +83,10 @@
                                 <v-card-text v-if="dialog.content.mission">Description de la mission: {{dialog.content.mission.description}}</v-card-text>
                             </v-col>
                             <v-col cols="12" md="8">
-                                <v-card-text v-if="dialog.content.mission" class="ma-0 pa-2 pl-5"><div class="secondary--text">Type d'orbite:</div> {{dialog.content.mission.orbit.name}}</v-card-text>
-                                <v-card-text v-if="dialog.content.pad" class="ma-0 pa-2 pl-5"><div class="secondary--text">Pays:</div> {{dialog.content.pad.location.country_code}}</v-card-text>
-                                <v-card-text v-if="dialog.content.rocket" class="ma-0 pa-2 pl-5"><div class="secondary--text">Lanceur:</div> {{dialog.content.rocket.configuration.full_name}}</v-card-text>
-                                <v-card-text v-if="dialog.content.pad" class="ma-0 pa-2 pl-5"><div class="secondary--text">Pas de tir:</div> {{dialog.content.pad.location.name}}
+                                <v-card-text v-if="dialog.content.mission" class="ma-0 pa-2 pl-5"><div class="accent--text">Type d'orbite:</div> {{dialog.content.mission.orbit.name}}</v-card-text>
+                                <v-card-text v-if="dialog.content.pad" class="ma-0 pa-2 pl-5"><div class="accent--text">Pays:</div> {{dialog.content.pad.location.country_code}}</v-card-text>
+                                <v-card-text v-if="dialog.content.rocket" class="ma-0 pa-2 pl-5"><div class="accent--text">Lanceur:</div> {{dialog.content.rocket.configuration.full_name}}</v-card-text>
+                                <v-card-text v-if="dialog.content.pad" class="ma-0 pa-2 pl-5"><div class="accent--text">Pas de tir:</div> {{dialog.content.pad.location.name}}
                                     <a target="blank" :href="dialog.content.pad.map_url">Voir sur maps</a>
                                 </v-card-text>
                             </v-col>

@@ -1,5 +1,5 @@
 <template>
-  <v-card :href="card.link">
+  <v-card :href="card.link" target="_blank" rounded="0">
     <v-row>
       <v-col cols="2" class="d-flex align-center">
         <v-icon color="accent" large left style="margin-left: 10px">{{ card.icon }}</v-icon>
@@ -17,7 +17,20 @@
 
 <script>
 export default {
-  props: ['card', 'title'],
+  props: {
+    card: {
+      type: Object,
+      default() {
+        return {}
+      }
+    },
+    title: {
+      type: String,
+      default() {
+        return ""
+      }
+    }
+  },
   methods: {
     copyToClipboard(text) {
       navigator.clipboard.writeText(text)

@@ -1,6 +1,6 @@
 <template>
      <v-row class="break white--text indigo darken-2 pa-5" no-gutters justify="center" align="center">
-            <v-col v-for="contact in contacts" :key="contact.text" cols="12" sm="6" md="3" justify="center" :align="$vuetify.breakpoint.mobile ? 'left' : 'center'">
+            <v-col v-for="contact in contacts" :key="contact.text" cols="6" sm="6" md="3" justify="center" :align="$vuetify.breakpoint.mobile ? 'left' : 'center'">
               <p><v-icon class="cv--text mr-5">{{ contact.icon }}</v-icon>{{ contact.text }}</p>
             </v-col>
         </v-row>
