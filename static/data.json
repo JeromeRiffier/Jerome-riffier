@@ -42,11 +42,11 @@
     "card": {
       "avatar": "/moi.jpg",
       "name": {
-        "fr": "<strong>Jérôme Riffier</strong>, 5 ans d'experience dans le dévelopement web (et beaucoup de café)",
+        "fr": "<strong>Jérôme Riffier</strong>, 5 ans d'experience dans le développement web (et beaucoups de cafés)",
         "en": "<strong>Jérôme Riffier</strong>, 5 years of experience in web development (and countless coffes)"
       },
       "job": {
-        "fr": "Actuellement Developeur web à Tenor EDI Service, Ouvert aux propositions",
+        "fr": "Actuellement Développeur web à Tenor EDI Service, Ouvert aux propositions",
         "en": "Full Stack Developer"
       },
       "interests": [
@@ -473,6 +473,13 @@
   "PROS": {
     "companies" : [
       {
+        "name": "Tenor EDI Services",
+        "caution": {
+          "fr": "Étant sous NDA, je ne peux malheureusement pas montrer les projets sur lequel j'ai travaillé depuis 2020.",
+          "en": "Being under NDA, unfortunately I cannot show the projects I have worked on since 2020."
+        }
+      },
+      {
         "name": "MediaMarket",
         "cols": [
           {
@@ -630,7 +637,11 @@
               }
             ]
           }
-        ]
+        ],
+        "caution": {
+          "fr": "Seul le site <a href=\"https://mediamarket-pub.com/\" target=\"_blank\">Mediamarket-pub.com</a> est encore accessible, les autres ne sont malheureusement plus en ligne.",
+          "en": "Only the <a href=\"https://mediamarket-pub.com/\" target=\"_blank\">Mediamarket-pub.com</a> site is still accessible, the others are unfortunately no longer online."
+        }
       }
     ]
   },
