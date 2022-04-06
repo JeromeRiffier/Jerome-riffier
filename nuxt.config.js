@@ -1,4 +1,6 @@
 import colors from 'vuetify/es5/util/colors'
+import getRoutes from "./utils/getRoutes";
+
 
 export default {
 
@@ -128,7 +130,10 @@ export default {
 
   // Nuxt sitemap module configuration
   sitemap: {
-    hostname: 'https://jerome-riffier.fr'
+    hostname: 'https://jerome-riffier.fr',
+    routes() {
+      return getRoutes();
+    },
   },
 
   // Nuxt googleAnalytics module configuration

@@ -2,16 +2,16 @@ import { groupBy } from 'lodash'
 
 const actions = {
   index(context) {
-    return this.$content('articles')
+    return this.$content('blog')
       .only(['title', 'description', 'createdAt', 'slug', 'lang'])
       .fetch()
-      .then((articles) => { return groupBy(articles, 'lang')});
+      .then((blog) => { return groupBy(blog, 'lang')});
   },
   show(context, slug) {
-    return this.$content('articles')
+    return this.$content('blog')
       .where({ slug})
       .fetch()
-      .then((articles) => { return articles[0]})
+      .then((blog) => { return blog[0]})
   },
 }
 
