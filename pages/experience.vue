@@ -1,10 +1,12 @@
 <template>
    <v-container fluid>
+     <v-col cols="12"><h1>{{ $t('Expérience professionelle') }}</h1></v-col>
      <v-row
        v-for="(company, companyIndex) in PROS.companies"
        :key="companyIndex"
+       class="px-4"
      >
-       <v-col cols="12"><h1>{{ company.name }}</h1></v-col>
+       <v-col cols="12"><h2>{{ company.name }}</h2></v-col>
         <v-col
           v-for="(col, colIndex) in company.cols"
           :key="colIndex"
@@ -25,13 +27,24 @@
                       :key="index"
                       :md="12/card.imgs.length"
                   >
-                    <v-img
-                      :src="img"
-                      class=" align-end ma-1 image"
-                      gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-                      :height="card.height"
-                    >
-                    </v-img>
+                    <v-dialog style="width: fit-content">
+                      <template #activator="{ on, attrs }">
+                      <v-img
+                        :src="img"
+                        class=" align-end ma-1 image"
+                        gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+                        :height="card.height"
+                        v-bind="attrs"
+                        v-on="on"
+                      >
+                      </v-img>
+                    </template>
+                      <v-img
+                        :src="img"
+                        contain
+                        max-height="1443"
+                      ></v-img>
+                    </v-dialog>
                   </v-col>
                 </v-row>
                  <v-toolbar color="rgba(0,0,0,0)" elevation="0">
@@ -82,6 +95,13 @@
             </v-col>
           </v-row>
         </v-col>
+       <v-card
+         v-if="company.caution[$i18n.locale]"
+         class="mx-3 pa-3 d-inline-flex"
+       >
+         <v-icon color="error" class="pr-2">mdi-alert-outline</v-icon>
+         <div  v-html="company.caution[$i18n.locale]"></div>
+       </v-card>
       </v-row>
     </v-container>
 </template>
@@ -91,7 +111,7 @@ import { call, sync } from 'vuex-pathify'
 
 export default {
   data: () => ({
-    pageTitle : 'Experience professionel',
+    pageTitle : 'Expérience professionelle',
   }),
   computed: {
     ...sync('pros/', ['PROS']),
@@ -124,5 +144,11 @@ export default {
         100% {
             background-position-y: 100%
         }
+    }
+    .v-dialog__content {
+      width: fit-content;
+      max-width: 80%;
+      left: 50%;
+      transform: translateX(-50%);
     }
 </style>
