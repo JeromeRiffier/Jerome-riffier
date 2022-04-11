@@ -5,13 +5,13 @@ description: Je suis récemment tomber sur une vidéo expliquant ce problème ma
   très simple à comprendre mais qu'aucun mathématiciens n'aurais n'aurais résolut.
 
 ---
-Passionné de science et de technologie, je suis abonné à pas mal de chaines de vulgarisations scientifique sur YouTube (_français comme anglais_).
+Passionné de science et de technologie, je suis abonné à des chaines de vulgarisation scientifique sur YouTube (_français comme anglais_).
 
-L’une de ces chaine « **Veritassium** » à publier une vidéo sur un problème mathématique très simple à comprendre mais impossible à résoudre qui ma intrigué.
+L’une d'elles « **Veritassium** » a publier une vidéo sur un problème mathématique très simple à comprendre mais impossible à résoudre qui ma intrigué.
 
 ### La conjecture
 
-Le principe de ce problème est très simple, prenez un nombre (n'importe lequel) puis appliquer l'algorithme suivant dessus :
+Le principe de ce problème est très simple : prenez un nombre (n'importe lequel) puis appliquer l'algorithme suivant dessus :
 
 * Si le nombre est paire divisez le par 2
 * Si le nombre est impaire multipliez le par 3 et ajouter 1
@@ -31,7 +31,7 @@ Par exemple prenons le chiffre 5
 >
 > 1 est impaire = 1 X 3 +1 = 4 (_ouille.._)
 
-La conjecture est donc ceci: "Pour tous les nombres entier positifs, si on applique cette algorithme, finira invariablement par boucler sur ces trois dernier résultat (4 -> 2 -> 1-> 4 etc..).
+La conjecture est donc : "Pour tous les nombres entiers positifs, si on applique cette algorithme, ils finiront invariablement par boucler sur ces trois derniers résultats (4 -> 2 -> 1-> 4 etc..).
 
 A fin de tester de façon plus visuel cette affirmation, j'ai donc créer ce composant :
 
