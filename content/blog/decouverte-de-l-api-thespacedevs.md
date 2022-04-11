@@ -7,16 +7,16 @@ description: En me baladant sur internet j’ai découvert l’existence d’une
 ---
 Cette **API** permet entre autre chose de récupérer les informations des prochains décollages de fusée ainsi que les détails concernant le type de lanceur, la base de lancement et l’entreprise gérant la mission.
 
-Je me suis dis qu'il pourrait être amusant de créer un petit Calendrier des prochaines missions spatial.
+Je me suis dis qu'il pourrait être amusant de créer un petit Calendrier des prochaines missions spatiales.
 
-Le seul hic de cette **API** est que les réponse ne sont disponible uniquement qu'en Anglais.
+Le seul hic de cette **API** est que les réponses ne sont disponibles uniquement qu'en Anglais.
 
-> Je pense qu'il serais possible d'y remédier dynamiquement en utilisant une API comme Google Traduction par exemple mais ce sera un sujet pour un autre temps.
+> Je pense qu'il serait possible d'y remédier dynamiquement en utilisant une API comme Google Traduction par exemple mais ce sera un sujet pour un autre temps.
 
-Cela dis pour une API créer et maintenue et mise a disposition gratuitement par des passionnés je ne pense pas qu'on puisse en tenir rigueur
+Cela dis pour une API créé, maintenue et mise à disposition gratuitement par des passionnés je ne pense pas qu'on puisse en tenir rigueur.
 
 D'ailleurs, n'hésitez pas à aller y jeter un œil [thespacedevs.com](https://thespacedevs.com/ "thespacedevs.com")
 
-Voici donc le calendrier que j'ai pus créer :
+Voici donc le calendrier que j'ai pu créer :
 
 <projects-space-calendar></projects-space-calendar>
