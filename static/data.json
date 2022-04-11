@@ -42,12 +42,12 @@
     "card": {
       "avatar": "/moi.jpg",
       "name": {
-        "fr": "<strong>Jérôme Riffier</strong>, 5 ans d'experience dans le développement web (et beaucoups de cafés)",
+        "fr": "<strong>Jérôme Riffier</strong>, 5 ans d'expérience dans le développement web (et beaucoup de cafés)",
         "en": "<strong>Jérôme Riffier</strong>, 5 years of experience in web development (and countless coffes)"
       },
       "job": {
         "fr": "Actuellement Développeur web à Tenor EDI Service, Ouvert aux propositions",
-        "en": "Full Stack Developer"
+        "en": "Full Stack Developer, open to work"
       },
       "interests": [
         "Web Developement",
@@ -109,7 +109,7 @@
         }
       },
       "aboutMe": {
-        "fr": "Salut et bienvenue sur mon site ! \nJe suis développeur full-stack depuis 2017. \nSpecialisé en framework PHP et Javascript, je vous laisse explorer ce site pour en apprendre plus sur moi.\nEt qui sait, peut-être me contacter pour qu'on commence à travailler ensemble  \uD83E\uDD37\u200D♂️",
+        "fr": "Salut et bienvenue sur mon site ! \nJe suis développeur full-stack depuis 2017. \nSpécialisé en framework PHP et Javascript, je vous laisse explorer ce site pour en apprendre plus sur moi.\nEt qui sait, peut-être me contacter pour qu'on commence à travailler ensemble  \uD83E\uDD37\u200D♂️",
         "en": "Hi and welcome to my site!\nI have been a full-stack developer since 2017.\nSpecialized in PHP and Javascript frameworks, I let you explore this site to learn more about me.\nAnd who knows, maybe contact me to 'we start working together \uD83E\uDD37\u200D♂️"
       }
     },
@@ -211,7 +211,7 @@
       "fr": {
         "nom": "Jérôme Riffier",
         "qualificatif": "Développeur / Concepteur",
-        "accroche": "5 Ans d'expérience en developement web, Back End et Front End."
+        "accroche": "5 Ans d'expérience en dévelopement web, Back End et Front End."
       },
       "en": {
         "nom": "Jérôme Riffier",
@@ -222,7 +222,7 @@
     "contacts": [
       {
         "icon": "mdi-email",
-        "text": "contact@jerome-riffier.fr"
+        "text": "jerome.riffier@hotmail.fr"
       },
       {
         "icon": "mdi-phone",
@@ -258,7 +258,7 @@
           "postes": [
             {
               "id": 0,
-              "text": "Concevoir, créer et maintenir des site metier"
+              "text": "Concevoir, créer et maintenir des sites metier"
             }
           ],
           "technologies": "Symfony/Laravel/Nuxt/VueJS"
@@ -290,11 +290,11 @@
           "postes": [
             {
               "id": 0,
-              "text": "Stage / Découverte de Windev 21 / Création d'une base de donnée"
+              "text": "Stage / Découverte de Windev 21 / Création d'une base de données"
             },
             {
               "id": 1,
-              "text": "Création d'un logiciel-métier de gestion interne permettant de gérer les informations clients de la prise de commande a la facturation"
+              "text": "Création d'un logiciel-métier de gestion interne permettant de gérer les informations clients de la prise de commande à la facturation"
             }
           ],
           "technologies": "Windev"
@@ -304,7 +304,7 @@
           "entreprise": "Atechsys",
           "periode": "06/2015 – 10/2015",
           "lieu": "Pourrières 83910",
-          "description": "Startup de recherche et développement de Drone a usage commercial ou militaire. Notamment connus pour prototyper la livraison par drone pour le groupe La Poste",
+          "description": "Startup de recherche et développement de Drone à usage commercial ou militaire. Notamment connu pour prototyper la livraison par drone pour le groupe La Poste",
           "postes": [
             {
               "id": 0,
@@ -436,11 +436,11 @@
         },
         {
           "titre": "Serveur personnel",
-          "description": "Création d'un serveur privé sur Raspberry Pi me permettant de présenter mes projets web dans le cadre scolaire."
+          "description": "Création d'un serveur privé sur Raspberry Pi me permettant de présenter mes projets web dans le cadre scolaire"
         },
         {
           "titre": "Bloqueur de publicité",
-          "description": "Ajout d'un serveur DNS modifié au raspberry pour bloquer toute les requette DNS de mon reseaux privé cherchant a me connecter a une publicité."
+          "description": "Ajout d'un serveur DNS modifié au raspberry pour bloquer toute les requette DNS de mon réseau privé cherchant à me connecter à une publicité."
         }
       ],
       "en": [
