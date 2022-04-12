@@ -74,6 +74,7 @@ export default {
     '@nuxtjs/i18n',
     '@nuxt/content',
     '@nuxtjs/recaptcha',
+    '@nuxtjs/robots',
     '@nuxtjs/sitemap' // Toujour laisser ce module en dernier
   ],
 
@@ -186,5 +187,9 @@ export default {
   colorMode: {
     preference: 'system',
     fallback: 'light',
+  },
+
+  // robots.txt Configuration
+  robots: {
   }
 }
