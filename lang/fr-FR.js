@@ -28,6 +28,9 @@ export default {
   'Message envoyé': 'Message envoyé',
   'Merci, je vous recontacterais au plus vite.': 'Merci, je vous recontacterais au plus vite.',
   'Télécharger en PDF': 'Télécharger en PDF',
-  'Il n\'y a pas encore d\'articles': 'Il n\'y a pas encore d\'articles'
+  'Il n\'y a pas encore d\'articles': 'Il n\'y a pas encore d\'articles',
+  'Le nom ou l\'entreprise est requis':'Le nom ou l\'entreprise est requis',
+  'L\'E-mail est requis':'L\'E-mail est requis',
+  'E-mail invalide': 'E-mail invalide'
 
 }

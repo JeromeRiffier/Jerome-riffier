@@ -13,7 +13,7 @@
             v-bind="attrs"
             :href="'/CV/' + $i18n.locale + '.pdf'"
             download="CV - Jérôme Riffier"
-            class="print-hide"
+            class="print-hide my-6 my-md-0"
             v-on="on"
           >
             <v-icon>mdi-download</v-icon>
