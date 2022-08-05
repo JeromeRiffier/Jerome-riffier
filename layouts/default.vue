@@ -115,7 +115,7 @@
       </template>
     </v-navigation-drawer>
     <v-main class="background-gradient">
-      <v-container class="pa-0 pa-md-auto">
+      <v-container class="pa-0 pa-md-4">
         <v-btn
         v-if="$vuetify.breakpoint.mobile"
           fixed

@@ -28,6 +28,9 @@ export default {
   'Mais pas de panique, vous pouvez toujours me joindre via mes autres moyens de contact (ci-dessus': 'But don\'t worry, you can always reach me via my other means of contact (above',
   'Message envoyé': 'Message sent',
   'Merci, je vous recontacterais au plus vite.': 'Thank you, I will contact you as soon as possible.',
+  'Il n\'y a pas encore d\'articles': 'There are no articles yet',
   'Télécharger en PDF': 'Download as PDF',
-  'Il n\'y a pas encore d\'articles': 'There are no articles yet'
+  'Le nom ou l\'entreprise est requis':'Name or company is required',
+  'L\'E-mail est requis':'Email is required',
+  'E-mail invalide': 'Invalid email'
 }

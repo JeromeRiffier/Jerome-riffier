@@ -46,8 +46,8 @@
         "en": "<strong>Jérôme Riffier</strong>, 5 years of experience in web development (and countless coffes)"
       },
       "job": {
-        "fr": "Actuellement Développeur web à Tenor EDI Service, Ouvert aux propositions",
-        "en": "Full Stack Developer, open to work"
+        "fr": "Actuellement Développeur web Full Stack",
+        "en": "Full Stack Developer"
       },
       "interests": [
         "Web Developement",
@@ -474,10 +474,51 @@
     "companies" : [
       {
         "name": "Tenor EDI Services",
-        "caution": {
-          "fr": "Étant sous NDA, je ne peux malheureusement pas montrer les projets sur lequel j'ai travaillé depuis 2020.",
-          "en": "Being under NDA, unfortunately I cannot show the projects I have worked on since 2020."
-        }
+        "cols": [
+          {
+            "size": 12,
+            "cards": [
+              {
+                "component": "experience-general-card",
+                "logo": "/screens/logo-sFactory.jpg",
+                "details": {
+                  "fr": [
+                    "Rattaché au service de développement externe de Tenor \"sFactory\" (dont vous pouver voir les référence sur leur <a target=\"_blank\", href=\"https://www.sfactory.fr/nos-clients/\">site</a> )",
+                    "J'ai participé a la création, évolution, maintenance de plusieurs sites metiers.",
+                    "Les principales Technologies utilisés sont :"
+                  ],
+                  "en": [
+                    "Attached to Tenor's external development service \"sFactory\" (whose references you can see on their <a target=\"_blank\", href=\"https://www.sfactory.fr/nos-clients/\">site</a> )",
+                    "I participated in the creation, evolution, maintenance of several business sites.",
+                    "The main technologies used are:"
+                  ]
+                },
+                "technologies": {
+                  "laravel": {
+                    "src":"/tech-logo/Laravel.svg",
+                    "width": 100
+                  },
+                  "nuxt": {
+                    "src":"/tech-logo/Nuxt-White.svg",
+                    "width":  100
+                  },
+                  "docker": {
+                    "src":"/tech-logo/Docker.png",
+                    "width":  100
+                  },
+                  "vuejs": {
+                    "src": "/tech-logo/VueJs.svg",
+                    "width":  50
+                  },
+                  "symfony": {
+                    "src":"/tech-logo/Symfony.svg",
+                    "width":  50
+                  }
+                }
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "MediaMarket",
@@ -486,6 +527,7 @@
             "size": 4,
             "cards": [
               {
+                "component": "experience-image-card",
                 "title": "Mediamarket-pub.com",
                 "details": {
                   "fr": [
@@ -501,8 +543,7 @@
                   "/screens/mediamarket-pub.jpg"
                 ],
                 "flex": 12,
-                "height": "530px",
-                "reveal": false
+                "height": "530px"
               }
             ]
           },
@@ -510,6 +551,7 @@
             "size": 8,
             "cards": [
               {
+                "component": "experience-image-card",
                 "title": "Six9 Media",
                 "details": {
                   "fr": [
@@ -524,10 +566,10 @@
                 ],
                 "flex": 12,
                 "height": "210px",
-                "class": "",
-                "reveal": false
+                "class": ""
               },
               {
+                "component": "experience-image-card",
                 "title": "Le Carnet",
                 "subtitle": "Europe 1/ Public.fr/ Tv7 Jours/ Parismatch ",
                 "details": {
@@ -548,10 +590,10 @@
                 ],
                 "flex": 12,
                 "height": "200px",
-                "class": "d-none d-md-block",
-                "reveal": false
+                "class": "d-none d-md-block"
               },
               {
+                "component": "experience-image-card",
                 "title": "Le Carnet",
                 "subtitle": "Europe 1",
                 "details": {
@@ -569,10 +611,10 @@
                 ],
                 "flex": 0,
                 "height": "200px",
-                "class": "d-sm-block d-md-none",
-                "reveal": false
+                "class": "d-sm-block d-md-none"
               },
               {
+                "component": "experience-image-card",
                 "title": "Le Carnet",
                 "subtitle": " Public.fr",
                 "details": {
@@ -590,10 +632,10 @@
                 ],
                 "flex": 0,
                 "height": "200px",
-                "class": "d-sm-block d-md-none",
-                "reveal": false
+                "class": "d-sm-block d-md-none"
               },
               {
+                "component": "experience-image-card",
                 "title": "Le Carnet",
                 "subtitle": "Tv7 Jours",
                 "details": {
@@ -611,10 +653,10 @@
                 ],
                 "flex": 0,
                 "height": "200px",
-                "class": "d-sm-block d-md-none",
-                "reveal": false
+                "class": "d-sm-block d-md-none"
               },
               {
+                "component": "experience-image-card",
                 "title": "Le Carnet",
                 "subtitle": "Parismatch",
                 "details":{
@@ -632,8 +674,7 @@
                 ],
                 "flex": 0,
                 "height": "200px",
-                "class": "d-sm-block d-md-none",
-                "reveal": false
+                "class": "d-sm-block d-md-none"
               }
             ]
           }
