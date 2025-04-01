@@ -65,8 +65,8 @@
           />
           <h1 class="category info--text">{{ $t('PROJETS PERSONNELS') }}</h1>
           <cv-projet v-for="projet in CV.projets[$i18n.locale]" :key="projet.titre" :projet=projet />
-          <h1 class="category info--text">{{ $t('INTÉRÊTS') }}</h1>
-          <cv-interet :interets=CV.interets[$i18n.locale] />
+          <h1 v-if="CV.interets" class="category info--text">{{ $t('INTÉRÊTS') }}</h1>
+          <cv-interet v-if="CV.interets" :interets=CV.interets[$i18n.locale] />
         </v-col>
       </v-row>
     </v-card>
