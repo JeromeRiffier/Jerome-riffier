@@ -61,24 +61,24 @@
       ],
       "technologies": {
         "laravel": {
-          "src":"/tech-logo/Laravel.svg",
+          "src": "/tech-logo/Laravel.svg",
           "width": 100
         },
         "nuxt": {
-          "src":"/tech-logo/Nuxt-White.svg",
-          "width":  100
+          "src": "/tech-logo/Nuxt-White.svg",
+          "width": 100
         },
         "docker": {
-          "src":"/tech-logo/Docker.png",
-          "width":  100
+          "src": "/tech-logo/Docker.png",
+          "width": 100
         },
         "vuejs": {
           "src": "/tech-logo/VueJs.svg",
-          "width":  50
+          "width": 50
         },
         "symfony": {
-          "src":"/tech-logo/Symfony.svg",
-          "width":  50
+          "src": "/tech-logo/Symfony.svg",
+          "width": 50
         }
       },
       "address": "69420 Longes",
@@ -95,7 +95,7 @@
           "href": "https://github.com/JeromeRiffier?tab=repositories",
           "to": null,
           "isLink": true,
-          "target":  "_blank",
+          "target": "_blank",
           "hover": "Les sources de mes projets personnels uniquement",
           "icon": "github"
         },
@@ -103,7 +103,7 @@
           "href": "https://www.linkedin.com/in/j%C3%A9r%C3%B4me-riffier-289752174/",
           "to": null,
           "isLink": true,
-          "target":  "_blank",
+          "target": "_blank",
           "hover": null,
           "icon": "linkedin"
         }
@@ -116,12 +116,12 @@
     "timeline": [
       {
         "date": {
-          "year" : "2019 - Aujourd'hui",
-          "color" : "orange"
+          "year": "2019 - Aujourd'hui",
+          "color": "orange"
         },
         "title": "CDI: Tenor EDI Services",
         "town": "Oullin",
-        "description":  "Concepteur de site client pour grand compte.\nRecherche des besoin, conception de l'architecture des sites et base de données, réalisation et maintenance des application",
+        "description": "Concepteur de site client pour grand compte.\nRecherche des besoin, conception de l'architecture des sites et base de données, réalisation et maintenance des application",
         "companyLogo": "/company-logo/tenor.png",
         "techLogo": [
           "/tech-logo/Laravel.svg",
@@ -133,12 +133,12 @@
       },
       {
         "date": {
-          "year" : "2017 - 2019",
-          "color" : "amber"
+          "year": "2017 - 2019",
+          "color": "amber"
         },
         "title": "CDI: Mediamarket",
         "town": "Villeurbanne",
-        "description":  "Création from scratch et maintenance d'une page publicitaire pour les sites de Europe1/ Public.fr/ TV7 Jours/ ParisMatch (rubrique le carnet)\nResponsable des outils informatiques de la société",
+        "description": "Création from scratch et maintenance d'une page publicitaire pour les sites de Europe1/ Public.fr/ TV7 Jours/ ParisMatch (rubrique le carnet)\nResponsable des outils informatiques de la société",
         "companyLogo": "/company-logo/mediamarket.jfif",
         "techLogo": [
           "/tech-logo/PHP.png",
@@ -148,39 +148,34 @@
       },
       {
         "date": {
-          "year" : "2017",
-          "color" : "green"
+          "year": "2017",
+          "color": "green"
         },
         "title": "Stage: The Web House",
         "town": "Apt",
-        "description":  "Création d'un logiciel-métier de gestion interne permettant de gérer les informations clients de la prise de commande a la facturation",
+        "description": "Création d'un logiciel-métier de gestion interne permettant de gérer les informations clients de la prise de commande a la facturation",
         "companyLogo": null,
-        "techLogo": [
-          "/tech-logo/Windev.png"
-        ]
+        "techLogo": ["/tech-logo/Windev.png"]
       },
       {
         "date": {
-          "year" : "2015",
-          "color" : "red"
+          "year": "2015",
+          "color": "red"
         },
         "title": "Atechsys",
         "town": "Pourrières",
-        "description":  "Adaptation d'une interface graphique de contrôle de drone en C++ via le Framework QT",
+        "description": "Adaptation d'une interface graphique de contrôle de drone en C++ via le Framework QT",
         "companyLogo": "/company-logo/atechsys.svg",
-        "techLogo": [
-          "/tech-logo/c++.svg",
-          "/tech-logo/QT.png"
-        ]
+        "techLogo": ["/tech-logo/c++.svg", "/tech-logo/QT.png"]
       },
       {
         "date": {
-          "year" : "2014 - 2017",
-          "color" : "green"
+          "year": "2014 - 2017",
+          "color": "green"
         },
         "title": "Supinfo",
         "town": "Lyon",
-        "description":  "Formation Bac +2 en developpement",
+        "description": "Formation Bac +2 en developpement",
         "companyLogo": "/company-logo/supinfo.png",
         "techLogo": [
           "/tech-logo/HTML.svg",
@@ -190,14 +185,14 @@
       },
       {
         "date": {
-          "year" : "2014",
-          "color" : "cyan"
+          "year": "2014",
+          "color": "cyan"
         },
         "title": "Bac",
         "town": "Bourg en Bresse",
         "description": "BAC STI2D specialité  Système d'Information et Numérique (SIN)",
-        "companyh-logo":null,
-        "techLogo":[
+        "companyh-logo": null,
+        "techLogo": [
           "/tech-logo/HTML.svg",
           "/tech-logo/JS.png",
           "/tech-logo/CSS.svg",
@@ -210,8 +205,8 @@
     "head": {
       "fr": {
         "nom": "Jérôme Riffier",
-        "qualificatif": "Développeur / Concepteur",
-        "accroche": "5 Ans d'expérience en dévelopement web, Back End et Front End."
+        "qualificatif": "Concepteur/ Développeur Freelance",
+        "accroche": "8 Ans d'expérience en dévelopement web, Back End et Front End."
       },
       "en": {
         "nom": "Jérôme Riffier",
@@ -222,7 +217,7 @@
     "contacts": [
       {
         "icon": "mdi-email",
-        "text": "jerome.riffier@hotmail.fr"
+        "text": "jerome.riffier@gmail.com"
       },
       {
         "icon": "mdi-phone",
@@ -230,7 +225,7 @@
       },
       {
         "icon": "mdi-home",
-        "text": "Longes 69420"
+        "text": "Valeille 42110"
       },
       {
         "icon": "mdi-linkedin",
@@ -238,21 +233,58 @@
       }
     ],
     "competences": [
-      "PHP",
-      "Laravel",
-      "Symfony",
+      "React",
+      "NextJs",
+      "NestJs",
       "Nuxt",
+      "VueJs",
+      "PHP",
+      "Strapi",
+      "Laravel",
       "PWA",
       "Docker",
-      "JS",
-      "Windev"
+      "Symfony",
+      "TDD",
+      "Cypress"
     ],
     "experiences": {
       "fr": [
         {
+          "titre": "Développeur Freelance",
+          "entreprise": "Tenor",
+          "periode": "02/2025 - aujourd'hui",
+          "lieu": "Valeille 42110 (Distanciel)",
+          "description": "Developpement, refonte de site et formation",
+          "postes": [
+            {
+              "id": 0,
+              "text": "Concevoir et créer des sites."
+            },
+            {
+              "id": 1,
+              "text": "Maintenir et optimiser les performances."
+            }
+          ],
+          "technologies": "Voir \"Compétence\" ➡️"
+        },
+        {
+          "titre": "Développeur Senior",
+          "entreprise": "Insign",
+          "periode": "09/2022 – 01/2025",
+          "lieu": "Lyon 69001 (Distanciel)",
+          "description": "Developpement et refonte de site",
+          "postes": [
+            {
+              "id": 0,
+              "text": "Concevoir, créer et maintenir des sites metier"
+            }
+          ],
+          "technologies": "Nuxt/VueJS/React/NextJs"
+        },
+        {
           "titre": "Analyste Développeur",
           "entreprise": "Tenor",
-          "periode": "02/2020 – Aujourd'hui",
+          "periode": "02/2020 – 09/2022",
           "lieu": "Oullin 69600",
           "description": "Concepteur de site client pour grand compte",
           "postes": [
@@ -320,9 +352,41 @@
       ],
       "en": [
         {
+          "titre": "Freelance Developer",
+          "entreprise": "Tenor",
+          "periode": "02/2025 - present",
+          "lieu": "Valeille 42110 (Remote)",
+          "description": "Development, site redesign and training",
+          "postes": [
+            {
+              "id": 0,
+              "text": "Design and create websites."
+            },
+            {
+              "id": 1,
+              "text": "Maintain and optimize performance."
+            }
+          ],
+          "technologies": "See \"Skills\" ➡️"
+        },
+        {
+          "titre": "Senior Developer",
+          "entreprise": "Insign",
+          "periode": "09/2022 – 01/2025",
+          "lieu": "Lyon 69001 (Remote)",
+          "description": "Development and site redesign",
+          "postes": [
+            {
+              "id": 0,
+              "text": "Design, create and maintain business websites"
+            }
+          ],
+          "technologies": "Nuxt/VueJS/React/NextJs"
+        },
+        {
           "titre": "Analyst Developer",
           "entreprise": "Tenor",
-          "periode": "02/2020 – Today",
+          "periode": "02/2020 – 09/2022",
           "lieu": "Oullin",
           "description": "Client site designer for large accounts customer",
           "postes": [
@@ -414,22 +478,12 @@
         "lieu": "Bourg en Bresse"
       }
     ],
-    "interets": {
-      "fr": [
-        "IA",
-        "Nouvelle technologie",
-        "Musique",
-        "Espace"
-      ],
-      "en": [
-        "AI",
-        "New technology",
-        "Music",
-        "Space"
-      ]
-    },
     "projets": {
       "fr": [
+        {
+          "titre": "IOT",
+          "description": "Creation d'un prototype de lecteur de carte RFID autonome via ESP32 fonctionnant sur batterie/panneau solaire avec modem 4g"
+        },
         {
           "titre": "Deep learning",
           "description": "Implémentation d'une solution de deep learning sur Ubuntu permettant de modifier le style d'une image"
@@ -459,19 +513,176 @@
       ]
     },
     "point_forts": {
-      "fr": [
-        "Autonome, passionné, motivé et inventif.",
-        "Grande capacité d'apprentissage."
-      ],
+      "fr": ["Autonome, passionné, motivé et inventif.", "Ponctuel"],
       "en": [
         "Autonomous, passionate, motivated and inventive.",
         "Great learning ability."
       ]
     }
-
   },
   "PROS": {
-    "companies" : [
+    "companies": [
+      {
+        "name": "Insign",
+        "cols": [
+          {
+            "size": 12,
+            "cards": [
+              {
+                "component": "experience-general-card",
+                "logo": "/company-logo/3_vallees.png",
+                "flex": 12,
+                "details": {
+                  "fr": [
+                    "Les 3 Vallées Explorer",
+                    "Creation d'une experience ludique sous la forme d'une web app",
+                    "Utilisation du GPS pour créer un jeux de piste géants dans le plus grand domaine skiable du monde"
+                  ],
+                  "en": [
+                    "The 3 Valleys Explorer",
+                    "Creation of a playful experience in the form of a web app",
+                    "Using GPS to create a giant treasure hunt in the world's largest ski area"
+                  ]
+                },
+                "technologies": {
+                  "nuxt": {
+                    "src": "/tech-logo/Nuxt-White.svg",
+                    "width": 100
+                  },
+                  "vuejs": {
+                    "src": "/tech-logo/VueJs.svg",
+                    "width": 50
+                  },
+                  "Strapi": {
+                    "src": "/tech-logo/strapi.avif",
+                    "width": 50
+                  },
+                  "PWA": {
+                    "src": "/tech-logo/pwa.png",
+                    "width": 50
+                  }
+                }
+              },
+              {
+                "component": "experience-general-card",
+                "logo": "/company-logo/atelierparfum.webp",
+                "flex": 12,
+                "details": {
+                  "fr": [
+                    "PlayEmotions - Un parfum d'émotion playemotions.latelierparfum.com",
+                    "Conception/ création d'une experience ludique basés sur l'IA pour le parfumeur latelierparfum.com",
+                    "PlayEmotion utilise l'IA Morphcast et la camera de l'utilisateur pour analyser leur reaction pendant le visionage de différent extrait vidéo et determiner quel emotion les touches le plus pour leur proposer le parfum correspondant."
+                  ],
+                  "en": [
+                    "PlayEmotions - A scent of emotion playemotions.latelierparfum.com",
+                    "Design/creation of a playful AI-based experience for the perfumer latelierparfum.com",
+                    "PlayEmotion uses Morphcast AI and the user's camera to analyze their reactions while viewing different video clips and determine which emotions affect them the most to suggest the corresponding perfume."
+                  ]
+                },
+                "technologies": {
+                  "nuxt": {
+                    "src": "/tech-logo/Nuxt-White.svg",
+                    "width": 100
+                  },
+                  "vuejs": {
+                    "src": "/tech-logo/VueJs.svg",
+                    "width": 50
+                  },
+                  "Morphcast": {
+                    "src": "/tech-logo/morphcast.svg",
+                    "width": 50
+                  },
+                  "PWA": {
+                    "src": "/tech-logo/pwa.png",
+                    "width": 50
+                  }
+                }
+              },
+              {
+                "component": "experience-general-card",
+                "logo": "/company-logo/epc.jpg",
+                "flex": 6,
+                "details": {
+                  "fr": ["Refonte du site du groupe EPC avec NextJs 15 et Strapi"],
+                  "en": ["Redesign of the  EPC-group website with NextJs 15 and Strapi"]
+                },
+                "technologies": {
+                  "Next": {
+                    "src": "/tech-logo/Next.png",
+                    "width": 100
+                  },
+                  "Strapi": {
+                    "src": "/tech-logo/strapi.avif",
+                    "width": 50
+                  },
+                  "docker": {
+                    "src": "/tech-logo/Docker.png",
+                    "width": 100
+                  },
+                  "React": {
+                    "src": "/tech-logo/react.png",
+                    "width": 50
+                  }
+                }
+              },
+              {
+                "component": "experience-general-card",
+                "logo": "/company-logo/ada.png",
+                "flex": 6,
+                "details": {
+                  "fr": ["Refonte du site ADA.fr"],
+                  "en": ["Redesign of the ADA.fr site"]
+                },
+                "technologies": {
+                  "Next": {
+                    "src": "/tech-logo/Next.png",
+                    "width": 100
+                  },
+                  "Nest": {
+                    "src": "/tech-logo/nest.svg",
+                    "width": 50
+                  },
+                  "docker": {
+                    "src": "/tech-logo/Docker.png",
+                    "width": 100
+                  },
+                  "React": {
+                    "src": "/tech-logo/react.png",
+                    "width": 50
+                  }
+                }
+              },
+              {
+                "component": "experience-general-card",
+                "logo": "/company-logo/interflora.svg",
+                "flex": 6,
+                "details": {
+                  "fr": ["Refonte du site E-commerce Interflora"],
+                  "en": ["Redesign of the Interflora E-commerce site"]
+                },
+                "technologies": {
+                  "nuxt": {
+                    "src": "/tech-logo/Nuxt-White.svg",
+                    "width": 100
+                  },
+                  "docker": {
+                    "src": "/tech-logo/Docker.png",
+                    "width": 100
+                  },
+                  "vuejs": {
+                    "src": "/tech-logo/VueJs.svg",
+                    "width": 50
+                  },
+                  "Strapi": {
+                    "src": "/tech-logo/strapi.avif",
+                    "width": 50
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
       {
         "name": "Tenor EDI Services",
         "cols": [
@@ -495,24 +706,24 @@
                 },
                 "technologies": {
                   "laravel": {
-                    "src":"/tech-logo/Laravel.svg",
+                    "src": "/tech-logo/Laravel.svg",
                     "width": 100
                   },
                   "nuxt": {
-                    "src":"/tech-logo/Nuxt-White.svg",
-                    "width":  100
+                    "src": "/tech-logo/Nuxt-White.svg",
+                    "width": 100
                   },
                   "docker": {
-                    "src":"/tech-logo/Docker.png",
-                    "width":  100
+                    "src": "/tech-logo/Docker.png",
+                    "width": 100
                   },
                   "vuejs": {
                     "src": "/tech-logo/VueJs.svg",
-                    "width":  50
+                    "width": 50
                   },
                   "symfony": {
-                    "src":"/tech-logo/Symfony.svg",
-                    "width":  50
+                    "src": "/tech-logo/Symfony.svg",
+                    "width": 50
                   }
                 }
               }
@@ -539,9 +750,7 @@
                     "Also including a Mail form script and a link to an online payment page."
                   ]
                 },
-                "imgs": [
-                  "/screens/mediamarket-pub.jpg"
-                ],
+                "imgs": ["/screens/mediamarket-pub.jpg"],
                 "flex": 12,
                 "height": "530px"
               }
@@ -561,9 +770,7 @@
                     "Presentation site of the company Six9 Media. Create based on a template."
                   ]
                 },
-                "imgs": [
-                  "/screens/69media.jpg"
-                ],
+                "imgs": ["/screens/69media.jpg"],
                 "flex": 12,
                 "height": "210px",
                 "class": ""
@@ -606,9 +813,7 @@
                     "Site made in PHP/HTML5/CSS/MySQL/AJAX. This site was placed in an iframe on the Europe 1 site"
                   ]
                 },
-                "imgs": [
-                  "/screens/carnet-europe1.jpg"
-                ],
+                "imgs": ["/screens/carnet-europe1.jpg"],
                 "flex": 0,
                 "height": "200px",
                 "class": "d-sm-block d-md-none"
@@ -627,9 +832,7 @@
                     "Site made in PHP/HTML5/CSS/MySQL/AJAX. This site was placed in an iframe on the Public.fr site"
                   ]
                 },
-                "imgs": [
-                  "/screens/carnet-public.jpg"
-                ],
+                "imgs": ["/screens/carnet-public.jpg"],
                 "flex": 0,
                 "height": "200px",
                 "class": "d-sm-block d-md-none"
@@ -648,9 +851,7 @@
                     "Site made in PHP/HTML5/CSS/MySQL/AJAX. This site was placed in an iframe on the Tv7 Jours site"
                   ]
                 },
-                "imgs": [
-                  "/screens/carnet-tv7.jpg"
-                ],
+                "imgs": ["/screens/carnet-tv7.jpg"],
                 "flex": 0,
                 "height": "200px",
                 "class": "d-sm-block d-md-none"
@@ -659,7 +860,7 @@
                 "component": "experience-image-card",
                 "title": "Le Carnet",
                 "subtitle": "Parismatch",
-                "details":{
+                "details": {
                   "fr": [
                     "Site Publi-redactionel",
                     "Site réalisé en PHP/HTML5/CSS/MySQL/AJAX. Ce site etait placé dans une iframe sur le site de Parismatch"
@@ -669,9 +870,7 @@
                     "Site made in PHP/HTML5/CSS/MySQL/AJAX. This site was placed in an iframe on the Parismatch site"
                   ]
                 },
-                "imgs": [
-                  "/screens/carnet-parismatch.jpg"
-                ],
+                "imgs": ["/screens/carnet-parismatch.jpg"],
                 "flex": 0,
                 "height": "200px",
                 "class": "d-sm-block d-md-none"
@@ -706,10 +905,9 @@
           {
             "href": "https://thespacedevs.com/",
             "icon": "mdi-link",
-            "name":  "thespacedevs.com"
+            "name": "thespacedevs.com"
           }
         ]
-
       },
       {
         "id": 3,
@@ -721,7 +919,7 @@
           {
             "href": "https://www.youtube.com/watch?v=094y1Z2wpJg",
             "icon": "mdi-youtube",
-            "name":  "The Simplest Math Problem No One Can Solve - Collatz Conjecture"
+            "name": "The Simplest Math Problem No One Can Solve - Collatz Conjecture"
           }
         ]
       },
@@ -735,7 +933,7 @@
           {
             "href": "https://pixijs.com/",
             "icon": "mdi-link",
-            "name":  "PixiJS"
+            "name": "PixiJS"
           },
           {
             "href": "https://www.youtube.com/c/SebastianLague",
@@ -758,7 +956,6 @@
         "description": "This article does not really correspond to a discovery or a test on a technology strictly speaking.\n\nI just think it would be nice to explain a bit how this site is made, although all the sources are available on my Github if you want to see my creation more closely.\nBut before starting a bit of background, this site is my second personal site (the sources of the first are also available on my Github).\n\n I decided it was time to replace it because with my 5 years as a web developer, the first one was seriously starting to become obsolete and no longer demonstrated my expertise.\nIndeed it was made entirely in html and Javascript without framework...\n\nAlthough used to php development under Symfony at first and more recently Laravel for my work. I wanted to avoid the costs of a VPS server and therefore generate my site in static.\n\nHowever, I also used in my work a perfect JS framework for my case Nuxt JS and it is with this framework that I created the site on which you are currently.\n\nNuxt JS is a French framework (cocorico) based on Vue JS technology, allowing the creation of modern sites. It allows server-side rendering as a static deployment of sites.\nIn addition, this framework has several very pleasant assets for a developer:\n\n- Firstly, it uses the VueX store system which, coupled with VueJS, makes it possible to store the data useful to the site and reuse it if necessary in the pages one can in the manner of a database. Which allowed me to gather all my data in a JSON file that you will find in assets/data.json in the sources of the site\n\n- Secondly it allows a pushed cache and offline use of the application as well as the possibility of saving the site as a PWA in your device\n\n- Finally VueJs being a very popular framework, there are many plugins to further increase the capacity of the site, for example I used Vuetify as a graphic library, Pathify to simplify the use of the store or NuxtJs/Color-mode to take into account your system preferences is display light or dark mode accordingly.",
         "component": null,
         "externalLinks": []
-
       },
       {
         "id": 2,
@@ -770,10 +967,9 @@
           {
             "href": "https://thespacedevs.com/",
             "icon": "mdi-link",
-            "name":  "thespacedevs.com"
+            "name": "thespacedevs.com"
           }
         ]
-
       },
       {
         "id": 3,
@@ -785,7 +981,7 @@
           {
             "href": "https://www.youtube.com/watch?v=094y1Z2wpJg",
             "icon": "mdi-youtube",
-            "name":  "The Simplest Math Problem No One Can Solve - Collatz Conjecture"
+            "name": "The Simplest Math Problem No One Can Solve - Collatz Conjecture"
           }
         ]
       },
@@ -799,7 +995,7 @@
           {
             "href": "https://pixijs.com/",
             "icon": "mdi-link",
-            "name":  "PixiJS"
+            "name": "PixiJS"
           },
           {
             "href": "https://www.youtube.com/c/SebastianLague",
@@ -819,27 +1015,27 @@
     "cards": {
       "Email": {
         "icon": "mdi-email",
-        "link": "mailTo:contact@jerome-riffier.fr",
-        "text": "contact@jerome-riffier.fr",
+        "link": "mailTo:jerome.riffier@gmail.com",
+        "text": "jerome.riffier@gmail.com",
         "copy": true
       },
       "Téléphone": {
         "icon": "mdi-phone",
         "link": "tel:+33666899437",
         "text": "06 66 89 94 37",
-        "copy":  true
+        "copy": true
       },
       "Adresse": {
         "icon": "mdi-home",
-        "link":  null,
-        "text":  "69420 Longes, Rhone Alpes",
-        "copy":  false
+        "link": null,
+        "text": "42110 Valeille, Rhone Alpes",
+        "copy": false
       },
       "LinkedIn": {
         "icon": "mdi-linkedin",
         "link": "https://www.linkedin.com/in/j%C3%A9r%C3%B4me-riffier-289752174/",
-        "text":  "Jérôme Riffier",
-        "copy":  false
+        "text": "Jérôme Riffier",
+        "copy": false
       }
     }
   }
