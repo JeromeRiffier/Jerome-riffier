@@ -42,8 +42,8 @@
     "card": {
       "avatar": "/moi.jpg",
       "name": {
-        "fr": "<strong>Jérôme Riffier</strong>, 5 ans d'expérience dans le développement web (et beaucoup de cafés)",
-        "en": "<strong>Jérôme Riffier</strong>, 5 years of experience in web development (and countless coffes)"
+        "fr": "<strong>Jérôme Riffier</strong>, 8 ans d'expérience dans le développement web (et beaucoup de cafés)",
+        "en": "<strong>Jérôme Riffier</strong>, 8 years of experience in web development (and countless coffes)"
       },
       "job": {
         "fr": "Actuellement Développeur web Full Stack",
@@ -251,7 +251,6 @@
       "fr": [
         {
           "titre": "Développeur Freelance",
-          "entreprise": "Tenor",
           "periode": "02/2025 - aujourd'hui",
           "lieu": "Valeille 42110 (Distanciel)",
           "description": "Developpement, refonte de site et formation",
