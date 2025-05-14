@@ -89,20 +89,34 @@ export default {
       background_color: '#daeeff'
     },
     workbox: {
-      enabled: process.env.NODE_ENV === 'production', // or use a global variable to track the current NODE_ENV, etc to determine dev mode
-      cacheAssets: false,
+      enabled:process.env.NODE_ENV === 'production',
+      cacheAssets: true, // Enable caching of assets
       offline: true,
-      offlineStrategy: 'CacheFirst'
+      offlineStrategy: 'NetworkFirst', // Change from CacheFirst to NetworkFirst
+      runtimeCaching: [
+        {
+          urlPattern: '/*',
+          handler: 'NetworkFirst',
+          method: 'GET',
+          strategyOptions: {
+            cacheName: 'site-cache',
+            cacheExpiration: {
+              maxEntries: 100,
+              maxAgeSeconds: 60 * 60 * 24 * 30 // 1 day
+            }
+          }
+        }
+      ],
+      skipWaiting: true, // Force activation of new service worker
+      clientsClaim: true // Take control of all pages immediately
     },
     icon: {
-      /* icon options */
       fileName: 'icon_pwa.png'
     },
     meta: {
       theme_color: '#daeeff'
     }
   },
-
   // i18n localisation config
   i18n: {
     locales: [
